@@ -1,3 +1,4 @@
-# 코드잇 AI엔지니어 3팀 프로젝트 1번 md 테스트
-
-## 테스트 문구 입니다
+# 모두가 똑같이 씀
+data_path = "data/train_images"
+# 또는
+data_path = "../data/train_images" # notebooks/ 안에서 실행할 때

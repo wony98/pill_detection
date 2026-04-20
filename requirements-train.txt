@@ -1,0 +1,11 @@
+opencv-python
+Pillow
+albumentations
+pycocotools
+tqdm
+pyyaml
+requests
+torch
+torchvision
+torchaudio
+ultralytics

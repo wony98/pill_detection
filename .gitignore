@@ -5,6 +5,16 @@
 data/
 _toolkit/
 
+# EDA outputs eda/*.pkl
+eda/*.csv
+eda/split_info.json
+
+# Model training outputs
+runs/
+*.pt
+*.onnx
+*.engine
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/

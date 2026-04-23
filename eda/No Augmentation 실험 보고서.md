@@ -106,7 +106,7 @@ IoU 0.5~0.9 구간에서 성능이 거의 평탄하게 유지됨. 이는 모델�
 ## 시각화 해석
 
 - **results.png**: Epoch별 loss 및 mAP 추이. train loss는 계속 하락, val loss는 epoch 5부터 정체.
-- **map_by_iou.png**: IoU threshold별 mAP 변화. 0.5~0.9 평탄 구간, 0.95 급락 구간, Kaggle 평가 구간(0.75~0.95) 하이라이트.
+- **map_by_iou.png**: IoU threshold별 mAP 변화. 0.5 ~ 0.9 평탄 구간, 0.95 급락 구간, Kaggle 평가 구간(0.75 ~ 0.95) 하이라이트.
 - **BoxPR_curve.png**: Precision-Recall 곡선 (IoU 0.5 기준). 전체 평균(파란선) 우상단에 밀착되어 이상적 형태. 일부 클래스(회색 선) 중 곡선이 완만한 3-4개 존재.
 - **confusion_matrix_normalized.png**: 정규화된 혼동 행렬. 대각선 외 오분류 거의 없음. 일부 클래스가 background와 미세 혼동.
 - **BoxF1_curve.png**: F1-Confidence 곡선. Best F1 = 0.99 at confidence threshold ≈ 0.79. 실사용 시 confidence threshold 0.79 권장.

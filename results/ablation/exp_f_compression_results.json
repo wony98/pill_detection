@@ -1,0 +1,1663 @@
+{
+  "exp_name": "exp_f_compression",
+  "author": "승원",
+  "timestamp": "2026-04-24T12:43:25.087214",
+  "eval_version": "v2",
+  "num_images": 33,
+  "detection_rate": 1.0,
+  "top1_accuracy": 0.1818,
+  "top3_accuracy": 0.2424,
+  "results": [
+    {
+      "filename": "비모보정 500_20mg.png",
+      "img_width": 474,
+      "img_height": 414,
+      "gt_dl_name": "비모보정 500/20mg",
+      "gt_class_idx": 85,
+      "num_detections": 3,
+      "detections": [
+        {
+          "bbox": [
+            107.0,
+            221.1,
+            259.7,
+            263.8
+          ],
+          "top3_class_idx": [
+            31
+          ],
+          "top3_class_name": [
+            "이가탄에프캡슐 150mg/PTP"
+          ],
+          "top3_confidence": [
+            0.0231
+          ]
+        },
+        {
+          "bbox": [
+            0.0,
+            0.0,
+            85.5,
+            160.1
+          ],
+          "top3_class_idx": [
+            94
+          ],
+          "top3_class_name": [
+            "자누메트엑스알서방정 100/1000mg"
+          ],
+          "top3_confidence": [
+            0.0131
+          ]
+        },
+        {
+          "bbox": [
+            0.0,
+            168.6,
+            54.8,
+            407.8
+          ],
+          "top3_class_idx": [
+            14
+          ],
+          "top3_class_name": [
+            "엘도스캡슐(에르도스테인)(수출용)"
+          ],
+          "top3_confidence": [
+            0.013
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "아토르바정 10mg.png",
+      "img_width": 564,
+      "img_height": 438,
+      "gt_dl_name": "아토르바정 10mg",
+      "gt_class_idx": 60,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            118.5,
+            88.0,
+            319.7,
+            206.2
+          ],
+          "top3_class_idx": [
+            69,
+            42,
+            102
+          ],
+          "top3_class_name": [
+            "토비애즈서방정 4mg",
+            "동아가바펜틴정 800mg",
+            "아토젯정 10/40mg"
+          ],
+          "top3_confidence": [
+            0.2085,
+            0.1897,
+            0.0304
+          ]
+        },
+        {
+          "bbox": [
+            171.3,
+            183.4,
+            381.5,
+            296.0
+          ],
+          "top3_class_idx": [
+            102,
+            104,
+            1
+          ],
+          "top3_class_name": [
+            "아토젯정 10/40mg",
+            "로수젯정10/5밀리그램",
+            "게보린정 300mg/PTP"
+          ],
+          "top3_confidence": [
+            0.1303,
+            0.0863,
+            0.0553
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "인사돌플러스정 35mg_.png",
+      "img_width": 340,
+      "img_height": 340,
+      "gt_dl_name": "인사돌플러스정 35mg/PTP",
+      "gt_class_idx": 56,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            219.7,
+            0.1,
+            339.9,
+            99.6
+          ],
+          "top3_class_idx": [
+            90,
+            101
+          ],
+          "top3_class_name": [
+            "트라젠타듀오정 2.5/850mg",
+            "제미메트서방정 50/1000mg"
+          ],
+          "top3_confidence": [
+            0.0824,
+            0.0225
+          ]
+        },
+        {
+          "bbox": [
+            117.9,
+            152.6,
+            216.2,
+            233.9
+          ],
+          "top3_class_idx": [
+            21
+          ],
+          "top3_class_name": [
+            "이튼큐정 35mg/PTP"
+          ],
+          "top3_confidence": [
+            0.0231
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "지르텍정(세티리진염산염).png",
+      "img_width": 298,
+      "img_height": 260,
+      "gt_dl_name": "지르텍정(세티리진염산염)",
+      "gt_class_idx": 51,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            107.8,
+            81.4,
+            208.0,
+            186.1
+          ],
+          "top3_class_idx": [
+            107,
+            82,
+            29
+          ],
+          "top3_class_name": [
+            "엔트레스토필름코팅정 200mg",
+            "졸로푸트정 100mg",
+            "투스딘골드캡슐 150mg/PTP"
+          ],
+          "top3_confidence": [
+            0.3502,
+            0.1099,
+            0.0384
+          ]
+        },
+        {
+          "bbox": [
+            168.0,
+            55.1,
+            297.7,
+            248.6
+          ],
+          "top3_class_idx": [
+            67
+          ],
+          "top3_class_name": [
+            "비타비백정 100mg/병"
+          ],
+          "top3_confidence": [
+            0.0321
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "타이레놀이알서방정(아세트아미노펜)(수출용).png",
+      "img_width": 382,
+      "img_height": 328,
+      "gt_dl_name": "타이레놀이알서방정(아세트아미노펜)(수출용)",
+      "gt_class_idx": 17,
+      "num_detections": 3,
+      "detections": [
+        {
+          "bbox": [
+            74.7,
+            158.8,
+            317.8,
+            324.5
+          ],
+          "top3_class_idx": [
+            90
+          ],
+          "top3_class_name": [
+            "트라젠타듀오정 2.5/850mg"
+          ],
+          "top3_confidence": [
+            0.0397
+          ]
+        },
+        {
+          "bbox": [
+            0.0,
+            51.6,
+            198.1,
+            196.4
+          ],
+          "top3_class_idx": [
+            90,
+            73
+          ],
+          "top3_class_name": [
+            "트라젠타듀오정 2.5/850mg",
+            "자누메트정 50/850mg"
+          ],
+          "top3_confidence": [
+            0.0312,
+            0.0225
+          ]
+        },
+        {
+          "bbox": [
+            38.0,
+            64.9,
+            323.2,
+            201.8
+          ],
+          "top3_class_idx": [
+            111,
+            90
+          ],
+          "top3_class_name": [
+            "람노스캡슐500mg/병",
+            "트라젠타듀오정 2.5/850mg"
+          ],
+          "top3_confidence": [
+            0.0114,
+            0.0111
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "게보린정 300mg_3.png",
+      "img_width": 254,
+      "img_height": 401,
+      "gt_dl_name": "게보린정 300mg/PTP",
+      "gt_class_idx": 1,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            47.0,
+            118.0,
+            212.5,
+            272.1
+          ],
+          "top3_class_idx": [
+            101
+          ],
+          "top3_class_name": [
+            "제미메트서방정 50/1000mg"
+          ],
+          "top3_confidence": [
+            0.7947
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "글리아타민연질캡슐.png",
+      "img_width": 522,
+      "img_height": 665,
+      "gt_dl_name": "글리아타민연질캡슐",
+      "gt_class_idx": 95,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            181.2,
+            256.6,
+            313.4,
+            354.0
+          ],
+          "top3_class_idx": [
+            70,
+            104
+          ],
+          "top3_class_name": [
+            "놀텍정 10mg",
+            "로수젯정10/5밀리그램"
+          ],
+          "top3_confidence": [
+            0.5909,
+            0.0904
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "낙소졸정 500_20mg.png",
+      "img_width": 918,
+      "img_height": 849,
+      "gt_dl_name": "낙소졸정 500/20mg",
+      "gt_class_idx": 92,
+      "num_detections": 3,
+      "detections": [
+        {
+          "bbox": [
+            428.1,
+            362.1,
+            559.3,
+            569.4
+          ],
+          "top3_class_idx": [
+            12
+          ],
+          "top3_class_name": [
+            "에어탈정(아세클로페낙)"
+          ],
+          "top3_confidence": [
+            0.0369
+          ]
+        },
+        {
+          "bbox": [
+            788.9,
+            326.8,
+            916.8,
+            726.7
+          ],
+          "top3_class_idx": [
+            75
+          ],
+          "top3_class_name": [
+            "아모잘탄정 5/100mg"
+          ],
+          "top3_confidence": [
+            0.0251
+          ]
+        },
+        {
+          "bbox": [
+            499.5,
+            0.0,
+            775.9,
+            532.6
+          ],
+          "top3_class_idx": [
+            30
+          ],
+          "top3_class_name": [
+            "다보타민큐정 10mg/병"
+          ],
+          "top3_confidence": [
+            0.0127
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "넥시움정 40mg.png",
+      "img_width": 673,
+      "img_height": 585,
+      "gt_dl_name": "넥시움정 40mg",
+      "gt_class_idx": 23,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            128.8,
+            191.4,
+            540.7,
+            462.0
+          ],
+          "top3_class_idx": [
+            101,
+            67
+          ],
+          "top3_class_name": [
+            "제미메트서방정 50/1000mg",
+            "비타비백정 100mg/병"
+          ],
+          "top3_confidence": [
+            0.545,
+            0.0793
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "노바스크정 5mg.png",
+      "img_width": 693,
+      "img_height": 520,
+      "gt_dl_name": "노바스크정 5mg",
+      "gt_class_idx": 50,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            337.0,
+            249.4,
+            433.4,
+            328.3
+          ],
+          "top3_class_idx": [
+            50
+          ],
+          "top3_class_name": [
+            "노바스크정 5mg"
+          ],
+          "top3_confidence": [
+            0.0321
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "놀텍정 10mg.png",
+      "img_width": 658,
+      "img_height": 503,
+      "gt_dl_name": "놀텍정 10mg",
+      "gt_class_idx": 70,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            243.1,
+            211.5,
+            379.5,
+            318.8
+          ],
+          "top3_class_idx": [
+            70,
+            104
+          ],
+          "top3_class_name": [
+            "놀텍정 10mg",
+            "로수젯정10/5밀리그램"
+          ],
+          "top3_confidence": [
+            0.831,
+            0.2112
+          ]
+        },
+        {
+          "bbox": [
+            241.0,
+            175.9,
+            372.5,
+            248.8
+          ],
+          "top3_class_idx": [
+            104
+          ],
+          "top3_class_name": [
+            "로수젯정10/5밀리그램"
+          ],
+          "top3_confidence": [
+            0.4852
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "디카테오정.png",
+      "img_width": 501,
+      "img_height": 335,
+      "gt_dl_name": "디카테오정",
+      "gt_class_idx": 88,
+      "num_detections": 3,
+      "detections": [
+        {
+          "bbox": [
+            269.6,
+            39.4,
+            353.4,
+            163.9
+          ],
+          "top3_class_idx": [
+            117,
+            97
+          ],
+          "top3_class_name": [
+            "디카테오엘씨정 10mg/병",
+            "트루패스정 4mg"
+          ],
+          "top3_confidence": [
+            0.9163,
+            0.2685
+          ]
+        },
+        {
+          "bbox": [
+            126.5,
+            153.6,
+            239.5,
+            258.9
+          ],
+          "top3_class_idx": [
+            117,
+            97,
+            103
+          ],
+          "top3_class_name": [
+            "디카테오엘씨정 10mg/병",
+            "트루패스정 4mg",
+            "제라타딘정(로라타딘)"
+          ],
+          "top3_confidence": [
+            0.3279,
+            0.0309,
+            0.0248
+          ]
+        },
+        {
+          "bbox": [
+            119.9,
+            255.0,
+            254.2,
+            322.9
+          ],
+          "top3_class_idx": [
+            117,
+            15,
+            102
+          ],
+          "top3_class_name": [
+            "디카테오엘씨정 10mg/병",
+            "삼남건조수산화알루미늄겔정",
+            "아토젯정 10/40mg"
+          ],
+          "top3_confidence": [
+            0.0792,
+            0.0707,
+            0.0496
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "라시도필캡슐(비매품).png",
+      "img_width": 720,
+      "img_height": 482,
+      "gt_dl_name": "라시도필캡슐(비매품)",
+      "gt_class_idx": 52,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            275.9,
+            203.6,
+            513.9,
+            437.8
+          ],
+          "top3_class_idx": [
+            52,
+            102,
+            113
+          ],
+          "top3_class_name": [
+            "라시도필캡슐(비매품)",
+            "아토젯정 10/40mg",
+            "바이오탑디캡슐 50mg/병"
+          ],
+          "top3_confidence": [
+            0.3529,
+            0.0247,
+            0.0207
+          ]
+        },
+        {
+          "bbox": [
+            216.4,
+            130.3,
+            510.0,
+            307.5
+          ],
+          "top3_class_idx": [
+            113,
+            112
+          ],
+          "top3_class_name": [
+            "바이오탑디캡슐 50mg/병",
+            "카발린캡슐 25mg"
+          ],
+          "top3_confidence": [
+            0.1201,
+            0.0242
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "마이칼디정.png",
+      "img_width": 967,
+      "img_height": 1194,
+      "gt_dl_name": "마이칼디정",
+      "gt_class_idx": 72,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            238.2,
+            458.4,
+            694.4,
+            681.6
+          ],
+          "top3_class_idx": [
+            75
+          ],
+          "top3_class_name": [
+            "아모잘탄정 5/100mg"
+          ],
+          "top3_confidence": [
+            0.9168
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "맥시부펜이알정.png",
+      "img_width": 804,
+      "img_height": 555,
+      "gt_dl_name": "맥시부펜이알정 300mg",
+      "gt_class_idx": 64,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            214.4,
+            243.5,
+            362.8,
+            317.1
+          ],
+          "top3_class_idx": [
+            27
+          ],
+          "top3_class_name": [
+            "아빌리파이정 10mg"
+          ],
+          "top3_confidence": [
+            0.9728
+          ]
+        },
+        {
+          "bbox": [
+            463.4,
+            243.6,
+            613.6,
+            317.1
+          ],
+          "top3_class_idx": [
+            27,
+            20
+          ],
+          "top3_class_name": [
+            "아빌리파이정 10mg",
+            "씨즈날정(세티리진염산염)"
+          ],
+          "top3_confidence": [
+            0.8485,
+            0.0781
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "뮤테란캡슐 100mg.png",
+      "img_width": 1057,
+      "img_height": 1222,
+      "gt_dl_name": "뮤테란캡슐 100mg",
+      "gt_class_idx": 4,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            295.2,
+            481.7,
+            531.7,
+            988.3
+          ],
+          "top3_class_idx": [
+            4
+          ],
+          "top3_class_name": [
+            "뮤테란캡슐 100mg"
+          ],
+          "top3_confidence": [
+            0.76
+          ]
+        },
+        {
+          "bbox": [
+            0.0,
+            0.0,
+            366.4,
+            656.0
+          ],
+          "top3_class_idx": [
+            94
+          ],
+          "top3_class_name": [
+            "자누메트엑스알서방정 100/1000mg"
+          ],
+          "top3_confidence": [
+            0.0194
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "비오플250캡슐.png",
+      "img_width": 1255,
+      "img_height": 892,
+      "gt_dl_name": "비오플250캡슐 282.5mg",
+      "gt_class_idx": 91,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            498.3,
+            394.6,
+            868.1,
+            550.6
+          ],
+          "top3_class_idx": [
+            82
+          ],
+          "top3_class_name": [
+            "졸로푸트정 100mg"
+          ],
+          "top3_confidence": [
+            0.104
+          ]
+        },
+        {
+          "bbox": [
+            0.0,
+            133.4,
+            667.0,
+            864.1
+          ],
+          "top3_class_idx": [
+            94
+          ],
+          "top3_class_name": [
+            "자누메트엑스알서방정 100/1000mg"
+          ],
+          "top3_confidence": [
+            0.0154
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "비타비백정(비타민).png",
+      "img_width": 697,
+      "img_height": 1143,
+      "gt_dl_name": "비타비백정 100mg/병",
+      "gt_class_idx": 67,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            107.0,
+            380.1,
+            648.1,
+            781.6
+          ],
+          "top3_class_idx": [
+            101,
+            67,
+            23
+          ],
+          "top3_class_name": [
+            "제미메트서방정 50/1000mg",
+            "비타비백정 100mg/병",
+            "넥시움정 40mg"
+          ],
+          "top3_confidence": [
+            0.1151,
+            0.0662,
+            0.0415
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "아보다트연질캡슐 0.5mg_1.png",
+      "img_width": 950,
+      "img_height": 1125,
+      "gt_dl_name": "아보다트연질캡슐 0.5mg",
+      "gt_class_idx": 37,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            215.5,
+            703.5,
+            746.1,
+            1116.5
+          ],
+          "top3_class_idx": [
+            115,
+            101
+          ],
+          "top3_class_name": [
+            "바이오탑하이캡슐 150mg/병",
+            "제미메트서방정 50/1000mg"
+          ],
+          "top3_confidence": [
+            0.0249,
+            0.0168
+          ]
+        },
+        {
+          "bbox": [
+            0.0,
+            451.7,
+            397.0,
+            897.8
+          ],
+          "top3_class_idx": [
+            94
+          ],
+          "top3_class_name": [
+            "자누메트엑스알서방정 100/1000mg"
+          ],
+          "top3_confidence": [
+            0.02
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "아스피린프로텍트정100mg.png",
+      "img_width": 738,
+      "img_height": 464,
+      "gt_dl_name": "아스피린프로텍트정 100mg",
+      "gt_class_idx": 25,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            298.2,
+            166.8,
+            445.1,
+            309.6
+          ],
+          "top3_class_idx": [
+            12,
+            28
+          ],
+          "top3_class_name": [
+            "에어탈정(아세클로페낙)",
+            "자이프렉사정 2.5mg"
+          ],
+          "top3_confidence": [
+            0.9846,
+            0.0695
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "엔테론정 150mg.png",
+      "img_width": 1007,
+      "img_height": 458,
+      "gt_dl_name": "엔테론정 150mg",
+      "gt_class_idx": 36,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            517.7,
+            140.6,
+            726.4,
+            340.9
+          ],
+          "top3_class_idx": [
+            116,
+            40
+          ],
+          "top3_class_name": [
+            "엘스테인정(에르도스테인)",
+            "크레스토정 20mg"
+          ],
+          "top3_confidence": [
+            0.0594,
+            0.0306
+          ]
+        },
+        {
+          "bbox": [
+            282.2,
+            143.3,
+            489.9,
+            342.9
+          ],
+          "top3_class_idx": [
+            1,
+            116
+          ],
+          "top3_class_name": [
+            "게보린정 300mg/PTP",
+            "엘스테인정(에르도스테인)"
+          ],
+          "top3_confidence": [
+            0.0335,
+            0.023
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "울트라셋이알서방정.png",
+      "img_width": 1390,
+      "img_height": 1051,
+      "gt_dl_name": "울트라셋이알서방정",
+      "gt_class_idx": 81,
+      "num_detections": 5,
+      "detections": [
+        {
+          "bbox": [
+            442.3,
+            402.1,
+            978.9,
+            697.7
+          ],
+          "top3_class_idx": [
+            100,
+            92,
+            115
+          ],
+          "top3_class_name": [
+            "글리틴정(콜린알포세레이트)",
+            "낙소졸정 500/20mg",
+            "바이오탑하이캡슐 150mg/병"
+          ],
+          "top3_confidence": [
+            0.1507,
+            0.0706,
+            0.0109
+          ]
+        },
+        {
+          "bbox": [
+            0.0,
+            60.6,
+            336.7,
+            254.8
+          ],
+          "top3_class_idx": [
+            14,
+            91
+          ],
+          "top3_class_name": [
+            "엘도스캡슐(에르도스테인)(수출용)",
+            "비오플250캡슐 282.5mg"
+          ],
+          "top3_confidence": [
+            0.0305,
+            0.0254
+          ]
+        },
+        {
+          "bbox": [
+            1115.9,
+            969.9,
+            1388.6,
+            1051.0
+          ],
+          "top3_class_idx": [
+            111
+          ],
+          "top3_class_name": [
+            "람노스캡슐500mg/병"
+          ],
+          "top3_confidence": [
+            0.0205
+          ]
+        },
+        {
+          "bbox": [
+            0.0,
+            916.8,
+            403.6,
+            1051.0
+          ],
+          "top3_class_idx": [
+            91
+          ],
+          "top3_class_name": [
+            "비오플250캡슐 282.5mg"
+          ],
+          "top3_confidence": [
+            0.0183
+          ]
+        },
+        {
+          "bbox": [
+            403.8,
+            0.0,
+            819.8,
+            294.4
+          ],
+          "top3_class_idx": [
+            91,
+            14
+          ],
+          "top3_class_name": [
+            "비오플250캡슐 282.5mg",
+            "엘도스캡슐(에르도스테인)(수출용)"
+          ],
+          "top3_confidence": [
+            0.0174,
+            0.0161
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "인사돌플러스정.png",
+      "img_width": 1296,
+      "img_height": 973,
+      "gt_dl_name": "인사돌플러스정 35mg/PTP",
+      "gt_class_idx": 56,
+      "num_detections": 4,
+      "detections": [
+        {
+          "bbox": [
+            593.4,
+            256.1,
+            1083.9,
+            970.1
+          ],
+          "top3_class_idx": [
+            29
+          ],
+          "top3_class_name": [
+            "투스딘골드캡슐 150mg/PTP"
+          ],
+          "top3_confidence": [
+            0.0986
+          ]
+        },
+        {
+          "bbox": [
+            365.9,
+            0.3,
+            1058.9,
+            113.3
+          ],
+          "top3_class_idx": [
+            29,
+            111,
+            30
+          ],
+          "top3_class_name": [
+            "투스딘골드캡슐 150mg/PTP",
+            "람노스캡슐500mg/병",
+            "다보타민큐정 10mg/병"
+          ],
+          "top3_confidence": [
+            0.0877,
+            0.0227,
+            0.0114
+          ]
+        },
+        {
+          "bbox": [
+            388.0,
+            259.3,
+            743.1,
+            971.7
+          ],
+          "top3_class_idx": [
+            88
+          ],
+          "top3_class_name": [
+            "디카테오정"
+          ],
+          "top3_confidence": [
+            0.0482
+          ]
+        },
+        {
+          "bbox": [
+            682.2,
+            0.1,
+            1052.8,
+            102.9
+          ],
+          "top3_class_idx": [
+            24
+          ],
+          "top3_class_name": [
+            "동화덴스톨캡슐 150mg/PTP"
+          ],
+          "top3_confidence": [
+            0.0202
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "자누비아정 50mg.png",
+      "img_width": 906,
+      "img_height": 939,
+      "gt_dl_name": "자누비아정 50mg",
+      "gt_class_idx": 63,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            421.8,
+            399.6,
+            563.6,
+            536.5
+          ],
+          "top3_class_idx": [
+            40,
+            55
+          ],
+          "top3_class_name": [
+            "크레스토정 20mg",
+            "자트랄엑스엘정 10mg"
+          ],
+          "top3_confidence": [
+            0.6682,
+            0.0113
+          ]
+        },
+        {
+          "bbox": [
+            306.9,
+            352.7,
+            445.4,
+            488.4
+          ],
+          "top3_class_idx": [
+            41,
+            87
+          ],
+          "top3_class_name": [
+            "가바토파정 100mg",
+            "리바로정 4mg"
+          ],
+          "top3_confidence": [
+            0.3827,
+            0.1447
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "자트랄엑스엘정 10mg.png",
+      "img_width": 893,
+      "img_height": 668,
+      "gt_dl_name": "자트랄엑스엘정 10mg",
+      "gt_class_idx": 55,
+      "num_detections": 4,
+      "detections": [
+        {
+          "bbox": [
+            374.7,
+            319.9,
+            526.3,
+            498.0
+          ],
+          "top3_class_idx": [
+            55,
+            41,
+            36
+          ],
+          "top3_class_name": [
+            "자트랄엑스엘정 10mg",
+            "가바토파정 100mg",
+            "엔테론정 150mg"
+          ],
+          "top3_confidence": [
+            0.5224,
+            0.1041,
+            0.0598
+          ]
+        },
+        {
+          "bbox": [
+            240.7,
+            225.1,
+            538.3,
+            497.4
+          ],
+          "top3_class_idx": [
+            70,
+            81,
+            109
+          ],
+          "top3_class_name": [
+            "놀텍정 10mg",
+            "울트라셋이알서방정",
+            "뮤코원캡슐(에르도스테인)"
+          ],
+          "top3_confidence": [
+            0.0582,
+            0.0317,
+            0.024
+          ]
+        },
+        {
+          "bbox": [
+            509.8,
+            0.1,
+            799.3,
+            198.7
+          ],
+          "top3_class_idx": [
+            30
+          ],
+          "top3_class_name": [
+            "다보타민큐정 10mg/병"
+          ],
+          "top3_confidence": [
+            0.0525
+          ]
+        },
+        {
+          "bbox": [
+            0.1,
+            277.3,
+            222.7,
+            667.4
+          ],
+          "top3_class_idx": [
+            4
+          ],
+          "top3_class_name": [
+            "뮤테란캡슐 100mg"
+          ],
+          "top3_confidence": [
+            0.0344
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "졸로푸트정 100mg.png",
+      "img_width": 1005,
+      "img_height": 527,
+      "gt_dl_name": "졸로푸트정 100mg",
+      "gt_class_idx": 82,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            540.7,
+            149.3,
+            960.3,
+            359.3
+          ],
+          "top3_class_idx": [
+            75,
+            107
+          ],
+          "top3_class_name": [
+            "아모잘탄정 5/100mg",
+            "엔트레스토필름코팅정 200mg"
+          ],
+          "top3_confidence": [
+            0.3731,
+            0.2353
+          ]
+        },
+        {
+          "bbox": [
+            90.6,
+            163.5,
+            482.4,
+            373.3
+          ],
+          "top3_class_idx": [
+            75,
+            82,
+            90
+          ],
+          "top3_class_name": [
+            "아모잘탄정 5/100mg",
+            "졸로푸트정 100mg",
+            "트라젠타듀오정 2.5/850mg"
+          ],
+          "top3_confidence": [
+            0.0262,
+            0.0126,
+            0.0103
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "종근당글리아티린연질캡슐.png",
+      "img_width": 583,
+      "img_height": 514,
+      "gt_dl_name": "종근당글리아티린연질캡슐(콜린알포세레이트) ",
+      "gt_class_idx": 46,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            190.1,
+            121.2,
+            385.9,
+            239.0
+          ],
+          "top3_class_idx": [
+            46,
+            104,
+            36
+          ],
+          "top3_class_name": [
+            "종근당글리아티린연질캡슐(콜린알포세레이트) ",
+            "로수젯정10/5밀리그램",
+            "엔테론정 150mg"
+          ],
+          "top3_confidence": [
+            0.4757,
+            0.2407,
+            0.0153
+          ]
+        },
+        {
+          "bbox": [
+            198.5,
+            278.0,
+            392.0,
+            393.9
+          ],
+          "top3_class_idx": [
+            46,
+            36,
+            95
+          ],
+          "top3_class_name": [
+            "종근당글리아티린연질캡슐(콜린알포세레이트) ",
+            "엔테론정 150mg",
+            "글리아타민연질캡슐"
+          ],
+          "top3_confidence": [
+            0.1845,
+            0.0609,
+            0.0356
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "지르텍정.png",
+      "img_width": 993,
+      "img_height": 744,
+      "gt_dl_name": "지르텍정(세티리진염산염)",
+      "gt_class_idx": 51,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            385.7,
+            380.6,
+            552.2,
+            474.7
+          ],
+          "top3_class_idx": [
+            27
+          ],
+          "top3_class_name": [
+            "아빌리파이정 10mg"
+          ],
+          "top3_confidence": [
+            0.7696
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "케이캡정 50mg.png",
+      "img_width": 760,
+      "img_height": 687,
+      "gt_dl_name": "케이캡정 50mg",
+      "gt_class_idx": 114,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            150.1,
+            240.7,
+            599.5,
+            483.7
+          ],
+          "top3_class_idx": [
+            101,
+            67,
+            18
+          ],
+          "top3_class_name": [
+            "제미메트서방정 50/1000mg",
+            "비타비백정 100mg/병",
+            "삐콤씨에프정 618.6mg/병"
+          ],
+          "top3_confidence": [
+            0.0459,
+            0.0306,
+            0.0205
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "쿠에타핀정 25mg.png",
+      "img_width": 512,
+      "img_height": 437,
+      "gt_dl_name": "쿠에타핀정 25mg",
+      "gt_class_idx": 66,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            167.5,
+            149.9,
+            341.2,
+            321.7
+          ],
+          "top3_class_idx": [
+            65,
+            56,
+            23
+          ],
+          "top3_class_name": [
+            "메가파워정 90mg/병",
+            "인사돌플러스정 35mg/PTP",
+            "넥시움정 40mg"
+          ],
+          "top3_confidence": [
+            0.2376,
+            0.0288,
+            0.0114
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "타이레놀500mg.png",
+      "img_width": 692,
+      "img_height": 336,
+      "gt_dl_name": "타이레놀정500mg",
+      "gt_class_idx": 11,
+      "num_detections": 4,
+      "detections": [
+        {
+          "bbox": [
+            251.5,
+            112.4,
+            370.4,
+            259.9
+          ],
+          "top3_class_idx": [
+            82
+          ],
+          "top3_class_name": [
+            "졸로푸트정 100mg"
+          ],
+          "top3_confidence": [
+            0.3682
+          ]
+        },
+        {
+          "bbox": [
+            0.0,
+            0.0,
+            169.0,
+            332.9
+          ],
+          "top3_class_idx": [
+            90,
+            29,
+            18
+          ],
+          "top3_class_name": [
+            "트라젠타듀오정 2.5/850mg",
+            "투스딘골드캡슐 150mg/PTP",
+            "삐콤씨에프정 618.6mg/병"
+          ],
+          "top3_confidence": [
+            0.1886,
+            0.1637,
+            0.014
+          ]
+        },
+        {
+          "bbox": [
+            270.0,
+            26.8,
+            510.0,
+            336.0
+          ],
+          "top3_class_idx": [
+            18,
+            94
+          ],
+          "top3_class_name": [
+            "삐콤씨에프정 618.6mg/병",
+            "자누메트엑스알서방정 100/1000mg"
+          ],
+          "top3_confidence": [
+            0.0393,
+            0.0147
+          ]
+        },
+        {
+          "bbox": [
+            433.3,
+            148.8,
+            691.4,
+            334.3
+          ],
+          "top3_class_idx": [
+            29
+          ],
+          "top3_class_name": [
+            "투스딘골드캡슐 150mg/PTP"
+          ],
+          "top3_confidence": [
+            0.0127
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "트루비타정 60mg.png",
+      "img_width": 879,
+      "img_height": 667,
+      "gt_dl_name": "트루비타정 60mg/병",
+      "gt_class_idx": 48,
+      "num_detections": 1,
+      "detections": [
+        {
+          "bbox": [
+            341.8,
+            250.9,
+            508.2,
+            344.4
+          ],
+          "top3_class_idx": [
+            84,
+            99
+          ],
+          "top3_class_name": [
+            "트라젠타정(리나글립틴)",
+            "브린텔릭스정 20mg"
+          ],
+          "top3_confidence": [
+            0.1074,
+            0.0841
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "프로스카정.png",
+      "img_width": 216,
+      "img_height": 168,
+      "gt_dl_name": "프로스카정",
+      "gt_class_idx": 16,
+      "num_detections": 2,
+      "detections": [
+        {
+          "bbox": [
+            120.5,
+            36.4,
+            207.4,
+            121.1
+          ],
+          "top3_class_idx": [
+            42
+          ],
+          "top3_class_name": [
+            "동아가바펜틴정 800mg"
+          ],
+          "top3_confidence": [
+            0.9046
+          ]
+        },
+        {
+          "bbox": [
+            7.8,
+            36.4,
+            94.5,
+            120.6
+          ],
+          "top3_class_idx": [
+            42,
+            102
+          ],
+          "top3_class_name": [
+            "동아가바펜틴정 800mg",
+            "아토젯정 10/40mg"
+          ],
+          "top3_confidence": [
+            0.0728,
+            0.0374
+          ]
+        }
+      ]
+    }
+  ]
+}

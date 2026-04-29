@@ -1,0 +1,15 @@
+{
+  "measured_at": "2026-04-29 14:45",
+  "environment": "Colab CPU runtime (2 vCPU, HF Spaces 무료 환경 근사)",
+  "model": "RTMDet-tiny (seed=100, best_coco_bbox_mAP_epoch_15.pth)",
+  "imgsz": 640,
+  "n_images": 33,
+  "n_rounds": 3,
+  "mean_ms": 1031.297158282826,
+  "std_ms": 288.6731836249516,
+  "min_ms": 760.4477229999702,
+  "max_ms": 2783.785484999953,
+  "median_ms": 940.7111319999331,
+  "mean_sec": 1.031297158282826,
+  "verdict": "직접 배포 가능"
+}

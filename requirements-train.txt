@@ -1,11 +1,21 @@
-opencv-python
-Pillow
+# 일반 모델 학습 환경 (YOLOv8 / RF-DETR / Faster R-CNN)
+# RTMDet은 mmdet 스택이 별도라 requirements-rtmdet.txt 참고
+
+# Core ML stack
+# torch는 CUDA 버전에 맞춰 설치 (예: --index-url https://download.pytorch.org/whl/cu118)
+torch==2.1.0
+torchvision==0.16.0
+numpy<2
+
+# 모델 프레임워크
+ultralytics
+rfdetr
+
+# 학습 보조
 albumentations
 pycocotools
+PyYAML
+opencv-python
+Pillow
 tqdm
-pyyaml
 requests
-torch
-torchvision
-torchaudio
-ultralytics

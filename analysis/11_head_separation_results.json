@@ -1,0 +1,64 @@
+{
+  "session": 46,
+  "phase": "A-5 (head separation)",
+  "date": "2026-05-05",
+  "analyzed_cases": {
+    "total": 70,
+    "pair_1_동아오팔몬→리피토": 43,
+    "pair_3_비유피4→베시케어": 27
+  },
+  "reg_head": {
+    "baseline": {
+      "iou_mean": 0.9653202437773071,
+      "iou_median": 0.9731421020251078,
+      "iou_min": 0.5403491600013998,
+      "iou_max": 0.9951803515439617,
+      "pct_above_0.9": 98.57142857142858
+    },
+    "v2": {
+      "iou_mean": 0.9594730766665001,
+      "iou_median": 0.9688768626211182,
+      "iou_min": 0.5459616208657383,
+      "iou_max": 0.9877279426460727,
+      "pct_above_0.9": 98.57142857142858
+    }
+  },
+  "cls_head": {
+    "v2_top1_conf_mean": 0.7526787732328687,
+    "v2_top1_conf_median": 0.7494362890720367,
+    "v2_top1_top2_gap_mean": 0.2915049576333591,
+    "gt_in_top3_count": 69,
+    "gt_outside_top3_count": 1,
+    "gt_conf_mean": 0.4598496666421061,
+    "gt_conf_median": 0.471639484167099,
+    "gt_rank_2nd": 66,
+    "gt_rank_3rd": 3,
+    "wrong_vs_gt_gap_mean": 0.29431560959505,
+    "aamost_won_count": 14
+  },
+  "by_pair": {
+    "pair_1": {
+      "n_cases": 43,
+      "base_iou_mean": 0.9609428198570564,
+      "v2_iou_mean": 0.9594948376632089,
+      "v2_top1_conf_mean": 0.773607826510141,
+      "v2_top1_top2_gap_mean": 0.3317610358082971,
+      "gt_in_top3_count": 43
+    },
+    "pair_3": {
+      "n_cases": 27,
+      "base_iou_mean": 0.9722916966873366,
+      "v2_iou_mean": 0.9594384202643346,
+      "v2_top1_conf_mean": 0.7193473180135092,
+      "v2_top1_top2_gap_mean": 0.2273934257251245,
+      "gt_in_top3_count": 26
+    }
+  },
+  "diagnosis": {
+    "reg_head": "NORMAL — IoU mean 0.96, 100% above 0.5",
+    "cls_head": "WEAK DECISION — gt rank 2nd in 94% of cases, gt conf 0.46 vs wrong conf 0.75",
+    "feature_at_logit_level": "KNOWS GT — top3 contains gt in 99% (69/70)",
+    "limitation": "cls head logit이 정답 정보를 가짐을 확인했지만 backbone feature 자체에 변별 정보가 있는지는 미측정. A-5-2에서 클래스별 grad-CAM으로 검증 필요."
+  },
+  "next_step": "A-5-2 — backbone validation via class-conditional grad-CAM (Colab)"
+}

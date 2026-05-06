@@ -1,0 +1,262 @@
+{
+  "session": 46,
+  "phase": "A-4-2 (data vs model causality)",
+  "date": "2026-05-05",
+  "config": {
+    "n_per_class_visual": 6,
+    "n_per_class_measure": 50,
+    "target_sizes": [
+      "None",
+      "640",
+      "1024",
+      "1280"
+    ],
+    "abs_threshold": 16,
+    "pill_area_percentile": 90,
+    "random_seed": 2026
+  },
+  "measurements": {
+    "동아오팔몬정(리마프로스트알파-시클로덱스트린포접화합물)": {
+      "original": {
+        "lap_mean": 10.717412190883643,
+        "imprint_pixel_ratio": 0.11168214959764329,
+        "abs_pixel_ratio": 0.24892871519603843,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      },
+      "imgsz_640": {
+        "lap_mean": 4.742676815289642,
+        "imprint_pixel_ratio": 0.12645126772869417,
+        "abs_pixel_ratio": 0.03631312366527255,
+        "preservation_pct": 44.25207065679362,
+        "n_roi": 50
+      },
+      "imgsz_1024": {
+        "lap_mean": 6.12014075694776,
+        "imprint_pixel_ratio": 0.12593444718344002,
+        "abs_pixel_ratio": 0.06975619908750447,
+        "preservation_pct": 57.104650338573556,
+        "n_roi": 50
+      },
+      "imgsz_1280": {
+        "lap_mean": 10.717412190883643,
+        "imprint_pixel_ratio": 0.11168214959764329,
+        "abs_pixel_ratio": 0.24892871519603843,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      }
+    },
+    "리피토정 20mg": {
+      "original": {
+        "lap_mean": 12.188445861016444,
+        "imprint_pixel_ratio": 0.11100277454782516,
+        "abs_pixel_ratio": 0.29773681117034584,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      },
+      "imgsz_640": {
+        "lap_mean": 5.1905311490123305,
+        "imprint_pixel_ratio": 0.12496842597140995,
+        "abs_pixel_ratio": 0.04616845851177086,
+        "preservation_pct": 42.58566849456778,
+        "n_roi": 50
+      },
+      "imgsz_1024": {
+        "lap_mean": 6.932251954411332,
+        "imprint_pixel_ratio": 0.11853406864526012,
+        "abs_pixel_ratio": 0.09764836622177844,
+        "preservation_pct": 56.87560197140035,
+        "n_roi": 50
+      },
+      "imgsz_1280": {
+        "lap_mean": 12.188445861016444,
+        "imprint_pixel_ratio": 0.11100277454782516,
+        "abs_pixel_ratio": 0.29773681117034584,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      }
+    },
+    "디카테오엘씨정 10mg/병": {
+      "original": {
+        "lap_mean": 8.3261856934444,
+        "imprint_pixel_ratio": 0.1143437708774904,
+        "abs_pixel_ratio": 0.1513370783195349,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      },
+      "imgsz_640": {
+        "lap_mean": 3.920495681902914,
+        "imprint_pixel_ratio": 0.13149457946140927,
+        "abs_pixel_ratio": 0.018546011608890724,
+        "preservation_pct": 47.08633492272105,
+        "n_roi": 50
+      },
+      "imgsz_1024": {
+        "lap_mean": 4.986668019250573,
+        "imprint_pixel_ratio": 0.13018222731568588,
+        "abs_pixel_ratio": 0.03983541717232657,
+        "preservation_pct": 59.89138607822322,
+        "n_roi": 50
+      },
+      "imgsz_1280": {
+        "lap_mean": 8.3261856934444,
+        "imprint_pixel_ratio": 0.1143437708774904,
+        "abs_pixel_ratio": 0.1513370783195349,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      }
+    },
+    "디카테오정": {
+      "original": {
+        "lap_mean": 7.880883383089663,
+        "imprint_pixel_ratio": 0.11427109990501177,
+        "abs_pixel_ratio": 0.13466417521695032,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      },
+      "imgsz_640": {
+        "lap_mean": 3.696972900944853,
+        "imprint_pixel_ratio": 0.14193364710196907,
+        "abs_pixel_ratio": 0.014543531017804043,
+        "preservation_pct": 46.910640866449064,
+        "n_roi": 50
+      },
+      "imgsz_1024": {
+        "lap_mean": 4.715398325886542,
+        "imprint_pixel_ratio": 0.13548870925111514,
+        "abs_pixel_ratio": 0.03181855804282043,
+        "preservation_pct": 59.833372690231236,
+        "n_roi": 50
+      },
+      "imgsz_1280": {
+        "lap_mean": 7.880883383089663,
+        "imprint_pixel_ratio": 0.11427109990501177,
+        "abs_pixel_ratio": 0.13466417521695032,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      }
+    },
+    "비유피-4정 20mg": {
+      "original": {
+        "lap_mean": 8.998479004089402,
+        "imprint_pixel_ratio": 0.11100292305388178,
+        "abs_pixel_ratio": 0.16660271256105233,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      },
+      "imgsz_640": {
+        "lap_mean": 4.514593175628429,
+        "imprint_pixel_ratio": 0.1235584333473029,
+        "abs_pixel_ratio": 0.044663326645451626,
+        "preservation_pct": 50.170625208735274,
+        "n_roi": 50
+      },
+      "imgsz_1024": {
+        "lap_mean": 5.68729911690323,
+        "imprint_pixel_ratio": 0.11583953421052168,
+        "abs_pixel_ratio": 0.0663720985511047,
+        "preservation_pct": 63.20289367034817,
+        "n_roi": 50
+      },
+      "imgsz_1280": {
+        "lap_mean": 8.998479004089402,
+        "imprint_pixel_ratio": 0.11100292305388178,
+        "abs_pixel_ratio": 0.16660271256105233,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      }
+    },
+    "베시케어정 10mg": {
+      "original": {
+        "lap_mean": 9.292816969866582,
+        "imprint_pixel_ratio": 0.11087187608355277,
+        "abs_pixel_ratio": 0.17846581187936705,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      },
+      "imgsz_640": {
+        "lap_mean": 4.600026953098192,
+        "imprint_pixel_ratio": 0.12374429536443939,
+        "abs_pixel_ratio": 0.04404418201967682,
+        "preservation_pct": 49.500888352955855,
+        "n_roi": 50
+      },
+      "imgsz_1024": {
+        "lap_mean": 5.834549364253263,
+        "imprint_pixel_ratio": 0.11845158815682719,
+        "abs_pixel_ratio": 0.06930673974735137,
+        "preservation_pct": 62.78558356602423,
+        "n_roi": 50
+      },
+      "imgsz_1280": {
+        "lap_mean": 9.292816969866582,
+        "imprint_pixel_ratio": 0.11087187608355277,
+        "abs_pixel_ratio": 0.17846581187936705,
+        "preservation_pct": 100.0,
+        "n_roi": 50
+      }
+    }
+  },
+  "pairs": [
+    {
+      "pair_id": 1,
+      "class_a": "동아오팔몬정(리마프로스트알파-시클로덱스트린포접화합물)",
+      "class_b": "리피토정 20mg",
+      "regression_count": 43,
+      "human_eye_visual_separable": true,
+      "imgsz_1280_preservation": true,
+      "same_company": false,
+      "company_a": "동아에스티(주)",
+      "company_b": "한국화이자제약(주)",
+      "same_drug_group": false,
+      "drug_group_basis": "회사·성분·효능 완전 다름",
+      "judgment": "모델 한계",
+      "prescription": "각인 학습 강화 (각인 강조 loss / two-stage / fine-grained)"
+    },
+    {
+      "pair_id": 2,
+      "class_a": "디카테오엘씨정 10mg/병",
+      "class_b": "디카테오정",
+      "regression_count": 32,
+      "human_eye_visual_separable": false,
+      "imgsz_1280_preservation": true,
+      "same_company": true,
+      "company_a": "(주)다림바이오텍",
+      "company_b": "(주)다림바이오텍",
+      "same_drug_group": true,
+      "drug_group_basis": "같은 회사·성분, 함량만 3배 차이 (480mg vs 1500mg 칼슘)",
+      "judgment": "데이터 한계 + 같은 약물군",
+      "prescription": "클래스 통합 검토 (팀+강사님 합의 필요)"
+    },
+    {
+      "pair_id": 3,
+      "class_a": "비유피-4정 20mg",
+      "class_b": "베시케어정 10mg",
+      "regression_count": 27,
+      "human_eye_visual_separable": true,
+      "imgsz_1280_preservation": true,
+      "same_company": false,
+      "company_a": "제일약품(주)",
+      "company_b": "한국아스텔라스제약(주)",
+      "same_drug_group": false,
+      "drug_group_basis": "같은 적응증(과민성 방광)이나 다른 성분(프로피베린 vs 솔리페나신)",
+      "judgment": "모델 한계",
+      "prescription": "각인 학습 강화 (각인 강조 loss / two-stage / fine-grained)"
+    }
+  ],
+  "overall_conclusion": {
+    "data_limit_pairs": [
+      2
+    ],
+    "model_limit_pairs": [
+      1,
+      3
+    ],
+    "key_finding": "imgsz 640 baseline에서도 사람 눈에는 변별 가능한 영상 (페어 1, 3). v2 imgsz 1280에서는 거의 원본 수준 보존. 그럼에도 라벨 이동 100% 발생 = 학습 메커니즘이 각인 모양/패턴을 학습 신호로 받지 못함.",
+    "prescription_priority": [
+      "P1: 각인 학습 강화 (페어 1, 3 = 약 70% 케이스)",
+      "P2: 클래스 통합 검토 (페어 2)",
+      "P3: 동의어 처리 (에르도스테인 패밀리 등)"
+    ]
+  }
+}

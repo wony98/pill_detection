@@ -5,7 +5,8 @@
 data/
 _toolkit/
 
-# EDA outputs eda/*.pkl
+# EDA outputs
+eda/*.pkl
 eda/*.csv
 eda/split_info.json
 
@@ -214,3 +215,47 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,python
+
+# Environment file
+.env
+
+# ZIP files
+*.zip
+
+# Crawling
+crawling/AutoCrawler/
+
+# Claude internal docs
+CLAUDE.md
+HANDOFF*.md
+
+# Kaggle upload staging
+kaggle_upload/
+
+# Collected raw 47 images (includes excluded ones)
+eval/raw_47/
+
+# 대용량 자산 (Drive 별도 보관)
+crops_cache.pkl
+results/rtmdet_tiny_backup/
+results/rtmdet_tiny_backup_seed100/
+
+# 팀원/실패 코드
+synthetic_images.py
+pexels_collector.py
+
+# 합성 배경 (Drive 자산)
+synthetic_bg/
+
+# Session 49 산출물 풀린 폴더 (zip은 *.zip으로 이미 차단)
+synthetic_v2/
+synthetic_v3/
+rtmdet_demo_package_v2/
+rtmdet_demo_package_v4/
+v4_평가검증/
+
+# API 응답 캐시 (대용량)
+eda/api_data/
+
+# IDE
+.vscode/

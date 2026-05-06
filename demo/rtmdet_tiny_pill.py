@@ -4,54 +4,17 @@ base_lr = 0.00025
 checkpoint = 'https://download.openmmlab.com/mmdetection/v3.0/rtmdet/cspnext_rsb_pretrain/cspnext-tiny_imagenet_600e.pth'
 custom_hooks = [
     dict(
-        ema_type='ExpMomentumEMA',
-        momentum=0.0002,
-        priority=49,
-        type='EMAHook',
-        update_buffers=True),
-    dict(
-        switch_epoch=280,
-        switch_pipeline=[
-            dict(backend_args=None, type='LoadImageFromFile'),
-            dict(type='LoadAnnotations', with_bbox=True),
-            dict(
-                keep_ratio=True,
-                ratio_range=(
-                    0.5,
-                    2.0,
-                ),
-                scale=(
-                    640,
-                    640,
-                ),
-                type='RandomResize'),
-            dict(crop_size=(
-                640,
-                640,
-            ), type='RandomCrop'),
-            dict(type='YOLOXHSVRandomAug'),
-            dict(prob=0.5, type='RandomFlip'),
-            dict(
-                pad_val=dict(img=(
-                    114,
-                    114,
-                    114,
-                )),
-                size=(
-                    640,
-                    640,
-                ),
-                type='Pad'),
-            dict(type='PackDetInputs'),
-        ],
-        type='PipelineSwitchHook'),
+        author='seungwon',
+        drive_folder_id='16Fzq3KytjNKK_GgW6wSG9nKLdRyqLJvS',
+        type='AutoUploadDriveHook',
+        work_dir='/content/rtmdet_work'),
 ]
 data_root = ''
 dataset_type = 'CocoDataset'
 default_hooks = dict(
     checkpoint=dict(
-        interval=5,
-        max_keep_ckpts=2,
+        interval=1,
+        max_keep_ckpts=3,
         save_best='coco/bbox_mAP',
         type='CheckpointHook'),
     logger=dict(interval=50, type='LoggerHook'),
@@ -79,7 +42,6 @@ img_scales = [
     ),
 ]
 interval = 10
-launcher = 'none'
 load_from = 'https://download.openmmlab.com/mmdetection/v3.0/rtmdet/rtmdet_tiny_8xb32-300e_coco/rtmdet_tiny_8xb32-300e_coco_20220902_112414-78e30dcc.pth'
 log_level = 'INFO'
 log_processor = dict(by_epoch=True, type='LogProcessor', window_size=50)
@@ -512,7 +474,7 @@ train_cfg = dict(
     ],
     max_epochs=15,
     type='EpochBasedTrainLoop',
-    val_interval=5)
+    val_interval=1)
 train_dataloader = dict(
     batch_sampler=None,
     batch_size=16,

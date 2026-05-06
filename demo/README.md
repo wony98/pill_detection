@@ -1,149 +1,101 @@
-# RTMDet-tiny Pill Detection — 추론 데모
+# RTMDet 알약 탐지 데모 패키지 v4
 
-118종 알약 검출 모델. 박스별 Top-3 후보 출력.
+3팀 HealthEat 프로젝트 — 지우님 웹 데모 인계용.
 
----
+## 변경 사항 (v2 → v4)
 
-## 이 폴더 구성
+- 모델 갱신: v2 (e14) → **v4 (e13)** 로 교체
+- 성능 개선: Top-1 31.9% → **46.8%** (+14.9pp)
+- 추론 사양 변경: imgsz 1280 → 1536 (config 자동 적용), **conf threshold 0.05 → 0.25 권장**
+- 추론 시간: 132.1ms/장 (GPU) / 약 1초 (CPU)
 
-```
-inference_demo.py        # 추론 데모 스크립트 (Top-3 그룹핑 포함)
-rtmdet_tiny_pill.py      # mmdet config (★ 가중치 로드 필수)
-pill.yaml                # class_idx 0~117 → 한글명 매핑
-README.md                # 본 파일
-```
+## 패키지 구성
 
-> 가중치 파일(`.pth`)은 용량 문제로 레포에 포함되지 않습니다. 아래 참고.
+| 파일 | 크기 | 설명 |
+|---|---|---|
+| best_coco_bbox_mAP_epoch_13.pth | 24MB | v4 가중치 |
+| rtmdet_tiny_pill.py | 35KB | 학습 config |
+| rtmdet_tiny_synth_v4_e13_seed100_results.json | 73KB | 33장 평가 결과 |
+| pill.yaml | 4KB | 118 클래스 매핑 (★ 클래스 ID의 진짜 출처) |
+| inference_demo.py | 5.7KB | Top-3 그룹핑 추론 스크립트 |
+| README.md | - | 이 문서 |
 
----
+## 33장 평가 성능 (47 GT 단위)
 
-## 가중치 위치 (별도)
+| 측정 | v2 (e14) | **v4 (e13)** | Δ |
+|---|---|---|---|
+| Top-1 | 31.9% | **46.8%** | +14.9pp |
+| Top-3 | 53.2% | **59.6%** | +6.4pp |
+| Detection | 95.7% | **95.7%** | 0 |
+| FP (conf 0.05) | 100 | 84 | -16 |
+| FP (conf 0.25) | - | **10** | - |
 
-**옵션 1 — 로컬 백업**
-```
-results/rtmdet_tiny_backup_seed100/best_coco_bbox_mAP_epoch_15.pth  (43MB)
-```
+### 환경별 Top-1
 
-**옵션 2 — Drive 백업** (팀 공유)
-```
-/MyDrive/pill_detection/results/_model_collection_seed100/  (예정)
-```
+| 환경 | v2 | **v4** |
+|---|---|---|
+| palm | 30.0% | **50.0%** |
+| dark | 0.0% | **50.0%** |
+| paper | 28.6% | **42.9%** |
+| desk | 20.0% | **40.0%** |
 
-추론 시 `--checkpoint` 인자로 경로 지정.
-
----
-
-## 환경 세팅 (★ 함정 회피 박제값)
+## 환경 세팅
 
 ```bash
-# 1. PyTorch 2.1 + NumPy<2
-pip install torch==2.1.0 torchvision==0.16.0
-pip install "numpy<2"
-
-# 2. mmdet 스택 (mmengine 버전 박제 ★)
-pip install -U openmim
-mim install "mmengine==0.10.4"   # ← 0.10.5+는 PyTorch 2.1 ASGD 충돌
-mim install "mmcv==2.1.0"
-git clone https://github.com/open-mmlab/mmdetection.git
-cd mmdetection && pip install -e . && cd ..
-
-# 3. 추가 의존성
-pip install pyyaml
+pip install torch==2.1.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+pip install "numpy<2" -q
+pip install "mmengine==0.10.4" "mmcv==2.1.0" "mmdet==3.3.0" -q
+pip install pyyaml opencv-python pillow -q
 ```
 
-**CPU 추론용**이면 `torch==2.1.0+cpu` 빌드 사용:
-```bash
-pip install torch==2.1.0+cpu torchvision==0.16.0+cpu --index-url https://download.pytorch.org/whl/cpu
-```
-
----
+★ **mmengine 0.10.5+ 사용 금지** — ASGD KeyError 발생. 반드시 0.10.4 명시 설치.
 
 ## 사용법
 
 ```bash
-# CPU 추론
 python inference_demo.py \
-    --img sample.png \
-    --checkpoint /path/to/best_coco_bbox_mAP_epoch_15.pth
-
-# GPU 추론
-python inference_demo.py --img sample.png --device cuda:0 \
-    --checkpoint /path/to/best_coco_bbox_mAP_epoch_15.pth
-
-# 결과 JSON 저장
-python inference_demo.py --img sample.png --out result.json \
-    --checkpoint /path/to/best_coco_bbox_mAP_epoch_15.pth
+    --config rtmdet_tiny_pill.py \
+    --checkpoint best_coco_bbox_mAP_epoch_13.pth \
+    --names pill.yaml \
+    --img <이미지 경로> \
+    --device cuda:0 \
+    --out result.png
 ```
 
-> config / pill.yaml은 같은 폴더에서 실행하면 기본값으로 잡힙니다.
+## 추론 동작 방식 (5단계)
 
-### 출력 예시
+1. mmdet API로 RTMDet-tiny 모델 로드
+2. config의 test_pipeline 자동 적용 (imgsz 1536)
+3. conf >= 0.05 1차 필터링 후 박스 추출
+4. IoU > 0.5 박스 그룹핑 (Top-3 클래스 추출)
+5. 그룹별 대표 bbox + Top-3 클래스/confidence 출력
 
-```
-[INFO] device     : cpu
-[INFO] classes    : 118
+## 추론 권장 사양 (v4)
 
-=== sample.png ===
-검출 박스 2개
+inference_demo.py 호출 시 또는 코드 내부에서 conf threshold 변경 권장:
 
-[박스 1] (120, 80) ~ (340, 260)
-  Top-1: 마그밀정(수산화마그네슘) (idx=0, conf=0.873)
-  Top-2: 인사돌플러스정 35mg/PTP (idx=56, conf=0.052)
-  Top-3: 글리아타민연질캡슐 (idx=95, conf=0.031)
-
-[박스 2] ...
+```python
+CONF_THRESHOLD = 0.25   # v2 default 0.05 → v4 권장 0.25
 ```
 
----
-
-## 추론 동작 방식
-
-1. mmdet `inference_detector`로 이미지 추론 (RTMDet은 항상 300개 박스 고정 출력)
-2. `conf >= 0.05` 1차 컷
-3. 같은 위치(`IoU > 0.5`)끼리 greedy 그룹핑
-4. 그룹 내 class별 best conf만 남기고 상위 3개 = Top-3
-5. 그룹 대표 bbox = 그룹 내 최고 conf 박스
-
-웹에 띄울 때는 `top3_class_name` (한글명) 그대로 쓰면 됩니다.
-
----
-
-## 성능 참고
-
-**평가셋 33장 / 47 bbox 채점 결과 (seed=42 / seed=100 평균):**
-- Top-1 정답률: 31.9%
-- Top-3 정답률: 42.6%
-- Detection rate: 88.3%
-
-**CPU 추론 속도** (Colab 2 vCPU, HF Spaces 무료 환경 근사):
-- 평균 1.03초 / 장
-- median 941ms
-
----
-
-## 클래스 매핑 주의사항
-
-`pill.yaml`의 `names` 리스트가 학습용 class_idx의 진짜 출처입니다.
-
-```yaml
-names:
-  0: 마그밀정(수산화마그네슘)
-  1: 게보린정 300mg/PTP
-  ...
-  117: ...
-```
-
-CSV에서 `sorted(unique) + enumerate`로 추측해서 만들면 어긋납니다. **반드시 pill.yaml 사용.**
-
-> 참고: Kaggle 제출 시에는 학습용 class_idx (0~117)가 아니라 **원본 dl_idx**를 `category_id`로 써야 합니다. 웹 데모는 무관.
-
----
+이유: v4는 confidence 분포가 v2보다 깔끔해 conf 0.25에서 Top-1/Top-3 손해 0, FP 84 → 10으로 88% 감소.
 
 ## 트러블슈팅
 
-**`KeyError: 'ASGD is already registered in optimizer'`**
-- 원인: mmengine 0.10.5+ + PyTorch 2.1 충돌
-- 처치: `pip install "mmengine==0.10.4" --force-reinstall --no-deps`
+- **mmengine ASGD KeyError**: `pip install "mmengine==0.10.4" -q` 후 런타임 재시작.
+- **numpy ABI 충돌**: `pip install "numpy<2" -q` 강제 다운그레이드.
+- **한글 파일명 cv2.imread 실패 (cp949)**: `cv2.imdecode(np.fromfile(path, dtype=np.uint8), cv2.IMREAD_COLOR)` 패턴 사용.
+- **mmcv NMS RuntimeError (sm_90)**: H100에서 발생. A100 또는 T4 사용 권장.
 
-**한글 파일명 깨짐 (Windows)**
-- Python `zipfile` 모듈 권장 (`unzip` 명령은 cp949 깨짐)
+## 클래스 매핑 주의
+
+★ **pill.yaml의 names가 진짜 출처**. 학습 시 사용한 매핑과 동일.
+class_idx (0~117) ↔ dl_idx 변환은 `pill.yaml`을 통해서만 수행해야 함.
+
+## 참고
+
+- ensemble 시도: v2+v4, v3+v4, v2+v3+v4 모두 v4 단독 대비 후퇴 → 단일 모델 추론 권장
+- 학습 곡선: val mAP@.5 epoch 7부터 천장, val mAP@.5:.95 epoch 12까지 미세 상승 (best_epoch=13)
+- 분석 노트북: `03_v4_evaluation_analysis.ipynb` (별도 공유)
+
+문의: 노승원

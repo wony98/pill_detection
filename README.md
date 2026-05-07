@@ -5,9 +5,9 @@ Codeit AI 부트캠프 초급 프로젝트 — **3팀 HealthEat**.
 
 ---
 
-## 최종 결과 (RTMDet-tiny v4)
+## 결과 비교 (4-way)
 
-| 측정 (33장 / 47 GT) | baseline | v2 | v3 | **v4 (최종)** |
+| 측정 (33장 / 47 GT) | **baseline (배포)** | v2 | v3 | **v4 (분석 우위)** |
 |---|---|---|---|---|
 | Top-1 정답률 | 29.8% | 31.9% | 29.8% | **46.8%** ★ |
 | Top-3 정답률 | 40.4% | 53.2% | 55.3% | **59.6%** |
@@ -33,6 +33,40 @@ Codeit AI 부트캠프 초급 프로젝트 — **3팀 HealthEat**.
 | bottle (약통) | 2 | 100.0% |
 | box (약상자) | 1 | 0.0% |
 
+## Quick Start
+
+```bash
+# 1. 클론
+git clone https://github.com/ZerofZero/codeit10_pj1.git
+cd codeit10_pj1
+
+# 2. RTMDet 환경 (venv 권장)
+pip install torch==2.1.0 torchvision==0.16.0 "numpy<2"
+pip install -U openmim
+mim install "mmengine==0.10.4"
+mim install "mmcv==2.1.0"
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection && pip install -e . && cd ..
+
+# 3. 가중치 다운로드 (Drive — "산출물 (Drive 백업)" 섹션 참조)
+#    baseline → demo/baseline/ 안에 .pth 배치
+#    v4 (선택) → demo/v4/ 안에 .pth 배치
+
+# 4. 추론 (default = baseline)
+python inference.py --img sample.png
+
+# 5. v4 모델 사용 (분석 단계 우위 검증용)
+python inference.py --img sample.png --model v4
+
+# 6. 옵션
+python inference.py --img sample.png --device cuda:0 --out result.json
+python inference.py --help
+```
+
+**모델 선택**:
+- `baseline` (default) — 현재 배포 모델, 웹 데모 후처리 호환
+- `v4` — 분석 단계 우위 (Top-1 46.8%), 후처리 호환 작업 시 교체 가능
+
 ---
 
 ## 폴더 구조
@@ -50,15 +84,15 @@ pill_detection/
 ├── analysis/                평가 분석 (4-way 비교 + 진단 노트북 10+개)
 ├── eval/                    평가셋 33장 + 결과 JSON + Kaggle 제출
 ├── demo/
-│   ├── baseline/            1차 deploy 정본 (지우님 웹 후처리 호환)
-│   ├── v4/                  추후 적용 여지 (후처리 호환 후 교체)
+│   ├── baseline/            현재 배포 모델 (웹 데모 후처리 호환)
+│   ├── v4/                  분석 단계 우위 모델 (후처리 호환 작업 시 교체 가능)
 │   └── api_matching.ipynb   식약처 API 매칭 (baseline/v4 공통)
 ├── results/                 모델 결과 JSON / 보고서 산출물
 ├── requirements-*.txt       환경별 패키지 (eda/train/rtmdet/all)
 └── README.md
 ```
 
-각 폴더 상세는 안 README 참조.
+각 폴더의 상세는 폴더 내 README.md 참조.
 
 ---
 
@@ -90,7 +124,7 @@ git clone https://github.com/open-mmlab/mmdetection.git && cd mmdetection && pip
 2. **합성 데이터 생성** — `data/synthetic/synthetic_images_v2.ipynb` / `v3.ipynb` / `palm_mask_rembg_colab.ipynb`
 3. **학습** — `training/notebooks/rtmdet_train_seed100.ipynb` (메인)
 4. **평가** — `eval/` 안 평가 노트북 + `analysis/03_v4_evaluation_analysis.ipynb`
-5. **추론 데모** — `demo/baseline/inference_demo.py` (1차 deploy 정본)
+5. **추론** — `python inference.py --img <이미지경로>` (루트 진입점, default = baseline)
 
 ---
 
@@ -139,6 +173,6 @@ git clone https://github.com/open-mmlab/mmdetection.git && cd mmdetection && pip
 
 ## 보고서 / 발표자료 / 협업일지
 
-- 발표자료 PPT: `docs/HealthEat_3팀_발표자료.pptx` (TBD — 박힘 예정)
-- 보고서 PDF: `docs/HealthEat_3팀_보고서.pdf` (TBD)
+- 발표자료 PPT: `docs/HealthEat_3팀_발표자료.pptx`
+- 보고서 PDF: `docs/HealthEat_3팀_보고서.pdf`
 - 협업일지: `docs/협업일지/` (5/4 ~ 5/8, 일자별 .txt)

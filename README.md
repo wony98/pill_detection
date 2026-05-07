@@ -43,7 +43,7 @@ cd codeit10_pj1
 # 2. RTMDet 환경 (venv 권장)
 pip install torch==2.1.0 torchvision==0.16.0 "numpy<2"
 pip install -U openmim
-mim install "mmengine==0.10.4"
+mim install "mmengine==0.10.4"   # 0.10.5+ ASGD 충돌
 mim install "mmcv==2.1.0"
 git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection && pip install -e . && cd ..
@@ -96,25 +96,22 @@ pill_detection/
 
 ---
 
-## 환경 세팅
+## 환경 세팅 상세
+
+추론만 할 경우 위의 **Quick Start** 섹션으로 충분합니다. 학습/EDA/실험까지 직접 돌려보려면 환경별로 분리된 requirements를 사용합니다.
 
 ```bash
-# 1. 통합 환경 (EDA + 일반 학습)
+# EDA + 일반 학습 (YOLOv8 / RF-DETR / Faster R-CNN)
 pip install -r requirements-all.txt
-
-# 2. RTMDet 전용 (별도 venv 권장)
-pip install torch==2.1.0 torchvision==0.16.0 "numpy<2"
-pip install -U openmim
-mim install "mmengine==0.10.4"   # ★ 0.10.5+ ASGD 충돌
-mim install "mmcv==2.1.0"
-git clone https://github.com/open-mmlab/mmdetection.git && cd mmdetection && pip install -e .
 ```
 
-환경별 패키지 분리:
+환경별 패키지 분리 의도:
 - `requirements-eda.txt` — 데이터 분석 / 노트북 실행
 - `requirements-train.txt` — YOLOv8 / RF-DETR / Faster R-CNN 학습
-- `requirements-rtmdet.txt` — RTMDet 학습 + 추론 (mmdet 스택)
-- `requirements-all.txt` — eda + train 통합
+- `requirements-rtmdet.txt` — RTMDet 학습 + 추론 (mmdet 스택, Quick Start에 동일 명령)
+- `requirements-all.txt` — eda + train 통합 (RTMDet은 별도)
+
+**RTMDet venv 분리 권장 이유**: mmdet 스택은 PyTorch 2.1.0 + numpy<2 + mmengine 0.10.4 핀이 필요하고, mim 경유 설치라 일반 학습 환경과 분리하면 충돌이 줄어듭니다.
 
 ---
 

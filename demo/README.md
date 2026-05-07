@@ -45,3 +45,4 @@ demo/
 118종 알약에 대한 효능/용법/주의사항 매핑 노트북 (data.go.kr 공개 API).
 공개 API 키 필요 (환경변수 `DATA_GO_KR_KEY`).
 출력: `pill_info_master.json` (118/118 클래스 100% 매핑 박힘).
+위치: `demo/pill_info_master.json` (118종 효능/용법/주의 + 식약처 image_url).

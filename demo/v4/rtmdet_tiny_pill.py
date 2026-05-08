@@ -69,12 +69,6 @@ custom_hooks = [
             dict(type='PackDetInputs'),
         ],
         type='PipelineSwitchHook'),
-    dict(
-        author='seungwon',
-        drive_folder_id='16Fzq3KytjNKK_GgW6wSG9nKLdRyqLJvS',
-        run_tag='v4',
-        type='AutoUploadDriveHook',
-        work_dir='/content/rtmdet_work_v4'),
 ]
 data_root = ''
 dataset_type = 'CocoDataset'

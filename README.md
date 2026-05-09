@@ -37,8 +37,8 @@ Codeit AI 부트캠프 초급 프로젝트 — **3팀 HealthEat**.
 
 ```bash
 # 1. 클론
-git clone https://github.com/ZerofZero/codeit10_pj1.git
-cd codeit10_pj1
+git clone https://github.com/wony98/pill_detection.git
+cd pill_detection
 
 # 2. RTMDet 환경 (venv 권장)
 pip install torch==2.1.0 torchvision==0.16.0 "numpy<2"
@@ -168,8 +168,7 @@ pip install -r requirements-all.txt
 
 ---
 
-## 보고서 / 발표자료 / 협업일지
+## 보고서
 
-- 발표자료 PPT: `docs/HealthEat_3팀_발표자료.pptx`
-- 보고서 PDF: `docs/HealthEat_3팀_보고서.pdf`
-- 협업일지: `docs/협업일지/` (5/4 ~ 5/8, 일자별 .txt)
+- [`docs/보고서.md`](docs/보고서.md) — 본문 (마크다운)
+- [`docs/보고서.pdf`](docs/보고서.pdf) — PDF 출력본

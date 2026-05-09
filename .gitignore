@@ -130,6 +130,10 @@ rtmdet_demo_package_v2/
 rtmdet_demo_package_v4/
 v4_평가검증/
 
+# 임시 작업 폴더 (팀원 노트북 / ppt figure 백업)
+_ppt_figures/
+_tmp_team_nb/
+
 # ----- Project: 압축 파일 -----
 *.zip
 

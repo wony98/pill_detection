@@ -158,7 +158,7 @@ pip install -r requirements-all.txt
 
 ## 산출물 (Hugging Face Hub)
 
-가중치 / 합성 데이터는 깃에 박지 않고 Hugging Face Hub에 별도 공개해 두었습니다.
+가중치와 합성 데이터는 용량이 커서 깃 저장소에 포함하지 않고 Hugging Face Hub에 별도 공개해 두었습니다.
 
 | 항목 | Hugging Face 레포 |
 |---|---|

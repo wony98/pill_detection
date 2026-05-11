@@ -56,7 +56,7 @@ training/
 
 ## 가중치 다운로드
 
-가중치는 깃에 박지 않습니다 (24~44 MB). Hugging Face Hub 사용:
+가중치는 용량이 커서 깃 저장소에 포함하지 않습니다 (24~44 MB). Hugging Face Hub 사용:
 
 ```bash
 huggingface-cli download wony98/healtheat-pill-rtmdet-baseline  # baseline 43 MB

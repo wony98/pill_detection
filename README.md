@@ -179,6 +179,6 @@ huggingface-cli download wony98/healtheat-pill-rtmdet-v4
 ## 발표 자료 / 보고서
 
 - [`docs/healtheat_presentation.pptx`](docs/healtheat_presentation.pptx) — 발표 자료 (PPT, 30 MB)
-- [`docs/보고서.md`](docs/보고서.md) — 본문 (마크다운)
-- [`docs/보고서.pdf`](docs/보고서.pdf) — PDF 출력본
-- [`docs/협업일지/`](docs/협업일지/) — 작업 진행 일지 12편 (2026-04-20 ~ 2026-05-08)
+- [`docs/report.md`](docs/report.md) — 본문 (마크다운)
+- [`docs/report.pdf`](docs/report.pdf) — PDF 출력본
+- [`docs/journal/`](docs/journal/) — 작업 진행 일지 12편 (2026-04-20 ~ 2026-05-08)

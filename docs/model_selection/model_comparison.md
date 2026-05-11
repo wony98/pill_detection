@@ -1,6 +1,6 @@
 # 모델 비교 분석 — 후보 3개 깊이 비교
 
-`docs/모델_선정/모델선정기준_v3.7.md`의 4~5단계(seed=100 재학습 + 1위 결정 + 깊이 비교)에 해당하는 분석 결과입니다. 분석 노트북은 `eval/model_comparison.ipynb`입니다.
+`docs/model_selection/selection_criteria_v3.7.md`의 4~5단계(seed=100 재학습 + 1위 결정 + 깊이 비교)에 해당하는 분석 결과입니다. 분석 노트북은 `eval/model_comparison.ipynb`입니다.
 
 3팀에서 각자 학습한 8개 모델 중, 1~2단계 임계값(Top-3 ≥ 27.7%)을 통과한 상위 3개 후보(RTMDet-tiny, RT-DETR, YOLOv8s)를 대상으로 4단계 재현성 검증과 5단계 깊이 비교를 수행했습니다.
 
@@ -93,7 +93,7 @@ RTMDet-tiny는 오답 대부분(28/30)이 시각 특성 기반 의미 있는 혼
 | 오답 품질 | 의미 있는 혼동 28/30 (다른 모델은 8/29~33으로 미분류 비중 압도) |
 | 모델 사이즈 | 4.91M (RT-DETR 33M 대비 1/7, YOLOv8s 11.18M 대비 1/2 미만) |
 
-RTMDet-tiny가 1위 확정되어 6단계 배포 적합성 검증으로 진입했습니다 (CPU 1.03초/장 측정 — `docs/v4_분석결과_요약.md` 참조).
+RTMDet-tiny가 1위 확정되어 6단계 배포 적합성 검증으로 진입했습니다 (CPU 1.03초/장 측정 — `docs/v4_summary.md` 참조).
 
 ---
 
@@ -102,6 +102,6 @@ RTMDet-tiny가 1위 확정되어 6단계 배포 적합성 검증으로 진입했
 | 자료 | 위치 |
 |---|---|
 | 분석 노트북 | `eval/model_comparison.ipynb` |
-| 모델 선정 프레임워크 | `docs/모델_선정/모델선정기준_v3.7.md` |
-| 실험 설계서 | `docs/모델_선정/모델비교_실험설계서_v4.md` |
-| RTMDet-tiny 최종 결과 (v4) | `docs/v4_분석결과_요약.md` |
+| 모델 선정 프레임워크 | `docs/model_selection/selection_criteria_v3.7.md` |
+| 실험 설계서 | `docs/model_selection/experiment_design_v4.md` |
+| RTMDet-tiny 최종 결과 (v4) | `docs/v4_summary.md` |

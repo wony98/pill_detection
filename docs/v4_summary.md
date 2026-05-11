@@ -167,5 +167,5 @@ val mAP@50:95는 epoch 11→12에서 +0.003으로 둔화, val mAP@50은 epoch 7�
 | figure 7장 | `img/figures_v4_eval/` |
 | v4 학습 사양 + 가중치 | HF Hub `wony98/healtheat-pill-rtmdet-v4` 모델 카드 |
 | v4 데모 패키지 | `models/RTMDet/v4/` (가중치 + config + inference) |
-| 합성 진화 흐름 | `docs/합성_진화/합성_v1_v2_v3_진화.md` |
-| 진단 / 처방 | `docs/진단_문제점.md`, `docs/진단_해결방안.md` |
+| 합성 진화 흐름 | `docs/synthesis_evolution/synthesis_v1_v2_v3.md` |
+| 진단 / 처방 | `docs/diagnosis_issues.md`, `docs/diagnosis_solutions.md` |

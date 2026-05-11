@@ -31,14 +31,14 @@ v3가 v2의 Top-1을 넘지 못해 (31.9% → 29.8% 회귀), v4에서 학습 사
 **진단 결과** (33장 Top-1 29.8%):
 - Val mAP@50 = 0.99 (학습 자체는 정상)
 - Test 29.8%의 원인은 분류 단계의 분포 갭입니다.
-- 7대 문제 검증 결과는 `docs/진단_문제점.md`를 참조해주세요.
+- 7대 문제 검증 결과는 `docs/diagnosis_issues.md`를 참조해주세요.
 - 핵심 문제: 단일 알약 합성 비율 3.4% vs Test 60.6% / 핀 클래스 hallucination / 각인 학습 실패
 
 ---
 
 ## 처방 → 합성/학습 버전 매핑
 
-진단 결과 도출된 처방 4가지(`docs/진단_해결방안.md`)와 각 버전의 실현 매핑입니다.
+진단 결과 도출된 처방 4가지(`docs/diagnosis_solutions.md`)와 각 버전의 실현 매핑입니다.
 
 | 처방 | 내용 | 실현 버전 |
 |---|---|---|
@@ -127,7 +127,7 @@ v2 대비 변경 7가지입니다 (`data/synthetic/synthetic_images_v3.ipynb` �
 
 **결과**: 33장 Top-1 +14.9pp (31.9% → 46.8%), Top-3 +4.3pp (55.3% → 59.6%), best epoch 12.
 
-상세 분석은 `docs/v4_분석결과_요약.md`를 참조해주세요.
+상세 분석은 `docs/v4_summary.md`를 참조해주세요.
 
 ---
 
@@ -153,6 +153,6 @@ label_dirs=['dataset_yolo/labels/train', 'synthetic_v3/labels/train'],
 | v3 합성 코드 | `data/synthetic/synthetic_images_v3.ipynb` |
 | palm 마스크 생성 | `data/synthetic/palm_mask_rembg_colab.ipynb` |
 | v4 학습 노트북 | `training/notebooks/rtmdet_tiny_synth_train_v4.ipynb` |
-| baseline 진단 | `docs/진단_문제점.md` |
-| 처방 우선순위 | `docs/진단_해결방안.md` |
-| v4 결과 분석 | `docs/v4_분석결과_요약.md` |
+| baseline 진단 | `docs/diagnosis_issues.md` |
+| 처방 우선순위 | `docs/diagnosis_solutions.md` |
+| v4 결과 분석 | `docs/v4_summary.md` |

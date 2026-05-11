@@ -181,7 +181,7 @@ random_state = 42
 
 **RTMDet-tiny (4.9M, OpenMMLab)**를 메인 탐지 모델로 확정했다. 경량 구조임에도 5단계 깊이 비교에서 가장 우수한 재현성·일반화·신뢰성을 보였다.
 
-> 자세한 후보 3개 깊이 비교는 [`docs/모델_선정/모델_비교_분석.md`](모델_선정/모델_비교_분석.md) 참조.
+> 자세한 후보 3개 깊이 비교는 [`docs/model_selection/model_comparison.md`](model_selection/model_comparison.md) 참조.
 
 ### 3.5 두 평가축 차이 — Kaggle vs 33장
 
@@ -278,7 +278,7 @@ PILL_COUNT_WEIGHTS = {1: 0.135, 2: 0.429, 3: 0.311, 4: 0.124}
 **MAX_PILL_AREA_POST 0.50 → 0.20**:
 - 회전 후 면적 제한 강화 → 거대 알약 컷 차단 → 현실성 확보
 
-자세한 진화 흐름은 [`docs/합성_진화/합성_v1_v2_v3_진화.md`](합성_진화/합성_v1_v2_v3_진화.md) 참조.
+자세한 진화 흐름은 [`docs/synthesis_evolution/synthesis_v1_v2_v3.md`](synthesis_evolution/synthesis_v1_v2_v3.md) 참조.
 
 ### 4.5 외부 자료 — HuggingFace Hub
 
@@ -331,7 +331,7 @@ baseline 학습 결과 다음 격차가 측정됐다.
 
 **결론**: detection 단독으로는 한계가 있다. 분류를 별도 모델(CNN)이 담당하는 **Two-Stage 구조**가 필요하다.
 
-> 진단 디테일: [`docs/진단_문제점.md`](진단_문제점.md), [`docs/진단_해결방안.md`](진단_해결방안.md)
+> 진단 디테일: [`docs/diagnosis_issues.md`](diagnosis_issues.md), [`docs/diagnosis_solutions.md`](diagnosis_solutions.md)
 
 이 진단은 v3 합성 처방의 한계와 함께 **CNN 분류기 도입(팀원 B 담당 트랙)의 정량 근거**가 됐다.
 
@@ -488,7 +488,7 @@ ensemble 방식: IoU 매칭 후 conf 평균(방식 A). 모든 모델 prediction�
 | ms/image (GPU) | 132.1 |
 | 추론 시간 (CPU, HF Spaces 2 vCPU) | **1.03초/장** |
 
-자세한 4-way 분석은 [`docs/v4_분석결과_요약.md`](v4_분석결과_요약.md) 참조.
+자세한 4-way 분석은 [`docs/v4_summary.md`](v4_summary.md) 참조.
 
 ---
 

@@ -1,6 +1,6 @@
 # RTMDet 알약 탐지 데모 패키지 (baseline)
 
-3팀 HealthEat 프로젝트 — 지우님 웹 데모 1차 deploy 정본.
+3팀 HealthEat 프로젝트 — 웹 데모 1차 deploy용 baseline 모델 패키지.
 
 ## 모델 사양
 
@@ -31,7 +31,7 @@
 
 ## 가중치 다운로드
 
-Drive: `pill_detection_3팀/seungwon/seungwon_work_dir.zip` 풀고 안 가중치 사용
+Hugging Face Hub 권장: `huggingface-cli download wony98/healtheat-pill-rtmdet-baseline`
 - 정본: `best_coco_bbox_mAP_epoch_15.pth` (43 MB)
 - 호환 사본: `baseline_v1_e15_best_e13.pth` (24 MB, EMA-only)
 

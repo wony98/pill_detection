@@ -1,12 +1,12 @@
 # Demo
 
-지우님 웹 데모 / HF Spaces 등 deploy용 데모 패키지 박혀있는 폴더입니다.
+웹 데모 및 HF Spaces 등 배포용 데모 패키지를 모아둔 폴더입니다.
 
 ## 구조
 
 ```
 demo/
-├── baseline/             ← 1차 deploy 정본 (지우님 웹 후처리 호환)
+├── baseline/             ← 1차 deploy 정본 (웹 후처리 호환)
 ├── v4/                   ← 추후 적용 여지 (후처리 호환 후 교체)
 └── api_matching.ipynb    ← 식약처 API 매칭 (118종, baseline/v4 공통)
 ```
@@ -21,18 +21,18 @@ demo/
 | 가중치 사이즈 | 43 MB | 44 MB |
 | imgsz | 1280 | 1536 |
 | 추론 시간 (CPU) | ~1초 | ~1초 |
-| 후처리 호환 | ✓ (지우님 웹 박힘) | ✗ (추후 작업) |
+| 후처리 호환 | ✓ (현 웹 데모 호환) | ✗ (추후 작업) |
 | 1차 deploy | ★ | - |
 
-**1차 deploy = baseline** — 지우님 웹의 후처리 코드가 baseline 사양에 맞춰져 있어 즉시 호환.
+**1차 deploy = baseline** — 팀에서 운영 중인 웹 데모의 후처리 코드가 baseline 사양에 맞춰져 있어 즉시 호환됩니다.
 **v4는 후처리 호환 작업 완료 후 교체 예정** (성능 +17pp, conf 0.25 권장, bimodal 분포 대응 필요).
 
 ## 가중치 다운로드
 
-가중치는 깃에 박지 않습니다 (24~44 MB). Drive 백업 사용:
+가중치는 깃에 포함되지 않습니다 (24~44 MB). Hugging Face Hub 권장:
 
-- baseline: `pill_detection_3팀/seungwon/seungwon_work_dir.zip` 풀고 `best_coco_bbox_mAP_epoch_15.pth` (43 MB)
-- v4: `pill_detection_3팀/seungwon/seungwon_v4_work_dir.zip` 풀고 `best_coco_bbox_mAP_epoch_12.pth` (44 MB)
+- baseline: `huggingface-cli download wony98/healtheat-pill-rtmdet-baseline` → `best_coco_bbox_mAP_epoch_15.pth` (43 MB)
+- v4: `huggingface-cli download wony98/healtheat-pill-rtmdet-v4` → `best_coco_bbox_mAP_epoch_12.pth` (44 MB)
 
 ## 사용법
 

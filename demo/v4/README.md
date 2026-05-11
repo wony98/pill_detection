@@ -1,7 +1,7 @@
 # RTMDet 알약 탐지 데모 패키지 v4
 
 3팀 HealthEat 프로젝트.
-> **v4 deploy는 추후 작업입니다.** 1차 deploy는 `demo/baseline/`을 사용하세요. 지우님 웹 후처리가 baseline 사양에 맞춰져 있어 v4는 후처리 호환 작업 후 적용 예정.
+> **v4 deploy는 추후 작업입니다.** 1차 deploy는 `demo/baseline/`을 사용하세요. 팀에서 운영 중인 웹 데모의 후처리가 baseline 사양에 맞춰져 있어, v4는 후처리 호환 작업 후 적용할 예정입니다.
 
 
 ## 변경 사항 (v2 → v4)
@@ -100,4 +100,4 @@ class_idx (0~117) ↔ dl_idx 변환은 `pill.yaml`을 통해서만 수행해야 
 - 학습 곡선: val mAP@.5 epoch 7부터 천장, val mAP@.5:.95 epoch 12까지 미세 상승 (best_epoch=13)
 - 분석 노트북: `03_v4_evaluation_analysis.ipynb` (별도 공유)
 
-문의: 노승원
+문의: wony98

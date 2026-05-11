@@ -48,9 +48,10 @@ mim install "mmcv==2.1.0"
 git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection && pip install -e . && cd ..
 
-# 3. 가중치 다운로드 (Drive — "산출물 (Drive 백업)" 섹션 참조)
-#    baseline → demo/baseline/ 안에 .pth 배치
-#    v4 (선택) → demo/v4/ 안에 .pth 배치
+# 3. 가중치 다운로드 (Hugging Face Hub — "산출물" 섹션 참조)
+huggingface-cli download wony98/healtheat-pill-rtmdet-baseline --local-dir demo/baseline/
+#    v4 (선택)
+huggingface-cli download wony98/healtheat-pill-rtmdet-v4 --local-dir demo/v4/
 
 # 4. 추론 (default = baseline)
 python inference.py --img sample.png
@@ -127,13 +128,14 @@ pip install -r requirements-all.txt
 
 ## 데이터
 
-- 학습 클래스: 118종 (`pill.yaml` names 리스트 = 클래스 ID 진짜 출처)
+- 학습 클래스: 118종 (`pill.yaml` — YOLO/RTMDet 학습용 클래스 이름 리스트, 클래스 ID 진짜 출처)
 - 공통 전처리 결과: 39,864 ann / 10,392 img
-- Split: Combo Group, val_ratio=0.2, seed=42 (train 8,302 / val 2,090)
-- 합성 데이터 v3: 7,994장 (palm 마스크 + dark surface + 격자 단축경로 차단)
+- Split: **Combo Group** (같은 조합 사진은 train/val 한쪽에만 들어가는 분할 방식), val_ratio=0.2, seed=42 (train 8,302 / val 2,090)
+- 합성 데이터 v3: 7,994장 (palm 마스크 + dark surface + **격자 단축경로 차단** — 학습 데이터의 4모서리 격자 배치를 모델이 외워버리는 단축 학습을 막기 위한 설계)
 - 평가셋: 실사용 이미지 33장 / 47 GT bbox
 
 **Kaggle 제출 주의**: `category_id = dl_idx` (250부터 시작) — 학습용 0~117 인덱스 박으면 점수 0점.
+> `dl_idx`는 Kaggle 메타데이터의 클래스 인덱스로, 학습 코드의 0~117 인덱스와 다릅니다.
 
 ---
 
@@ -154,21 +156,29 @@ pip install -r requirements-all.txt
 
 ---
 
-## 산출물 (Drive 백업)
+## 산출물 (Hugging Face Hub)
 
-가중치 / 학습 로그는 깃에 박지 않습니다. Drive 사용:
+가중치 / 합성 데이터는 깃에 박지 않고 Hugging Face Hub에 별도 공개해 두었습니다.
 
-| 항목 | Drive 위치 | 사이즈 |
-|---|---|---|
-| baseline 학습 백업 | `pill_detection_3팀/seungwon/seungwon_work_dir.zip` | 206 MB |
-| v2 학습 백업 | `pill_detection_3팀/seungwon/seungwon_v6_work_dir.zip` | 207 MB |
-| v3 학습 백업 | `pill_detection_3팀/seungwon/seungwon_v3_work_dir.zip` | 281 MB |
-| v4 학습 백업 | `pill_detection_3팀/seungwon/seungwon_v4_work_dir.zip` | 281 MB |
-| 데이터셋 | Drive ID `1xeE2mlCVcaxlhc98icP_Di7FKQfgAtlj` | 17.5 GB |
+| 항목 | Hugging Face 레포 |
+|---|---|
+| baseline 모델 (배포) | [`wony98/healtheat-pill-rtmdet-baseline`](https://huggingface.co/wony98/healtheat-pill-rtmdet-baseline) |
+| v4 모델 (분석 우위) | [`wony98/healtheat-pill-rtmdet-v4`](https://huggingface.co/wony98/healtheat-pill-rtmdet-v4) |
+| 합성 데이터 baseline | [`wony98/healtheat-pill-synthetic-baseline`](https://huggingface.co/datasets/wony98/healtheat-pill-synthetic-baseline) |
+| 합성 데이터 v2 | [`wony98/healtheat-pill-synthetic-v2`](https://huggingface.co/datasets/wony98/healtheat-pill-synthetic-v2) |
+| 합성 데이터 v3 | [`wony98/healtheat-pill-synthetic-v3`](https://huggingface.co/datasets/wony98/healtheat-pill-synthetic-v3) |
+
+```bash
+# 모델 가중치 다운로드 예시
+huggingface-cli download wony98/healtheat-pill-rtmdet-baseline
+huggingface-cli download wony98/healtheat-pill-rtmdet-v4
+```
 
 ---
 
-## 보고서
+## 발표 자료 / 보고서
 
+- [`docs/healtheat_presentation.pptx`](docs/healtheat_presentation.pptx) — 발표 자료 (PPT, 30 MB)
 - [`docs/보고서.md`](docs/보고서.md) — 본문 (마크다운)
 - [`docs/보고서.pdf`](docs/보고서.pdf) — PDF 출력본
+- [`docs/협업일지/`](docs/협업일지/) — 작업 진행 일지 12편 (2026-04-20 ~ 2026-05-08)

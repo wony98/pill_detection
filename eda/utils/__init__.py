@@ -1,5 +1,5 @@
 """
-seungwon-ml-toolkit utils
+ML toolkit utils
 
 사용 예시:
     from utils.eda_common import quick_audit, describe_plus

@@ -74,22 +74,24 @@ python inference.py --help
 
 ```
 pill_detection/
-├── docs/                    발표자료 / 보고서 / 협업일지
-├── data/
-│   ├── preprocessing/       팀 공통 전처리
-│   └── synthetic/           합성 데이터 생성 (v2/v3, palm 마스크, dark surface)
+├── docs/                    보고서 / 협업일지 / 모델 선정 / 합성 진화 / 진단 자료
+├── data/synthetic/          합성 데이터 생성 노트북 (v2/v3, palm 마스크, dark surface)
 ├── eda/                     데이터 분석 + 클래스 매핑 (01~04b)
 ├── training/
 │   ├── notebooks/           학습 노트북 (RTMDet/YOLOv8/Faster R-CNN/RF-DETR/ablation)
 │   └── configs/             baseline / v4 학습 config
 ├── analysis/                평가 분석 (4-way 비교 + 진단 노트북 10+개)
-├── eval/                    평가셋 33장 + 결과 JSON + Kaggle 제출
+├── eval/                    평가셋 33장 + Kaggle 제출 노트북
 ├── demo/
 │   ├── baseline/            현재 배포 모델 (웹 데모 후처리 호환)
 │   ├── v4/                  분석 단계 우위 모델 (후처리 호환 작업 시 교체 가능)
 │   └── api_matching.ipynb   식약처 API 매칭 (baseline/v4 공통)
-├── results/                 모델 결과 JSON / 보고서 산출물
-├── requirements-*.txt       환경별 패키지 (eda/train/rtmdet/all)
+├── results/reports/         보고서용 표 / 그림 / CSV
+├── assets/                  README / 보고서용 그림
+├── ppt_figures/             PPT 슬라이드 그림 산출물
+├── inference.py             추론 진입점
+├── requirements.txt         통합 패키지 목록 (RTMDet은 별도 venv 안내)
+├── LICENSE
 └── README.md
 ```
 
@@ -174,5 +176,10 @@ huggingface-cli download wony98/healtheat-pill-rtmdet-v4
 
 - [`docs/healtheat_presentation.pptx`](docs/healtheat_presentation.pptx) — 발표 자료 (PPT, 30 MB)
 - [`docs/report.md`](docs/report.md) — 본문 (마크다운)
-- [`docs/report.pdf`](docs/report.pdf) — PDF 출력본
 - [`docs/journal/`](docs/journal/) — 작업 진행 일지 12편 (2026-04-20 ~ 2026-05-08)
+
+---
+
+## License
+
+본 레포지토리는 [MIT License](LICENSE)를 따릅니다.

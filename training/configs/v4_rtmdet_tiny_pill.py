@@ -70,7 +70,7 @@ custom_hooks = [
         ],
         type='PipelineSwitchHook'),
     dict(
-        author='seungwon',
+        author='wony98',
         drive_folder_id='16Fzq3KytjNKK_GgW6wSG9nKLdRyqLJvS',
         run_tag='v4',
         type='AutoUploadDriveHook',

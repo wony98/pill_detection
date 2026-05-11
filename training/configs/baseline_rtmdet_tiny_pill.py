@@ -4,7 +4,7 @@ base_lr = 0.00025
 checkpoint = 'https://download.openmmlab.com/mmdetection/v3.0/rtmdet/cspnext_rsb_pretrain/cspnext-tiny_imagenet_600e.pth'
 custom_hooks = [
     dict(
-        author='seungwon',
+        author='wony98',
         drive_folder_id='16Fzq3KytjNKK_GgW6wSG9nKLdRyqLJvS',
         type='AutoUploadDriveHook',
         work_dir='/content/rtmdet_work'),

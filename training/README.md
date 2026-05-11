@@ -20,12 +20,12 @@ training/
 
 ## 모델 학습 이력 (RTMDet-tiny)
 
-| 버전 | best epoch | 33장 Top-1 | 주요 처방 | 학습 백업 (Drive) |
+| 버전 | best epoch | 33장 Top-1 | 주요 처방 | 학습 산출물 (Hugging Face Hub) |
 |---|---|---|---|---|
-| baseline | 15 (best e13) | 29.8% | 합성 통합본 학습 | `seungwon_work_dir.zip` |
-| v2 | 14 | 31.9% | 합성 v2 (격자/배경 단축경로 차단) | `seungwon_v6_work_dir.zip` |
-| v3 | 11 | 29.8% | 합성 v3 (palm 마스크) | `seungwon_v3_work_dir.zip` |
-| **v4** | **12** | **46.8%** ★ | **imgsz 1536 + RandomCrop + Albu 4종 + EMA 0.0001** | `seungwon_v4_work_dir.zip` |
+| baseline | 15 (best e13) | 29.8% | 합성 통합본 학습 | `wony98/healtheat-pill-rtmdet-baseline` |
+| v2 | 14 | 31.9% | 합성 v2 (격자/배경 단축경로 차단) | (학습 백업, HF 미공개) |
+| v3 | 11 | 29.8% | 합성 v3 (palm 마스크) | (학습 백업, HF 미공개) |
+| **v4** | **12** | **46.8%** ★ | **imgsz 1536 + RandomCrop + Albu 4종 + EMA 0.0001** | `wony98/healtheat-pill-rtmdet-v4` |
 
 > v4 결과 JSON 파일명에 박힌 `e13`은 라벨 표기 오류 — 실제 best epoch = 12.
 
@@ -56,15 +56,17 @@ training/
 
 ## 가중치 다운로드
 
-가중치는 깃에 박지 않습니다 (24~44 MB). Drive 백업 사용:
+가중치는 깃에 박지 않습니다 (24~44 MB). Hugging Face Hub 사용:
 
-- baseline: `pill_detection_3팀/seungwon/seungwon_work_dir.zip` 안 `best_coco_bbox_mAP_epoch_15.pth` (43 MB)
-- v4: `pill_detection_3팀/seungwon/seungwon_v4_work_dir.zip` 안 `best_coco_bbox_mAP_epoch_12.pth` (44 MB)
+```bash
+huggingface-cli download wony98/healtheat-pill-rtmdet-baseline  # baseline 43 MB
+huggingface-cli download wony98/healtheat-pill-rtmdet-v4         # v4 44 MB
+```
 
 ## 재현 절차 (v4 기준)
 
-1. `seungwon_v4_work_dir.zip` Drive에서 다운로드
+1. `huggingface-cli download wony98/healtheat-pill-rtmdet-v4` 로 v4 산출물 다운로드
 2. config = `configs/v4_rtmdet_tiny_pill.py` (imgsz 1536, Albu, EMA 0.0001 박힘)
-3. 데이터 = `dataset_yolo.zip` Drive ID `1xeE2mlCVcaxlhc98icP_Di7FKQfgAtlj`
+3. 데이터 = `dataset_yolo.zip` (팀 내부 공유)
 4. Colab A100 + 위 환경 박힌 그대로
 5. ETA ~3시간 30분 (epoch 13)

@@ -1,5 +1,5 @@
 # RTMDet 전용 환경 (학습 + 추론)
-# 일반 ML 환경과 분리해서 별도 venv 또는 Colab에서 사용 권장
+# Python 3.10 + 일반 ML 환경과 분리해서 별도 venv 또는 Colab에서 사용 권장
 #
 # 주의:
 #   - mmengine 0.10.5+ 는 PyTorch 2.1 ASGD 옵티마이저 등록 충돌 → 0.10.4 박제 필수

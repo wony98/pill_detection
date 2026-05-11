@@ -1,5 +1,6 @@
 # 일반 모델 학습 환경 (YOLOv8 / RF-DETR / Faster R-CNN)
-# RTMDet은 mmdet 스택이 별도라 requirements-rtmdet.txt 참고
+# Python 3.10+ 권장. RTMDet은 mmdet 스택이 별도라 requirements-rtmdet.txt 참고
+# 설치: pip install -r requirements-train.txt
 
 # Core ML stack
 # torch는 CUDA 버전에 맞춰 설치 (예: --index-url https://download.pytorch.org/whl/cu118)

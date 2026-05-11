@@ -1,6 +1,6 @@
 {
   "exp_name": "rtdetr_synth_seed100",
-  "author": "수빈",
+  "author": "팀원 D",
   "model_framework": "ultralytics",
   "model_params_M": 33.0,
   "batch_size_used": 16,

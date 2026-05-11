@@ -1,6 +1,6 @@
 {
   "exp_name": "exp_faster_rcnn",
-  "author": "승원",
+  "author": "wony98",
   "experiment_type": "model",
   "model_framework": "torchvision",
   "model_name": "fasterrcnn_resnet50_fpn_v2",

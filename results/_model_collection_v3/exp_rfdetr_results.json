@@ -1,6 +1,6 @@
 {
   "exp_name": "exp_rfdetr",
-  "author": "승원",
+  "author": "wony98",
   "experiment_type": "model",
   "model_framework": "rfdetr",
   "model_name": "RFDETRBase",

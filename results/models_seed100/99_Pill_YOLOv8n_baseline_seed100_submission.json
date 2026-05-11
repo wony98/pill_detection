@@ -1,6 +1,6 @@
 {
   "exp_name": "99_Pill_YOLOv8n_baseline_seed100",
-  "author": "고귀한",
+  "author": "팀원 A",
   "model_framework": "ultralytics",
   "model_params_M": 3.35,
   "batch_size_used": 16,

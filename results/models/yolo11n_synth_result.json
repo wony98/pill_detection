@@ -1,6 +1,6 @@
 {
   "exp_name": "yolo11n_synth",
-  "author": "수빈",
+  "author": "팀원 D",
   "model_framework": "ultralytics",
   "model_params_M": 2.6,
   "batch_size_used": 16,

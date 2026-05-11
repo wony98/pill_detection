@@ -1,6 +1,6 @@
 {
   "exp_name": "06_Pill_FasterRCNN_MobileNetV3LargeFPN_baseline_seed42",
-  "author": "고귀한",
+  "author": "팀원 A",
   "model_framework": "torchvision",
   "model_params_M": 19.53,
   "batch_size_used": 16,

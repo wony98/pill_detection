@@ -1,6 +1,6 @@
 {
   "exp_name": "yolox_s_synth_augFalse_seed42_top3",
-  "author": "수민",
+  "author": "팀원 C",
   "model_framework": "YOLOX",
   "model_params_M": 9.0,
   "batch_size_used": 16,

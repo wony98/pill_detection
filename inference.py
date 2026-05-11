@@ -17,8 +17,8 @@ v4 모델 사용 (성능 검증용, 웹 데모와는 별개):
     v4       : 분석 단계 우위 모델 (Top-1 46.8%, baseline 대비 +17.0pp)
                웹 데모 후처리 호환성 미검증 — 추후 적용 예정
 
-실제 추론 로직은 demo/{baseline,v4}/inference_demo.py에 있음 (이 파일은 진입점 래퍼).
-모델 가중치는 README.md의 'Quick Start' 섹션 참조.
+실제 추론 로직은 demo/{baseline,v4}/inference_demo.py에 있고, 이 파일은 진입점 래퍼입니다.
+모델 가중치 다운로드는 README.md 'Quick Start' 섹션 참조.
 """
 import argparse
 import sys

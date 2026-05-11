@@ -1,6 +1,6 @@
 {
   "exp_name": "rtmdet_tiny_synth_e11_seed100",
-  "author": "seungwon",
+  "author": "wony98",
   "model_framework": "mmdet rtmdet_tiny",
   "model_params_M": 4.9,
   "batch_size_used": 16,

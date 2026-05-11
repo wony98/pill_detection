@@ -216,7 +216,7 @@ random_state = 42
 
 **가설**: 누끼 딴 알약을 다양한 배경 위에 합성해 학습 데이터 다양성을 확보하면, 실 사용 환경 일반화가 개선된다.
 
-<img src="../img/data_original.png" width="45%" /> <img src="../img/data_synthetic.png" width="45%" />
+<img src="../assets/data_original.png" width="45%" /> <img src="../assets/data_synthetic.png" width="45%" />
 
 ### 4.2 어떻게 만들었나 — 3단계 흐름
 
@@ -514,7 +514,7 @@ ensemble 방식: IoU 매칭 후 conf 평균(방식 A). 모든 모델 prediction�
 
 ### 7.2 전체 파이프라인 (Two-Stage + 다중 보조축)
 
-<img src="../img/architecture.png" width="80%" />
+<img src="../assets/architecture.png" width="80%" />
 
 사용자가 업로드한 알약 사진은 다음 순서로 처리된다.
 

@@ -1,0 +1,41 @@
+# Pill Detection — 통합 환경
+# Python 3.10+ 권장
+#
+# RTMDet 학습/추론용 mmdet 스택(mmengine, mmcv, mmdet)은 PyTorch 2.1까지만 호환되어
+# 본 파일과 별도 venv 또는 Colab에서 아래 흐름으로 설치하는 것을 권장합니다.
+#
+#   pip install torch==2.1.0 torchvision==0.16.0 "numpy<2"
+#   pip install -U openmim
+#   mim install "mmengine==0.10.4"
+#   mim install "mmcv==2.1.0"
+#   pip install mmdet==3.3.0
+#
+# 본 파일은 EDA / YOLOv8 / RF-DETR / Faster R-CNN 학습용 통합 환경입니다.
+
+# 코어 ML 스택 (torch는 CUDA 버전에 맞춰 설치)
+torch==2.1.0
+torchvision==0.16.0
+numpy<2
+
+# 데이터 / 시각화
+pandas==2.2.3
+matplotlib==3.9.2
+seaborn==0.13.2
+Pillow==10.4.0
+opencv-python==4.10.0.84
+openpyxl==3.1.5
+PyYAML==6.0.2
+
+# 학습 프레임워크
+ultralytics
+rfdetr
+
+# 학습 / 평가 보조
+albumentations
+pycocotools==2.0.8
+tqdm==4.67.1
+requests
+
+# 노트북
+jupyter==1.1.1
+ipykernel==6.29.5

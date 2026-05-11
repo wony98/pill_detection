@@ -1,6 +1,0 @@
-# 통합 환경 (EDA + 일반 모델 학습)
-# Python 3.10+ 권장. RTMDet은 별도 환경 — requirements-rtmdet.txt 참조
-# 설치: pip install -r requirements-all.txt
-
--r requirements-eda.txt
--r requirements-train.txt

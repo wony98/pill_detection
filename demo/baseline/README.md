@@ -1,11 +1,11 @@
 # RTMDet 알약 탐지 데모 패키지 (baseline)
 
-3팀 HealthEat 프로젝트 — 웹 데모 1차 deploy용 baseline 모델 패키지.
+3팀 HealthEat 프로젝트의 웹 데모 1차 deploy용 baseline 모델 패키지.
 
 ## 모델 사양
 
 - RTMDet-tiny (4.9M params)
-- best epoch 15 (best 가중치 = epoch 13에서 박힘)
+- best epoch 15 (best 가중치는 epoch 13에서 저장됨)
 - imgsz 1280 / batch 16 / lr 0.00025
 - 합성 통합본 학습 (synthetic v1, K-code 56종 + AI Hub 추가 학습)
 
@@ -25,7 +25,7 @@
 |---|---|
 | `best_coco_bbox_mAP_epoch_15.pth` | baseline 가중치 (43 MB, Drive 백업, 깃 미포함) |
 | `rtmdet_tiny_pill.py` | 학습 config (35 KB) |
-| `pill.yaml` | 118 클래스 매핑 (★ 클래스 ID 진짜 출처) |
+| `pill.yaml` | 118 클래스 매핑 (클래스 ID 기준 출처) |
 | `inference_demo.py` | Top-3 그룹핑 추론 스크립트 (CONF_THRESH=0.05) |
 | `README.md` | 이 문서 |
 
@@ -55,22 +55,22 @@ python inference_demo.py --image path/to/image.jpg --config rtmdet_tiny_pill.py 
 1. 이미지 로드 (한글 경로 안전 처리: `cv2.imdecode(np.fromfile(...))`)
 2. RTMDet 추론 → bbox + score + label 출력
 3. NMS (IoU 0.5)
-4. CONF_THRESH 박힘 = 0.05 (baseline 권장값, 표시 박스 필터)
+4. CONF_THRESH = 0.05 (baseline 권장값, 표시 박스 필터)
 5. Top-3 그룹핑 (같은 bbox에 대한 상위 3개 클래스)
 
 ## 주의 (클래스 매핑)
 
-**`pill.yaml`이 클래스 ID의 진짜 출처입니다.**
-Kaggle 제출 시 `category_id = dl_idx` (250부터 시작) — 학습용 0~117 인덱스 박으면 점수 0점.
+`pill.yaml`이 클래스 ID의 기준 출처입니다.
+Kaggle 제출 시 `category_id = dl_idx` (250부터 시작). 학습용 0~117 인덱스를 넣으면 점수 0점입니다.
 
 ## 트러블슈팅
 
-- **mmengine ASGD KeyError**: 0.10.5+ 버그. `pip install "mmengine==0.10.4"` 명시 박음 + 런타임 재시작
+- **mmengine ASGD KeyError**: 0.10.5+ 버그. `pip install "mmengine==0.10.4"` 명시 설치 후 런타임 재시작
 - **numpy ABI 충돌**: albumentations 등 설치 시 numpy 2.x 끌려옴 → `pip install "numpy<2" --no-deps` 우회
 - **한글 경로 cv2.imread 실패**: `cv2.imdecode(np.fromfile(path, dtype=np.uint8), cv2.IMREAD_COLOR)` 패턴 사용
 - **mmcv NMS sm_90 미지원**: H100에서 RuntimeError. mmcv 2.1.0 cu118 wheel은 sm_80까지만 빌드 → A100 사용 권장
 
 ## 참고
 
-- v4 모델 (Top-1 46.8%)은 `demo/v4/`에 박혀있음. 후처리 호환 작업 후 deploy 예정.
+- v4 모델 (Top-1 46.8%)은 `demo/v4/`에 있음. 후처리 호환 작업 후 deploy 예정.
 - baseline 학습 진행: 본 레포 `training/notebooks/rtmdet_train_seed100.ipynb`

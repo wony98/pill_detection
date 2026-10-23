@@ -173,3 +173,12 @@ __pypackages__/
 # Translations
 *.mo
 *.pot
+
+# Local MLflow backfill environment, database and source artifacts
+.venv-mlflow/
+.mlflow-backfill/
+mlruns/
+mlartifacts/
+*.db
+*.db-shm
+*.db-wal

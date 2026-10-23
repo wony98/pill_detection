@@ -9,4 +9,4 @@
 | `palm_mask_rembg_colab.ipynb` | rembg로 손바닥 마스크 추출 (Colab) |
 | `generate_dark_surface.ipynb` | 어두운 배경 합성 변형 생성 |
 
-진화 배경/근거는 [`docs/합성_진화/합성_v1_v2_v3_진화.md`](../../docs/합성_진화/합성_v1_v2_v3_진화.md) 참조.
+진화 배경/근거는 [`docs/synthesis_evolution/synthesis_v1_v2_v3.md`](../../docs/synthesis_evolution/synthesis_v1_v2_v3.md) 참조.

@@ -3,8 +3,8 @@
 ## 결론 먼저
 
 **최종 모델: v4 단독 + conf 0.25**
-- 33장 평가 Top-1 **46.8%** (baseline 29.8% 대비 **+17.0pp**, v2 단독 31.9% 대비 **+14.9pp**)
-- 기존 측정 최고치였던 v2+v3 ensemble 36.2% 대비 **+10.6pp**
+- 33장 평가 Top-1 46.8% (baseline 29.8% 대비 +17.0pp, v2 단독 31.9% 대비 +14.9pp)
+- 기존 측정 최고치였던 v2+v3 ensemble 36.2% 대비 +10.6pp
 - ms/image 132.1 (v3와 동일, 배포 비용 변화 없음)
 
 ensemble은 모두 v4보다 후퇴(-2.1pp~-4.2pp). v4가 충분히 강해 약한 모델이 끌어내리는 패턴이라 단일 모델 추론으로 결정했습니다.
@@ -18,13 +18,13 @@ ensemble은 모두 v4보다 후퇴(-2.1pp~-4.2pp). v4가 충분히 강해 약한
 | baseline (e15) | 29.8% | 40.4% | 95.7% | 259 | 15 |
 | v2 (e14) | 31.9% | 53.2% | 95.7% | 100 | 14 |
 | v3 (e11) | 29.8% | 55.3% | 93.6% | 99 | 11 |
-| **v4 (e12)** | **46.8%** | **59.6%** | **95.7%** | **84** | **12** |
+| v4 (e12) | 46.8% | 59.6% | 95.7% | 84 | 12 |
 
 ### Ensemble 비교 (conf 0.2)
 
 | 구성 | Top-1 | Top-3 | FP |
 |---|---|---|---|
-| **v4 단독** | **46.8%** ★ | 59.6% | 14 |
+| v4 단독 | 46.8% | 59.6% | 14 |
 | v3+v4 | 44.7% | 61.7% | 24 |
 | v2+v4 | 44.7% | 57.4% | 28 |
 | v2+v3+v4 | 42.6% | 57.4% | 35 |
@@ -38,10 +38,10 @@ ensemble 방식: IoU 매칭 후 conf 평균 (방식 A). 모든 모델의 predict
 
 | 환경 | n | v2 | v3 | v4 | v4-v2 |
 |---|---|---|---|---|---|
-| palm | 20 | 30.0% | 35.0% | **50.0%** | +20.0pp |
-| dark | 2 | 0.0% | 0.0% | **50.0%** | +50.0pp |
-| paper | 7 | 28.6% | 14.3% | **42.9%** | +14.3pp |
-| desk | 5 | 20.0% | 20.0% | **40.0%** | +20.0pp |
+| palm | 20 | 30.0% | 35.0% | 50.0% | +20.0pp |
+| dark | 2 | 0.0% | 0.0% | 50.0% | +50.0pp |
+| paper | 7 | 28.6% | 14.3% | 42.9% | +14.3pp |
+| desk | 5 | 20.0% | 20.0% | 40.0% | +20.0pp |
 | cloth | 10 | 40.0% | 30.0% | 40.0% | +0.0pp |
 | bottle | 2 | 100.0% | 100.0% | 100.0% | +0.0pp |
 | box | 1 | 0.0% | 0.0% | 0.0% | +0.0pp |
@@ -57,12 +57,12 @@ palm/dark/paper 모든 가설 환경에서 목표치 달성. dark 환경은 합�
 | 0.05 (default) | 46.8% | 84 |
 | 0.10 | 46.8% | 29 |
 | 0.20 | 46.8% | 14 |
-| **0.25** | **46.8%** | **10** ★ |
+| 0.25 | 46.8% | 10 |
 | 0.30 | 44.7% | 7 |
 
 conf 0.25에서 Top-1 손해 0, FP 84 → 10으로 88% 감소. 0.30 이상은 Top-1 -2.1pp 손해 발생합니다.
 
-시각화: `img/figures_v4_eval/conf_threshold_sweep_3way.png`
+시각화: `analysis/figures_v4_eval/conf_threshold_sweep_3way.png`
 
 ---
 
@@ -71,12 +71,12 @@ conf 0.25에서 Top-1 손해 0, FP 84 → 10으로 88% 감소. 0.30 이상은 To
 | # | 항목 | v3 | v4 |
 |---|---|---|---|
 | 1 | batch size | 16 | 16 (A100 fallback) |
-| 2 | imgsz | 1280 | **1536** |
+| 2 | imgsz | 1280 | 1536 |
 | 3 | lr | 0.00025 | 0.00025 |
-| 4 | EMA momentum | 0.0002 | **0.0001** |
-| 5 | RandomCrop | 없음 | **crop_size=1280** |
-| 6 | CachedMixUp | p=0.5 | **p=0.7** |
-| 7 | Albumentations | 없음 | **CLAHE / Brightness / Noise / MotionBlur (p=0.3)** |
+| 4 | EMA momentum | 0.0002 | 0.0001 |
+| 5 | RandomCrop | 없음 | crop_size=1280 |
+| 6 | CachedMixUp | p=0.5 | p=0.7 |
+| 7 | Albumentations | 없음 | CLAHE / Brightness / Noise / MotionBlur (p=0.3) |
 
 기타 통제: max_epochs=13, num_last=3, switch=10, HSV value_delta=60, seed=100, num_classes=118, 합성 v3 그대로.
 
@@ -86,34 +86,34 @@ conf 0.25에서 Top-1 손해 0, FP 84 → 10으로 88% 감소. 0.30 이상은 To
 
 47 GT 단위 회복/후퇴 분석:
 
-- 회복 13건 / 후퇴 6건 / **순증 7건**
+- 회복 13건 / 후퇴 6건 / 순증 7건
 - top1 유지 13건 / wrong→top1 3건 / top3→top1 6건
 - det_fail 2건 변화 없음
 
-안정적 개선 패턴으로, 특정 케이스 회복이 아닌 전반적 분류 능력 향상으로 해석합니다.
+특정 케이스의 회복이 아니라 전반적 분류 능력 향상으로 해석합니다.
 
 ---
 
 ## Hallucination 3-way 분포
 
-- v2 91회 → v3 분포 재배치만 (수치 비슷) → v4 **71회** (-20)
+- v2 91회 → v3 분포 재배치만 (수치 비슷) → v4 71회 (-20)
 - 합성 다양화(v3)는 핀 클래스 분포 재배치만 했고, augmentation 다양성(v4)은 hallucination 양 자체를 감소시켰습니다.
 
-시각화: `img/figures_v4_eval/hallucination_3way.png`
+시각화: `analysis/figures_v4_eval/hallucination_3way.png`
 
 ---
 
 ## 4-way 통합 시각화
 
-### 정량 비교 (`img/figures_v4_eval/4way_quantitative_comparison.png`)
+### 정량 비교 (`analysis/figures_v4_eval/4way_quantitative_comparison.png`)
 
 Top-1 / Top-3 / Detection / FP 4지표 막대그래프 4 subplot:
 - **Top-1**: v4 46.8%로 baseline 29.8%, v2 31.9%, v3 29.8% 대비 우위
-- **Top-3**: v4 59.6% (점진적 증가 — baseline 40.4% → v2 53.2% → v3 55.3% → v4 59.6%)
+- **Top-3**: v4 59.6% (baseline 40.4% → v2 53.2% → v3 55.3% → v4 59.6%로 점진적 증가)
 - **Detection**: baseline / v2 / v4 모두 95.7%로 동일, v3만 93.6%로 소폭 하락
 - **FP**: baseline 259 → v4 84로 -68% 감소
 
-### 정성 비교 (`img/figures_v4_eval/4way_qualitative_*.png`)
+### 정성 비교 (`analysis/figures_v4_eval/4way_qualitative_*.png`)
 
 v2 → v4 회복 케이스 10건 자동 추출 후 상위 3건 시각화:
 
@@ -125,7 +125,7 @@ v2 → v4 회복 케이스 10건 자동 추출 후 상위 3건 시각화:
 
 색 코드: GT 초록 점선 / baseline 회색 / v2 파랑 / v3 보라 / v4 빨강 (conf ≥ 0.25 박스만 표시)
 
-### Ensemble 비교 (`img/figures_v4_eval/ensemble_4way_comparison.png`)
+### Ensemble 비교 (`analysis/figures_v4_eval/ensemble_4way_comparison.png`)
 
 v2+v3 / v2+v4 / v3+v4 / v2+v3+v4 ensemble 4-way 비교 figure. 모든 ensemble 구성이 v4 단독보다 Top-1에서 후퇴함을 시각화합니다.
 
@@ -140,12 +140,12 @@ val mAP@50:95는 epoch 11→12에서 +0.003으로 둔화, val mAP@50은 epoch 7�
 ## 최종 결정 근거 (v4 단독 + conf 0.25 채택)
 
 1. **Top-1 우위**: baseline 대비 +17.0pp / v2 단독 대비 +14.9pp / v2+v3 ensemble 대비 +10.6pp
-2. **Ensemble 후퇴**: v3+v4, v2+v4 모두 -2.1pp / v2+v3+v4 -4.2pp — v4가 강해 약한 모델이 끌어내림
+2. **Ensemble 후퇴**: v3+v4, v2+v4 모두 -2.1pp / v2+v3+v4 -4.2pp, v4가 강해 약한 모델이 끌어내림
 3. **Top-3 trade-off**: v3+v4 ensemble 61.7%로 +2.1pp 이득이지만 추론 비용 2배 → 단독 채택이 합리적
-4. **conf 0.25 sweet spot**: Top-1 손해 0, FP 14→10 추가 감소, Top-3 손해 0
+4. **conf 0.25 최적 임계값**: Top-1 손해 0, FP 14→10 추가 감소, Top-3 손해 0
 5. **conf 0.30 손해 발생**: Top-1 -2.1pp 발생으로 0.25가 한계
 6. **배포 비용 동일**: ms/image 132.1 (v3와 동일)
-7. **환경별 가설 충족**: palm 50% / dark 50% / paper 42.9% (목표 40/20/30 모두 ✓)
+7. **환경별 가설 충족**: palm 50% / dark 50% / paper 42.9% (목표 40/20/30 모두 달성)
 8. **안정적 개선**: v2 → v4 verdict 순증 7건 + hallucination -20건
 
 ---
@@ -164,8 +164,8 @@ val mAP@50:95는 epoch 11→12에서 +0.003으로 둔화, val mAP@50은 epoch 7�
 
 | 자료 | 위치 |
 |---|---|
-| figure 7장 | `img/figures_v4_eval/` |
+| figure 7장 | `analysis/figures_v4_eval/` |
 | v4 학습 사양 + 가중치 | HF Hub `wony98/healtheat-pill-rtmdet-v4` 모델 카드 |
-| v4 데모 패키지 | `models/RTMDet/v4/` (가중치 + config + inference) |
+| v4 데모 패키지 | `demo/v4/` (가중치 + config + inference) |
 | 합성 진화 흐름 | `docs/synthesis_evolution/synthesis_v1_v2_v3.md` |
-| 진단 / 처방 | `docs/diagnosis_issues.md`, `docs/diagnosis_solutions.md` |
+| 진단 / 개선안 | `docs/diagnosis_issues.md`, `docs/diagnosis_solutions.md` |

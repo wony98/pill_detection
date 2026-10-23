@@ -1,6 +1,6 @@
 # analysis/figures_causality/
 
-`data_model_causality.ipynb` 산출물 — imgsz(입력 해상도)가 baseline → v4 정답률 격차의 주 원인인지 검증한 인과성 분석.
+`data_model_causality.ipynb` 산출물: imgsz(입력 해상도)가 baseline → v4 정답률 격차의 주 원인인지 검증한 인과성 분석.
 
 | 파일 | 내용 |
 |---|---|

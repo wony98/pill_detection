@@ -6,7 +6,7 @@
 
 ## 변경 사항 (v2 → v4)
 
-- 모델 갱신: v2 (e14) → v4 (e13) 로 교체
+- 모델 갱신: v2 (e14) → v4 (저장 가중치 epoch 12)로 교체
 - 성능 개선: Top-1 31.9% → 46.8% (+14.9pp)
 - 추론 사양 변경: imgsz 1280 → 1536 (config 자동 적용), conf threshold 0.05 → 0.25 권장
 - 추론 시간: 132.1ms/장 (GPU) / 약 1초 (CPU)
@@ -24,13 +24,15 @@
 
 ## 33장 평가 성능 (47 GT 단위)
 
-| 측정 | v2 (e14) | v4 (e13) | Δ |
+| 측정 | v2 (e14) | v4 (평가 JSON e13) | Δ |
 |---|---|---|---|
 | Top-1 | 31.9% | 46.8% | +14.9pp |
 | Top-3 | 53.2% | 59.6% | +6.4pp |
 | Detection | 95.7% | 95.7% | 0 |
 | FP (conf 0.05) | 100 | 84 | -16 |
 | FP (conf 0.25) | - | 10 | - |
+
+평가 JSON 파일명은 `e13`이고 패키지의 가중치 파일은 epoch 12다. 평가 JSON에 체크포인트 경로나 해시가 없어 둘의 연결은 확인되지 않았다(`experiments/mlflow/lineage.md`).
 
 ### 환경별 Top-1
 
@@ -57,7 +59,7 @@ mmengine 0.10.5 이상은 ASGD KeyError가 발생하므로 0.10.4를 명시 설�
 ```bash
 python inference_demo.py \
     --config rtmdet_tiny_pill.py \
-    --checkpoint best_coco_bbox_mAP_epoch_13.pth \
+    --checkpoint best_coco_bbox_mAP_epoch_12.pth \
     --names pill.yaml \
     --img <이미지 경로> \
     --device cuda:0 \
@@ -97,7 +99,7 @@ class_idx (0~117) ↔ dl_idx 변환은 `pill.yaml`을 통해서만 수행해야 
 ## 참고
 
 - ensemble 시도: v2+v4, v3+v4, v2+v3+v4 모두 v4 단독 대비 후퇴 → 단일 모델 추론 권장
-- 학습 곡선: val mAP@.5 epoch 7부터 천장, val mAP@.5:.95 epoch 12까지 미세 상승 (best_epoch=13)
+- 학습 곡선: val mAP@.5 epoch 7부터 천장, val mAP@.5:.95 epoch 12까지 미세 상승 (저장된 best 체크포인트 epoch 12)
 - 분석 노트북: `03_v4_evaluation_analysis.ipynb` (별도 공유)
 
 문의: wony98

@@ -27,7 +27,7 @@ training/
 | v3 | 11 | 29.8% | 합성 v3 (palm 마스크) | (학습 백업, HF 미공개) |
 | v4 | 12 | 46.8% | imgsz 1536 + RandomCrop + Albu 4종 + EMA 0.0001 | `wony98/healtheat-pill-rtmdet-v4` |
 
-> v4 결과 JSON 파일명의 `e13`은 표기 오류다. 실제 best epoch = 12.
+> v4 결과 JSON 파일명은 `e13`, 보관된 best 가중치는 epoch 12다. 둘의 연결은 확인되지 않아 별도로 적는다(`experiments/mlflow/lineage.md`).
 
 ## v4 학습 설정 변경 (최종 모델)
 

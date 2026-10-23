@@ -1,4 +1,4 @@
-# 합성 데이터 진화 — v1 → v2 → v3
+# 합성 데이터 진화: v1 → v2 → v3
 
 3팀 HealthEat 프로젝트의 합성 데이터 진화 흐름입니다. 각 버전의 변경점, 근거, 결과를 정리했습니다.
 
@@ -13,7 +13,7 @@
 | baseline (v1) | dataset_yolo + 합성 통합본 7200 | 29.8% | 40.4% | 15 |
 | v2 | dataset_yolo + synthetic_v2 (양질 분포) | 31.9% | 53.2% | 14 |
 | v3 | dataset_yolo + synthetic_v3 (palm 마스크) | 29.8% | 55.3% | 11 |
-| **v4** | **dataset_yolo + synthetic_v3** (학습 사양 보강) | **46.8%** | **59.6%** | **12** |
+| v4 | dataset_yolo + synthetic_v3 (학습 사양 보강) | 46.8% | 59.6% | 12 |
 
 v3가 v2의 Top-1을 넘지 못해 (31.9% → 29.8% 회귀), v4에서 학습 사양 자체를 보강하는 방향으로 전환했습니다. v4는 합성 데이터(synthetic_v3)는 v3와 동일하게 두고, 학습 차원에서 7가지 변경을 적용한 결과입니다.
 
@@ -28,39 +28,39 @@ v3가 v2의 Top-1을 넘지 못해 (31.9% → 29.8% 회귀), v4에서 학습 사
 - 알약 개수: `MIN_PILLS=2, MAX_PILLS=4` 균등 샘플링
 - 배경: 6 카테고리 (palm, dark, fabric, gray, marble, white)
 
-**진단 결과** (33장 Top-1 29.8%):
+진단 결과 (33장 Top-1 29.8%):
 - Val mAP@50 = 0.99 (학습 자체는 정상)
 - Test 29.8%의 원인은 분류 단계의 분포 갭입니다.
 - 7대 문제 검증 결과는 `docs/diagnosis_issues.md`를 참조해주세요.
-- 핵심 문제: 단일 알약 합성 비율 3.4% vs Test 60.6% / 핀 클래스 hallucination / 각인 학습 실패
+- 주요 문제: 단일 알약 합성 비율 3.4% vs Test 60.6% / 핀 클래스 hallucination / 각인 학습 실패
 
 ---
 
-## 처방 → 합성/학습 버전 매핑
+## 개선안 → 합성/학습 버전 매핑
 
-진단 결과 도출된 처방 4가지(`docs/diagnosis_solutions.md`)와 각 버전의 실현 매핑입니다.
+진단 결과 도출된 개선안 4가지(`docs/diagnosis_solutions.md`)와 각 버전의 실현 매핑입니다.
 
-| 처방 | 내용 | 실현 버전 |
+| 개선안 | 내용 | 실현 버전 |
 |---|---|---|
-| 처방 1 | 학습 입력 해상도 imgsz=1280 상향 | v2 학습부터 |
-| 처방 2 | 합성 알약 크기 분포 폭 확대 + 개수별 분기 | v2 합성 |
-| 처방 3 | 합성 알약 개수 가중 샘플링 (1~5개) | v2 합성 |
-| 처방 4 | 배경 풀 재구성 + 가장자리 처리 | v3 (배경 풀) + v4 (가장자리) |
+| 개선안 1 | 학습 입력 해상도 imgsz=1280 상향 | v2 학습부터 |
+| 개선안 2 | 합성 알약 크기 분포 폭 확대 + 개수별 분기 | v2 합성 |
+| 개선안 3 | 합성 알약 개수 가중 샘플링 (1~5개) | v2 합성 |
+| 개선안 4 | 배경 풀 재구성 + 가장자리 처리 | v3 (배경 풀) + v4 (가장자리) |
 
-처방 1 (imgsz 1280)은 단계 2-B 각인 픽셀 보존 측정 결과 기반 결정입니다. 합성 ROI에서 imgsz 1024→1280 변경 시 lap 보존율이 +34.5p 점프했고, 1024는 640 대비 +3.4p로 비용 대비 효과가 미미했습니다.
+개선안 1 (imgsz 1280)은 단계 2-B 각인 픽셀 보존 측정 결과 기반 결정입니다. 합성 ROI에서 imgsz 1024→1280 변경 시 lap 보존율이 +34.5p 점프했고, 1024는 640 대비 +3.4p로 비용 대비 효과가 미미했습니다.
 
-처방 4는 두 가지로 분리 실현되었습니다. v3에서 배경 풀 재구성(palm 6→42장 + 마스크 침식)이 적용되었고, 가장자리 처리는 v4 학습 사양의 RandomCrop (1536→1280) 형태로 실현되었습니다.
+개선안 4는 두 가지로 분리 실현되었습니다. v3에서 배경 풀 재구성(palm 6→42장 + 마스크 침식)이 적용되었고, 가장자리 처리는 v4 학습 사양의 RandomCrop (1536→1280) 형태로 실현되었습니다.
 
 ---
 
-## v2 — 양질 분포 매칭 (처방 2+3 실현, 처방 1 학습 적용)
+## v2: 양질 분포 매칭 (개선안 2+3 실현, 개선안 1 학습 적용)
 
 v1 대비 변경 4가지입니다 (`data/synthetic/synthetic_images_v2.ipynb` 셀 0):
 
 1. **합성 분량**: 1000 → 7200 (양질 1800 + 신규 5400 통합)
-2. **알약 개수 가중 샘플링** (처방 3): 양질 1800장 측정 분포 기반
+2. 알약 개수 가중 샘플링 (개선안 3): 양질 1800장 측정 분포 기반
    - 1개 13.5% / 2개 42.9% / 3개 31.1% / 4개 12.4%
-3. **알약 크기 lognormal 분포** (처방 2): 양질 측정 mean/std 기반, 개수별 분리
+3. 알약 크기 lognormal 분포 (개선안 2): 양질 측정 mean/std 기반, 개수별 분리
    - 1개: mean -0.68, std 0.131 (클로즈업)
    - 2개: mean -1.25, std 0.585
    - 3-4개: mean -1.45, std 0.564
@@ -69,38 +69,38 @@ v1 대비 변경 4가지입니다 (`data/synthetic/synthetic_images_v2.ipynb` �
 
 **합성 카운트**: 7994장 → 9:1 분할 → train 7194 + val 800
 
-**학습 사양**: imgsz 1280 (처방 1 적용), max_epochs 13, batch 16, lr 0.00025
+**학습 사양**: imgsz 1280 (개선안 1 적용), max_epochs 13, batch 16, lr 0.00025
 
-**결과**: 33장 Top-3 +12.8pp (40.4% → 53.2%), Top-1 +2.1pp (29.8% → 31.9%) — 분류 회복 신호 확인.
+**결과**: 33장 Top-3 +12.8pp (40.4% → 53.2%), Top-1 +2.1pp (29.8% → 31.9%). 분류 회복 신호를 확인했습니다.
 
 ---
 
-## v3 — palm 마스크 + 침식 (처방 4 일부 실현: 배경 풀 재구성)
+## v3: palm 마스크 + 침식 (개선안 4 일부 실현: 배경 풀 재구성)
 
 v2 대비 변경 7가지입니다 (`data/synthetic/synthetic_images_v3.ipynb` 셀 0):
 
 1. **palm 배경 풀 확장**: 6장 → 42장 (Nano Banana 50장 생성 후 마스크 검수로 8장 폐기)
 2. **MAX_PILL_AREA_POST**: 0.50 → 0.20 (거대 알약 컷 차단, 현실성 확보)
 3. **palm 마스크 활용 + 50px 침식**: rembg 마스크에 침식을 적용하여 손가락 끝과 손목 끝을 제거했습니다. 알약이 손바닥 중앙 위주로 떨어지도록 하여 실 사용자 사진 패턴에 매칭합니다.
-4. **나머지 5개 카테고리** (dark, fabric, gray, marble, white): 균일 배경이라 무작위 배치를 그대로 유지합니다.
+4. 나머지 5개 카테고리 (dark, fabric, gray, marble, white): 균일 배경이라 무작위 배치를 그대로 유지합니다.
 5. **출력 폴더 분리**: synthetic_v2 → synthetic_v3
 6. **START_IDX = 0**: v3는 0부터 시작합니다.
-7. **합성 양 7994장** (v2 동일): train 9:1 분할 후 train 7188 + val 800
+7. 합성 양 7994장 (v2 동일): train 9:1 분할 후 train 7188 + val 800
 
-**변수 통제** (v2와 동일):
+변수 통제 (v2와 동일):
 - 알약 개수 가중치 / 양질 lognormal 크기 분포 / SIGMA_CLIP 2.0 / MIN_PILLS 1 / MARGIN 30 / random.seed(43)
 
 **학습 사양**: v2와 동일 (imgsz 1280, max_epochs 13)
 
-**보조 자료**: palm 마스크 생성은 별도 노트북에서 진행했습니다 — `data/synthetic/palm_mask_rembg_colab.ipynb` (rembg 2.0.50 + onnxruntime-gpu, Colab T4).
+**보조 자료**: palm 마스크 생성은 별도 노트북에서 진행했습니다. `data/synthetic/palm_mask_rembg_colab.ipynb` (rembg 2.0.50 + onnxruntime-gpu, Colab T4).
 
 **결과**: 33장 Top-3 +2.1pp (53.2% → 55.3%), Top-1 -2.1pp (31.9% → 29.8% 회귀), best epoch 11 조기 수렴.
 
-**평가**: v3가 v2의 Top-1을 넘지 못했습니다. palm 처방의 효과(Top-3 +2.1pp)는 확인되었으나, Top-1 회귀로 인해 합성 데이터 차원의 추가 처방보다는 학습 사양 자체를 보강하는 v4 트랙으로 전환했습니다.
+**평가**: v3가 v2의 Top-1을 넘지 못했습니다. palm 개선안의 효과(Top-3 +2.1pp)는 확인되었으나, Top-1 회귀로 인해 합성 데이터 차원의 추가 개선안보다는 학습 사양 자체를 보강하는 v4 트랙으로 전환했습니다.
 
 ---
 
-## v4 — 학습 사양 보강 (처방 4 가장자리 처리 실현)
+## v4: 학습 사양 보강 (개선안 4 가장자리 처리 실현)
 
 **목표**: v3가 못 넘은 v2 Top-1 (31.9%) 갱신.
 
@@ -109,17 +109,17 @@ v2 대비 변경 7가지입니다 (`data/synthetic/synthetic_images_v3.ipynb` �
 - 평가: 33장 동일
 - max_epochs 13, num_classes 118, seed 100, save_best='coco/bbox_mAP'
 
-**v3 대비 학습 사양 변경 7가지** (`training/notebooks/rtmdet_tiny_synth_train_v4.ipynb` 셀 0):
+v3 대비 학습 사양 변경 7가지 (`training/notebooks/rtmdet_tiny_synth_train_v4.ipynb` 셀 0):
 
 | # | 변경 | 비고 |
 |---|---|---|
 | 1 | batch 16 유지 (32 시도 → A100 OOM) | 환경 제약 |
-| 2 | imgsz 1280 → **1536** | 각인 보존 강화 |
+| 2 | imgsz 1280 → 1536 | 각인 보존 강화 |
 | 3 | lr 0.00025 유지 | batch 유지에 비례 정정 |
-| 4 | EMA momentum 0.0002 → **0.0001** | 더 강한 EMA |
-| 5 | **RandomCrop (1280, 1280)** | 가장자리 augmentation (1536→1280 random crop으로 알약 위치 다양화) — 처방 4 가장자리 처리 |
-| 6 | **CachedMixUp prob 0.5 → 0.7** | mixup 강화 |
-| 7 | **Albu transform 4종 추가** (stage1만, 각 p=0.3) | CLAHE / RandomBrightnessContrast / GaussNoise / MotionBlur |
+| 4 | EMA momentum 0.0002 → 0.0001 | 더 강한 EMA |
+| 5 | RandomCrop (1280, 1280) | 가장자리 augmentation (1536→1280 random crop으로 알약 위치 다양화), 개선안 4 가장자리 처리 |
+| 6 | CachedMixUp prob 0.5 → 0.7 | mixup 강화 |
+| 7 | Albu transform 4종 추가 (stage1만, 각 p=0.3) | CLAHE / RandomBrightnessContrast / GaussNoise / MotionBlur |
 
 7가지 변경 중 5가지를 적용했고, batch와 lr은 환경 제약상 유지했습니다 (v3에서 batch 16 + lr 0.00025로 학습 plateau 도달 확인).
 
@@ -140,7 +140,7 @@ image_dirs=['dataset_yolo/images/train', 'synthetic_v3/images/train'],
 label_dirs=['dataset_yolo/labels/train', 'synthetic_v3/labels/train'],
 ```
 
-- **dataset_yolo** (K-code 8302 train / 2090 val): 정제된 원본 학습 데이터입니다 (`eda/04b_team_common_preprocessing.ipynb` 결과).
+- dataset_yolo (K-code 8302 train / 2090 val): 정제된 원본 학습 데이터입니다 (`eda/04b_team_common_preprocessing.ipynb` 결과).
 - **synthetic_v2 또는 synthetic_v3**: 합성 데이터 (버전별 카운트는 위 섹션 참조).
 
 ---
@@ -154,5 +154,5 @@ label_dirs=['dataset_yolo/labels/train', 'synthetic_v3/labels/train'],
 | palm 마스크 생성 | `data/synthetic/palm_mask_rembg_colab.ipynb` |
 | v4 학습 노트북 | `training/notebooks/rtmdet_tiny_synth_train_v4.ipynb` |
 | baseline 진단 | `docs/diagnosis_issues.md` |
-| 처방 우선순위 | `docs/diagnosis_solutions.md` |
+| 개선안 우선순위 | `docs/diagnosis_solutions.md` |
 | v4 결과 분석 | `docs/v4_summary.md` |

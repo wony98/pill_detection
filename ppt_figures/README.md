@@ -8,8 +8,8 @@ PPT 발표 자료(`docs/healtheat_presentation.pptx`)에 들어간 슬라이드�
 
 | 그룹 | 내용 |
 |---|---|
-| `04_*` | 데이터 이슈 — class long-tail, P/Q/R 이슈 |
-| `05_*` | 배경 다양성 — palm/dark surface 샘플, rembg, 합성 v2/v3 |
+| `04_*` | 데이터 이슈: class long-tail, P/Q/R 이슈 |
+| `05_*` | 배경 다양성: palm/dark surface 샘플, rembg, 합성 v2/v3 |
 | `06_*` | augmentation ablation 결과 |
 | `07_*` | YOLOv8n 베이스라인 진단 (F1/PR/confusion/IoU) |
 | `10_*` | 학습 커브, IoU 분포 |

@@ -1,6 +1,6 @@
 # 3팀 모델 비교 실험 설계서 v4
 
-> 팀원 각자 환경(GPU, 데이터 경로 등)은 자유롭게 구성하고, **결과 비교용 핵심 조건**만 통일합니다.
+> 팀원 각자 환경(GPU, 데이터 경로 등)은 자유롭게 구성하고, 결과 비교용 핵심 조건만 통일합니다.
 
 **v4 변경점**: 증강 Top-3 확정 (3-1 섹션), 프레임워크별 구현 코드 추가 (3-2 섹션)
 
@@ -14,10 +14,10 @@
 
 ## 1. 공통 입력 데이터
 
-- **dataset_yolo v2** (팀 전체 동일 사용, 이미 공유됨)
+- dataset_yolo v2 (팀 전체 동일 사용, 이미 공유됨)
   - train 8,302장 / val 2,090장 / 118 classes
   - Split: GroupShuffleSplit by combo, val_ratio=0.2, seed=42
-- **eval_package.zip** (팀 공유됨)
+- eval_package.zip (팀 공유됨)
   - 실사용 33장 + answer_key.json
 
 ---
@@ -32,8 +32,8 @@ seed          = 42        (재현성 검증 시 seed=100 추가)
 pretrained    = True      (각 모델 공식 기본 가중치)
 ```
 
-- Optimizer / learning rate / scheduler: **각 프레임워크 기본값을 사용합니다** (통일하지 않습니다)
-- 학습 환경(GPU, 로컬/Colab/Kaggle)은 **팀원별 환경에 맞춥니다**
+- Optimizer / learning rate / scheduler: 각 프레임워크 기본값을 사용합니다 (통일하지 않습니다)
+- 학습 환경(GPU, 로컬/Colab/Kaggle)은 팀원별 환경에 맞춥니다
 
 ---
 
@@ -45,9 +45,9 @@ pretrained    = True      (각 모델 공식 기본 가중치)
 
 | 순위 | 기법 | 파라미터 | Δ Top-1 | Δ Top-3 |
 |---|---|---|---|---|
-| 🥇 | **CLAHE** (E1) | `clip_limit=4.0, tile_grid_size=(8,8), p=0.5` | +0.121 | +0.242 |
-| 🥈 | **GaussianBlur** (C1) | `blur_limit=7, p=0.3` | +0.121 | +0.182 |
-| 🥉 | **MotionBlur** (C2) | `blur_limit=7, p=0.3` | +0.121 | +0.182 |
+| 1 | CLAHE (E1) | `clip_limit=4.0, tile_grid_size=(8,8), p=0.5` | +0.121 | +0.242 |
+| 2 | GaussianBlur (C1) | `blur_limit=7, p=0.3` | +0.121 | +0.182 |
+| 3 | MotionBlur (C2) | `blur_limit=7, p=0.3` | +0.121 | +0.182 |
 
 Baseline (증강 없음 기본): Top-1 0.091 / Top-3 0.091
 
@@ -57,7 +57,7 @@ Baseline (증강 없음 기본): Top-1 0.091 / Top-3 0.091
 
 **원칙**: 수학적 완전 동일 불가, "같은 방향의 증강"만 보장. bbox/mask 함께 변환되는 구현만 사용.
 
-#### ultralytics (YOLO / RT-DETR) — Albumentations 몽키패치
+#### ultralytics (YOLO / RT-DETR): Albumentations 몽키패치
 
 ```python
 import sys
@@ -84,7 +84,7 @@ Albumentations.__init__ = _patched_init
 
 그 후 기본 방식대로 `model.train(data='pill.yaml', epochs=15, imgsz=640, batch=16, seed=42)`.
 
-#### torchvision (Faster R-CNN / RetinaNet / SSD) — Albumentations 래핑
+#### torchvision (Faster R-CNN / RetinaNet / SSD): Albumentations 래핑
 
 ```python
 import albumentations as A
@@ -104,7 +104,7 @@ boxes = transformed['bboxes']
 labels = transformed['labels']
 ```
 
-#### rfdetr — albumentations 직접 적용
+#### rfdetr: albumentations 직접 적용
 
 rfdetr 공식 API가 albumentations 지원. 구현 방식은 위 torchvision 방식과 동일 (bbox_params는 COCO 포맷 사용).
 
@@ -121,7 +121,7 @@ mask/bbox 같이 변환되는 것만 사용. albumentations 사용 시 `A.Compos
 
 ### 4-2. 채점 로직 (이름 기반 필수)
 
-**핵심**: class_idx 매핑이 모델마다 다르므로 **`dl_name` 문자열 매칭**으로 채점.
+class_idx 매핑이 모델마다 다르므로 `dl_name` 문자열 매칭으로 채점.
 
 ```python
 # 의사코드
@@ -148,32 +148,32 @@ detection_rate = detected_images / 33
 ## 5. 선발 기준 (필수 고정)
 
 ### 5-1. 1차 필터 (자격 요건)
-- ☑ 학습 완료 (학습 커브 스크린샷 제출)
-- ☑ 33장 Detection rate ≥ 0.8
-- ☑ 33장 미탐지 ≤ 5장
+- 학습 완료 (학습 커브 스크린샷 제출)
+- 33장 Detection rate ≥ 0.8
+- 33장 미탐지 ≤ 5장
 
 ### 5-2. 2차 주 지표
-- **Top-1 정확도 (33장)** 최고
+- Top-1 정확도 (33장) 최고
 
 ### 5-3. 3차 근접 처리
-Top-1 차이 **±6%p (±2장)** 이내면:
+Top-1 차이 ±6%p (±2장) 이내면:
 1. Top-3 정확도로 tie-break
 
 ### 5-4. 4차 재현성 검증
-- 상위 2-3개 후보 → **seed=100으로 추가 학습 1회**
-- seed=42와 seed=100 **모두 상위권**이어야 통과
+- 상위 2-3개 후보 → seed=100으로 추가 학습 1회
+- seed=42와 seed=100 모두 상위권이어야 통과
 
 ### 5-5. 5차 최종
-- 4차 통과 모델 중 **2회 Top-1 평균 최고**
+- 4차 통과 모델 중 2회 Top-1 평균 최고
 
 ---
 
 ## 6. 산출물 (필수 제출)
 
 ### 6-1. 필수 제출
-1. **결과 JSON** (아래 형식 준수)
-2. **학습 커브 스크린샷** (loss, mAP 등)
-3. **학습 설정 기록** (args.yaml 또는 하이퍼파라미터)
+1. 결과 JSON (아래 형식 준수)
+2. 학습 커브 스크린샷 (loss, mAP 등)
+3. 학습 설정 기록 (args.yaml 또는 하이퍼파라미터)
 
 ### 6-2. JSON 형식 (필수 준수)
 ```json
@@ -210,11 +210,11 @@ Top-1 차이 **±6%p (±2장)** 이내면:
 
 ## 7. 금지 사항 (필수 준수)
 
-- ❌ **epochs, imgsz, seed 임의 변경** (batch만 GPU 메모리 맞춰 조정 가능)
-- ❌ **증강 Top-3 외 임의 추가** (CLAHE / GaussianBlur / MotionBlur만)
-- ❌ **Top-3 파라미터 임의 변경** (3-1 표의 값 그대로)
-- ❌ **평가셋 이미지를 학습에 포함**
-- ❌ **평가 로직 임의 변경** (이름 기반 채점 필수)
+- epochs, imgsz, seed 임의 변경 (batch만 GPU 메모리 맞춰 조정 가능)
+- 증강 Top-3 외 임의 추가 (CLAHE / GaussianBlur / MotionBlur만)
+- Top-3 파라미터 임의 변경 (3-1 표의 값 그대로)
+- 평가셋 이미지를 학습에 포함
+- 평가 로직 임의 변경 (이름 기반 채점 필수)
 
 ---
 
@@ -229,4 +229,4 @@ Top-1 차이 **±6%p (±2장)** 이내면:
 
 ---
 
-**본 설계서의 모든 조건은 공정 비교를 위한 최소 통일 조건입니다.**
+본 설계서의 모든 조건은 공정 비교를 위한 최소 통일 조건입니다.

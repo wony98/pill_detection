@@ -80,7 +80,7 @@ inference_demo.py 호출 시 또는 코드 내부에서 conf threshold 변경 �
 CONF_THRESHOLD = 0.25   # v2 default 0.05 → v4 권장 0.25
 ```
 
-이유: v4는 confidence 분포가 v2보다 선명해 conf 0.25에서 Top-1/Top-3 손해 0, FP 84 → 10으로 88% 감소.
+이유: conf 0.25에서 Top-1/Top-3 손해 0, FP 84 → 10으로 88% 감소를 관측했습니다.
 
 ## 트러블슈팅
 

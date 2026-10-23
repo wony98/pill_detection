@@ -1,0 +1,205 @@
+[
+  {
+    "label": "archive_v6",
+    "kind": "training_history",
+    "source_sha256": "1ece4539397b77bb0a27b6b296b9fbbeca2f3e2e9d8a6b72f3e56b71436949c6",
+    "params": {
+      "seed": 100,
+      "max_epochs": 15,
+      "batch_size": 16,
+      "num_classes": 118,
+      "learning_rate": 0.00025
+    },
+    "evidence": {
+      "archive_sha256": "1ece4539397b77bb0a27b6b296b9fbbeca2f3e2e9d8a6b72f3e56b71436949c6",
+      "config_member": "20260503_151609/vis_data/config.py",
+      "config_sha256": "965aafc2eaf9fe97fa5b6ed6699283878692a6cba57e6896f17acf3150ec7e4c",
+      "scalar_member": "20260503_151609/vis_data/scalars.json",
+      "scalar_sha256": "cdaf8cad32047b8cad2ddf0c280fa7818f6db5ea5dbd4e5875de8ce17632f1a9",
+      "scalar_rows": 299,
+      "checkpoint_member": "best_coco_bbox_mAP_epoch_14.pth",
+      "checkpoint_sha256": "b9e3c3f33a0572b02d2f8b9c1fc05d1d088e083d85ee8ebb92c9a846f4cf2f38",
+      "historical_time_label": "20260503_151609",
+      "historical_timezone": "UNKNOWN",
+      "bundle_link": "same archive and log directory; not proof of evaluation identity",
+      "evaluation_link": "UNRESOLVED",
+      "evaluation_notebook_sha256": "689bed7d8b703e1ff9c7ad538700ea16387127bd7451f46b016814e80393df0a",
+      "current_assets_sha256": "661c172a945750e8b34bc4f47c2deb95c2b9998e6568820b7e753c5de1695790",
+      "historical_asset_identity": "UNRESOLVED: hashes describe present files, not files at evaluation time"
+    }
+  },
+  {
+    "label": "archive_v3",
+    "kind": "training_history",
+    "source_sha256": "1c0a977813e346cf50d3e384eab514e46f4c80b306a24aad472b73c095b51a64",
+    "params": {
+      "seed": 100,
+      "max_epochs": 13,
+      "batch_size": 16,
+      "num_classes": 118,
+      "learning_rate": 0.00025
+    },
+    "evidence": {
+      "archive_sha256": "1c0a977813e346cf50d3e384eab514e46f4c80b306a24aad472b73c095b51a64",
+      "config_member": "20260506_022615/vis_data/config.py",
+      "config_sha256": "8844dada3e43ae43ae477e9d9d554a0f9c55569a37be34280b27e5f46bec40d0",
+      "scalar_member": "20260506_022615/vis_data/scalars.json",
+      "scalar_sha256": "d9f539873aa38d453c539c5d8b47cd0c3aa0a6ec9554e849b46cc2bee5c7893d",
+      "scalar_rows": 246,
+      "checkpoint_member": "best_coco_bbox_mAP_epoch_11.pth",
+      "checkpoint_sha256": "fde717870fa7beca1e8a9d94f9b965979ce3f2d558998e99328e2227811d6d2e",
+      "historical_time_label": "20260506_022615",
+      "historical_timezone": "UNKNOWN",
+      "bundle_link": "same archive and log directory; not proof of evaluation identity",
+      "evaluation_link": "UNRESOLVED",
+      "evaluation_notebook_sha256": "689bed7d8b703e1ff9c7ad538700ea16387127bd7451f46b016814e80393df0a",
+      "current_assets_sha256": "661c172a945750e8b34bc4f47c2deb95c2b9998e6568820b7e753c5de1695790",
+      "historical_asset_identity": "UNRESOLVED: hashes describe present files, not files at evaluation time"
+    }
+  },
+  {
+    "label": "archive_v4",
+    "kind": "training_history",
+    "source_sha256": "89568d6ffcf1445f56350e1fcbd419b78a2252a05c4845e16ff31af262002c24",
+    "params": {
+      "seed": 100,
+      "max_epochs": 13,
+      "batch_size": 16,
+      "num_classes": 118,
+      "learning_rate": 0.00025
+    },
+    "evidence": {
+      "archive_sha256": "89568d6ffcf1445f56350e1fcbd419b78a2252a05c4845e16ff31af262002c24",
+      "config_member": "20260506_100358/vis_data/config.py",
+      "config_sha256": "6033a3b78f116c5a1b231cc08044fdecf74db61e4a01107e9a51ae08c195dbe3",
+      "scalar_member": "20260506_100358/vis_data/scalars.json",
+      "scalar_sha256": "bb2730c365963859ab9e7efeb561c2968a30b6dce354011daa14f39721999f3d",
+      "scalar_rows": 246,
+      "checkpoint_member": "best_coco_bbox_mAP_epoch_12.pth",
+      "checkpoint_sha256": "dd6dde2600752744321f5a266f3d1366c1d030762300ee61b09682bad18f77f7",
+      "historical_time_label": "20260506_100358",
+      "historical_timezone": "UNKNOWN",
+      "bundle_link": "same archive and log directory; not proof of evaluation identity",
+      "evaluation_link": "UNRESOLVED",
+      "evaluation_notebook_sha256": "689bed7d8b703e1ff9c7ad538700ea16387127bd7451f46b016814e80393df0a",
+      "current_assets_sha256": "661c172a945750e8b34bc4f47c2deb95c2b9998e6568820b7e753c5de1695790",
+      "historical_asset_identity": "UNRESOLVED: hashes describe present files, not files at evaluation time"
+    }
+  },
+  {
+    "label": "baseline",
+    "kind": "evaluation_history",
+    "source_sha256": "3d7aa21564462fc804e575c7d653d13296a4ea183dc4afd8c9dd4bf471fe4636",
+    "params": {
+      "exp_name": "rtmdet_tiny_synth_e15_seed100",
+      "model_framework": "mmdet rtmdet_tiny",
+      "model_params_M": 4.9,
+      "batch_size_used": 16,
+      "seed": 100,
+      "conf_threshold": 0.05,
+      "nms_iou": 0.5,
+      "best_epoch": 15,
+      "eval_version": "v4"
+    },
+    "evidence": {
+      "evaluation_sha256": "3d7aa21564462fc804e575c7d653d13296a4ea183dc4afd8c9dd4bf471fe4636",
+      "gt_set_sha256": "20d8da2c0019248e3e1c8c407135975278db2da46f4e3885aa34e690338c785d",
+      "reported_created_at": "2026-05-01T10:15:08",
+      "historical_timezone": "UNKNOWN",
+      "checkpoint_link": "UNRESOLVED",
+      "config_link": "UNRESOLVED",
+      "reason": "evaluation JSON has no checkpoint/config hash or path",
+      "metric_rule": "existing notebook GT-order greedy IoU>=0.5; stored predictions; no new inference",
+      "evaluation_notebook_sha256": "689bed7d8b703e1ff9c7ad538700ea16387127bd7451f46b016814e80393df0a",
+      "current_assets_sha256": "661c172a945750e8b34bc4f47c2deb95c2b9998e6568820b7e753c5de1695790",
+      "historical_asset_identity": "UNRESOLVED: hashes describe present files, not files at evaluation time"
+    }
+  },
+  {
+    "label": "v2",
+    "kind": "evaluation_history",
+    "source_sha256": "573e0464df43e220aae09443511d2149fea63ba094e23c5f2c15ec5b5ab21512",
+    "params": {
+      "exp_name": "rtmdet_tiny_synth_e14_seed100",
+      "model_framework": "mmdet rtmdet_tiny",
+      "model_params_M": 4.9,
+      "batch_size_used": 16,
+      "seed": 100,
+      "conf_threshold": 0.05,
+      "nms_iou": 0.5,
+      "best_epoch": 14,
+      "eval_version": "v4"
+    },
+    "evidence": {
+      "evaluation_sha256": "573e0464df43e220aae09443511d2149fea63ba094e23c5f2c15ec5b5ab21512",
+      "gt_set_sha256": "20d8da2c0019248e3e1c8c407135975278db2da46f4e3885aa34e690338c785d",
+      "reported_created_at": "2026-05-03T19:16:20",
+      "historical_timezone": "UNKNOWN",
+      "checkpoint_link": "UNRESOLVED",
+      "config_link": "UNRESOLVED",
+      "reason": "evaluation JSON has no checkpoint/config hash or path",
+      "metric_rule": "existing notebook GT-order greedy IoU>=0.5; stored predictions; no new inference",
+      "evaluation_notebook_sha256": "689bed7d8b703e1ff9c7ad538700ea16387127bd7451f46b016814e80393df0a",
+      "current_assets_sha256": "661c172a945750e8b34bc4f47c2deb95c2b9998e6568820b7e753c5de1695790",
+      "historical_asset_identity": "UNRESOLVED: hashes describe present files, not files at evaluation time"
+    }
+  },
+  {
+    "label": "v3",
+    "kind": "evaluation_history",
+    "source_sha256": "91259ecbc0ad664331a17d836d1acd0e8ef5dd28a07925c12c32530e2c9c86e5",
+    "params": {
+      "exp_name": "rtmdet_tiny_synth_e11_seed100",
+      "model_framework": "mmdet rtmdet_tiny",
+      "model_params_M": 4.9,
+      "batch_size_used": 16,
+      "seed": 100,
+      "conf_threshold": 0.05,
+      "nms_iou": 0.5,
+      "best_epoch": 11,
+      "eval_version": "v4"
+    },
+    "evidence": {
+      "evaluation_sha256": "91259ecbc0ad664331a17d836d1acd0e8ef5dd28a07925c12c32530e2c9c86e5",
+      "gt_set_sha256": "20d8da2c0019248e3e1c8c407135975278db2da46f4e3885aa34e690338c785d",
+      "reported_created_at": "2026-05-06T05:56:33",
+      "historical_timezone": "UNKNOWN",
+      "checkpoint_link": "UNRESOLVED",
+      "config_link": "UNRESOLVED",
+      "reason": "evaluation JSON has no checkpoint/config hash or path",
+      "metric_rule": "existing notebook GT-order greedy IoU>=0.5; stored predictions; no new inference",
+      "evaluation_notebook_sha256": "689bed7d8b703e1ff9c7ad538700ea16387127bd7451f46b016814e80393df0a",
+      "current_assets_sha256": "661c172a945750e8b34bc4f47c2deb95c2b9998e6568820b7e753c5de1695790",
+      "historical_asset_identity": "UNRESOLVED: hashes describe present files, not files at evaluation time"
+    }
+  },
+  {
+    "label": "v4",
+    "kind": "evaluation_history",
+    "source_sha256": "8d552d90e19a64f26ab7189f2f60798cef9d35aeb88357b3e6a75680e2c883d1",
+    "params": {
+      "exp_name": "rtmdet_tiny_synth_v4_e13_seed100",
+      "model_framework": "mmdet rtmdet_tiny",
+      "model_params_M": 4.9,
+      "batch_size_used": 16,
+      "seed": 100,
+      "conf_threshold": 0.05,
+      "nms_iou": 0.5,
+      "best_epoch": 13,
+      "eval_version": "v4"
+    },
+    "evidence": {
+      "evaluation_sha256": "8d552d90e19a64f26ab7189f2f60798cef9d35aeb88357b3e6a75680e2c883d1",
+      "gt_set_sha256": "20d8da2c0019248e3e1c8c407135975278db2da46f4e3885aa34e690338c785d",
+      "reported_created_at": "2026-05-06T14:32:59",
+      "historical_timezone": "UNKNOWN",
+      "checkpoint_link": "UNRESOLVED",
+      "config_link": "UNRESOLVED",
+      "reason": "evaluation JSON has no checkpoint/config hash or path",
+      "metric_rule": "existing notebook GT-order greedy IoU>=0.5; stored predictions; no new inference",
+      "evaluation_notebook_sha256": "689bed7d8b703e1ff9c7ad538700ea16387127bd7451f46b016814e80393df0a",
+      "current_assets_sha256": "661c172a945750e8b34bc4f47c2deb95c2b9998e6568820b7e753c5de1695790",
+      "historical_asset_identity": "UNRESOLVED: hashes describe present files, not files at evaluation time"
+    }
+  }
+]

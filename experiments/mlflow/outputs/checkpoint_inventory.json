@@ -1,0 +1,86 @@
+[
+  {
+    "source": "archive_v6",
+    "member": "best_coco_bbox_mAP_epoch_14.pth",
+    "sha256": "b9e3c3f33a0572b02d2f8b9c1fc05d1d088e083d85ee8ebb92c9a846f4cf2f38",
+    "bytes": 24479290,
+    "evaluation_link": "UNRESOLVED",
+    "evidence": "co-packaged in this archive; no checkpoint load or evaluation binding"
+  },
+  {
+    "source": "archive_v3",
+    "member": "best_coco_bbox_mAP_epoch_11.pth",
+    "sha256": "fde717870fa7beca1e8a9d94f9b965979ce3f2d558998e99328e2227811d6d2e",
+    "bytes": 43904720,
+    "evaluation_link": "UNRESOLVED",
+    "evidence": "co-packaged in this archive; no checkpoint load or evaluation binding"
+  },
+  {
+    "source": "archive_v4",
+    "member": "best_coco_bbox_mAP_epoch_12.pth",
+    "sha256": "dd6dde2600752744321f5a266f3d1366c1d030762300ee61b09682bad18f77f7",
+    "bytes": 44034384,
+    "evaluation_link": "UNRESOLVED",
+    "evidence": "co-packaged in this archive; no checkpoint load or evaluation binding"
+  },
+  {
+    "source": "baseline_canonical",
+    "member": "best_coco_bbox_mAP_epoch_15.pth",
+    "sha256": "1da6c9fc14b8fde2815f0155e905d08a4a20d3637f769413cb98c8f4b0779124",
+    "bytes": 43747984,
+    "hub_url": "https://huggingface.co/wony98/healtheat-pill-rtmdet-baseline",
+    "hub_status": "documented reference; remote identity unverified",
+    "evaluation_link": "UNRESOLVED",
+    "evidence": "file bytes only; weights never loaded"
+  },
+  {
+    "source": "baseline_compat",
+    "member": "baseline.pth",
+    "sha256": "a8ab151afd4fd80ce61f57f8213e9c1a45e268b501898fadcbf7da763faae61b",
+    "bytes": 24337530,
+    "hub_url": "https://huggingface.co/wony98/healtheat-pill-rtmdet-baseline",
+    "hub_status": "documented reference; remote identity unverified",
+    "evaluation_link": "UNRESOLVED",
+    "evidence": "file bytes only; weights never loaded"
+  },
+  {
+    "source": "package_v4_named_copy",
+    "member": "best_coco_bbox_mAP_epoch_13.pth",
+    "sha256": "a8ab151afd4fd80ce61f57f8213e9c1a45e268b501898fadcbf7da763faae61b",
+    "bytes": 24337530,
+    "hub_url": "",
+    "hub_status": "documented reference; remote identity unverified",
+    "evaluation_link": "UNRESOLVED",
+    "evidence": "file bytes only; weights never loaded"
+  },
+  {
+    "source": "v2_backup",
+    "member": "v2_e15_best_e14.pth",
+    "sha256": "b9e3c3f33a0572b02d2f8b9c1fc05d1d088e083d85ee8ebb92c9a846f4cf2f38",
+    "bytes": 24479290,
+    "hub_url": "",
+    "hub_status": "documented reference; remote identity unverified",
+    "evaluation_link": "UNRESOLVED",
+    "evidence": "file bytes only; weights never loaded"
+  },
+  {
+    "source": "v4_canonical",
+    "member": "best_coco_bbox_mAP_epoch_12.pth",
+    "sha256": "dd6dde2600752744321f5a266f3d1366c1d030762300ee61b09682bad18f77f7",
+    "bytes": 44034384,
+    "hub_url": "https://huggingface.co/wony98/healtheat-pill-rtmdet-v4",
+    "hub_status": "documented reference; remote identity unverified",
+    "evaluation_link": "UNRESOLVED",
+    "evidence": "file bytes only; weights never loaded"
+  },
+  {
+    "source": "v4_demo",
+    "member": "v4.pth",
+    "sha256": "dd6dde2600752744321f5a266f3d1366c1d030762300ee61b09682bad18f77f7",
+    "bytes": 44034384,
+    "hub_url": "https://huggingface.co/wony98/healtheat-pill-rtmdet-v4",
+    "hub_status": "documented reference; remote identity unverified",
+    "evaluation_link": "UNRESOLVED",
+    "evidence": "file bytes only; weights never loaded"
+  }
+]

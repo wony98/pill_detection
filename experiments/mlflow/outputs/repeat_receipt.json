@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "mode": "historical_backfill_no_training_no_inference",
+  "mlflow_version": "3.17.2",
+  "code_sha256": "dc07f56e869a7f7d35b8bdf5cf83dddba92ae2e45c0486296e9a90f5e1c0b51f",
+  "source_files_unchanged": 80,
+  "runs": 7,
+  "new_runs": 0,
+  "reused_runs": 7,
+  "all_metric_histories_verified": true,
+  "all_run_artifacts_verified": true,
+  "checkpoint_files": 9,
+  "unique_checkpoint_hashes": 5,
+  "evaluation_checkpoint_links": "UNRESOLVED",
+  "model_registry_used": false
+}

@@ -1,0 +1,69 @@
+{
+  "archives": [
+    {
+      "label": "archive_v6",
+      "path": "<BACKUP_DIR>/seungwon_v6_work_dir.zip"
+    },
+    {
+      "label": "archive_v3",
+      "path": "<BACKUP_DIR>/seungwon_v3_work_dir.zip"
+    },
+    {
+      "label": "archive_v4",
+      "path": "<BACKUP_DIR>/seungwon_v4_work_dir.zip"
+    }
+  ],
+  "evaluations": [
+    {
+      "label": "baseline",
+      "path": "<PILL_REPO>/eval/rtmdet_tiny_synth_e15_seed100_results.json"
+    },
+    {
+      "label": "v2",
+      "path": "<PILL_REPO>/eval/rtmdet_tiny_synth_e14_seed100_results.json"
+    },
+    {
+      "label": "v3",
+      "path": "<PILL_REPO>/eval/rtmdet_tiny_synth_e11_seed100_results.json"
+    },
+    {
+      "label": "v4",
+      "path": "<PILL_REPO>/eval/rtmdet_tiny_synth_v4_e13_seed100_results.json"
+    }
+  ],
+  "checkpoints": [
+    {
+      "label": "baseline_canonical",
+      "path": "<TEAM_REPO>/models/RTMDet/best_coco_bbox_mAP_epoch_15.pth",
+      "hub_url": "https://huggingface.co/wony98/healtheat-pill-rtmdet-baseline"
+    },
+    {
+      "label": "baseline_compat",
+      "path": "<PILL_REPO>/demo/baseline/baseline.pth",
+      "hub_url": "https://huggingface.co/wony98/healtheat-pill-rtmdet-baseline"
+    },
+    {
+      "label": "package_v4_named_copy",
+      "path": "<PILL_REPO>/rtmdet_demo_package_v4/best_coco_bbox_mAP_epoch_13.pth"
+    },
+    {
+      "label": "v2_backup",
+      "path": "<BACKUP_DIR>/v2_e15_best_e14.pth"
+    },
+    {
+      "label": "v4_canonical",
+      "path": "<TEAM_REPO>/models/RTMDet/v4/best_coco_bbox_mAP_epoch_12.pth",
+      "hub_url": "https://huggingface.co/wony98/healtheat-pill-rtmdet-v4"
+    },
+    {
+      "label": "v4_demo",
+      "path": "<PILL_REPO>/demo/v4/v4.pth",
+      "hub_url": "https://huggingface.co/wony98/healtheat-pill-rtmdet-v4"
+    }
+  ],
+  "evaluation_notebook": "<PILL_REPO>/analysis/03_v4_evaluation_analysis.ipynb",
+  "evaluation_assets": {
+    "images": "<PILL_REPO>/eval/test_images",
+    "labels": "<PILL_REPO>/eval/test_labels"
+  }
+}

@@ -3,6 +3,8 @@
 Codeit AI 부트캠프 초급 프로젝트 — **3팀 HealthEat**.
 이미지에서 최대 4개 알약을 탐지하고 118종 클래스로 분류하는 object detection 모델.
 
+[MLflow로 기존 실험 기록 사후 정리](experiments/mlflow/README.md) — 학습 로그와 평가 결과를 원본 파일 해시와 함께 정리하고, 평가와 체크포인트의 연결은 미확정으로 표시합니다.
+
 ---
 
 ## 결과 비교 (4-way)

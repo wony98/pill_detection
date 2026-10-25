@@ -1,0 +1,19 @@
+{
+  "schema": "healtheat-forward-v1",
+  "gt_version": "v2",
+  "gt_sha256": "3765b4441cbcfae33ca6380bbd66ebeb8bb9b467de6e2097c332a7a4b6d79720",
+  "ground_truth_file_sha256": "0a1296f420b12b85c1d5d03c1d5f1671534ca8448f6270ee6e8c374492f7174d",
+  "label_manifest_sha256": "84a7c62dc5e2b73599ec158b3d6d070bc18b65e7d17a1ccf23f1e66ef4738226",
+  "input_manifest_sha256": "4a7a6c4cdd5cb42812096e337fc2034aa724ab77f3d053a45b29aa12d7164df8",
+  "postprocess_source": "training/notebooks/rtmdet_tiny_synth_train_v4.ipynb",
+  "postprocess_source_sha256": "ee09f1e68ec60bea2bdc683da0823a56922bfc360cb79a390f50f65febdd570d",
+  "forward_code_sha256": "aa49172cb39b3f33f27adbe6cfe5405bb4ec3039a8643239f349ddef294d031b",
+  "thresholds": [
+    0.05,
+    0.25
+  ],
+  "grouping_iou": 0.5,
+  "topk": 3,
+  "historical_checkpoint_lineage": "UNRESOLVED",
+  "reference_mode": "same reused image set; GT-v2 rescoring"
+}

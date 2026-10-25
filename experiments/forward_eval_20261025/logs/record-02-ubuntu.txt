@@ -1,0 +1,6 @@
+2026/10/25 17:58:10 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2026/10/25 17:58:10 INFO mlflow.store.db.utils: Updating database tables
+{
+  "status": "PASS",
+  "run_id": "78d809eff3fd4c058d1d6cff958c01f3"
+}

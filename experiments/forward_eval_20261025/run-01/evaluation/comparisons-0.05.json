@@ -1,0 +1,4555 @@
+[
+  {
+    "rule": "reference order; highest IoU unused candidate >=0.5; ties by candidate order",
+    "reference_is_not_ground_truth": true,
+    "same_gt": true,
+    "same_postprocess": false,
+    "postprocess": {
+      "reference": {
+        "conf_threshold": 0.05,
+        "nms_iou": 0.5
+      },
+      "candidate": {
+        "conf_threshold": 0.05,
+        "nms_iou": 0.5
+      }
+    },
+    "reference_only_images": [],
+    "candidate_only_images": [],
+    "images": [
+      {
+        "filename": "게보린정 300mg_3.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9793814895852786,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.05019763112068176
+          }
+        ]
+      },
+      {
+        "filename": "글리아타민연질캡슐.png",
+        "reference_boxes": 6,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 1,
+        "matched": 5,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9760851437747046,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.10169932246208191
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.8207029195747204,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.06519383192062378
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 4,
+            "iou": 0.7469057929928495,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.006679631769657135
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 3,
+            "iou": 0.8915688973886754,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.0025441646575927734
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 5,
+            "iou": 0.8513785971374817,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.002861298620700836
+          }
+        ]
+      },
+      {
+        "filename": "낙소졸정 500_20mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 7,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 3,
+        "matched": 4,
+        "top1_agreements": 3,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.938402844565159,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.07438310980796814
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9623451266611182,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.32152581214904785
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9471441323438697,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.09256279468536377
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 4,
+            "iou": 0.9445576112684502,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.003263622522354126
+          }
+        ]
+      },
+      {
+        "filename": "넥시움정 40mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9210273581522506,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.04081147909164429
+          }
+        ]
+      },
+      {
+        "filename": "노바스크정 5mg.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9742955154143286,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.04212605953216553
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.6068260517881399,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.12185424566268921
+          }
+        ]
+      },
+      {
+        "filename": "놀텍정 10mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 1,
+        "matched": 4,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9523131541005085,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.09767431020736694
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.9625145009286767,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.1775493025779724
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 4,
+            "iou": 0.6389365038623888,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.02090737223625183
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 3,
+            "iou": 0.5286100811138599,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.017215386033058167
+          }
+        ]
+      },
+      {
+        "filename": "디카테오정.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.978386950988127,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.022378861904144287
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9667292585730844,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.2457679808139801
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9902869366939345,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.17091771960258484
+          }
+        ]
+      },
+      {
+        "filename": "라시도필캡슐(비매품).png",
+        "reference_boxes": 4,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 1,
+        "matched": 4,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.8724084634391759,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.010936379432678223
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9400317758703638,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.08846914768218994
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 3,
+            "iou": 0.8778283392917763,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.019661881029605865
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 4,
+            "iou": 0.6218447886930916,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.005471430718898773
+          }
+        ]
+      },
+      {
+        "filename": "마이칼디정.png",
+        "reference_boxes": 6,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 1,
+        "matched": 4,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9646532293593991,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.12946397066116333
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9631812487119276,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.06303641200065613
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.8183588385218769,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.12828393280506134
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.8126988240182048,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.0032426640391349792
+          }
+        ]
+      },
+      {
+        "filename": "맥시부펜이알정.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.8994048732535573,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.07100629806518555
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9161679061797751,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.09260928630828857
+          }
+        ]
+      },
+      {
+        "filename": "뮤테란캡슐 100mg.png",
+        "reference_boxes": 6,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 3,
+        "matched": 5,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9292579824329974,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.0997152328491211
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.735811091996469,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.15479245781898499
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.7588295840128755,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.10333752632141113
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 7,
+            "iou": 0.6783173312084729,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.06001030653715134
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 4,
+            "iou": 0.50706620414754,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.05593603849411011
+          }
+        ]
+      },
+      {
+        "filename": "비모보정 500_20mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 4,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 1,
+        "matched": 3,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9111715811532582,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.1156112551689148
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9495247605216537,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.10741107165813446
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.8110604235088652,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.01728692650794983
+          }
+        ]
+      },
+      {
+        "filename": "비오플250캡슐.png",
+        "reference_boxes": 9,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 7,
+        "candidate_only_boxes": 6,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.8649496983136257,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.3454356789588928
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 6,
+            "iou": 0.8221327594836545,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.08737849444150925
+          }
+        ]
+      },
+      {
+        "filename": "비타비백정(비타민).png",
+        "reference_boxes": 4,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9459168418916485,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.21155446767807007
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.6412124290680907,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.0593038946390152
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.8684979492980234,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.1243552677333355
+          }
+        ]
+      },
+      {
+        "filename": "아보다트연질캡슐 0.5mg_1.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9650268007655775,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.013575255870819092
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.5556944692089081,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.03227037936449051
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.8127361149593547,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.21062207221984863
+          }
+        ]
+      },
+      {
+        "filename": "아스피린프로텍트정100mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9849478301213777,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.3094378113746643
+          }
+        ]
+      },
+      {
+        "filename": "아토르바정 10mg.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9632376886294239,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.00515669584274292
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9620262837129084,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.03179746866226196
+          }
+        ]
+      },
+      {
+        "filename": "엔테론정 150mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 3,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9885300221971964,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.06790822744369507
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9884213331560372,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.25493940711021423
+          }
+        ]
+      },
+      {
+        "filename": "울트라셋이알서방정.png",
+        "reference_boxes": 11,
+        "candidate_boxes": 12,
+        "reference_only_boxes": 4,
+        "candidate_only_boxes": 5,
+        "matched": 7,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9818310284208593,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.0761755108833313
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.8993653607425186,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03679761290550232
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 2,
+            "iou": 0.9204001403164661,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.03902626037597656
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 10,
+            "iou": 0.8382731265358566,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.1340322457253933
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 3,
+            "iou": 0.8884844315784806,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.051032401621341705
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 4,
+            "iou": 0.7782020400309828,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.04317339509725571
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 8,
+            "iou": 0.7588721696517104,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.02802535891532898
+          }
+        ]
+      },
+      {
+        "filename": "인사돌플러스정 35mg_.png",
+        "reference_boxes": 8,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 3,
+        "candidate_only_boxes": 0,
+        "matched": 5,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.6517516881653826,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.08039915561676025
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9109266064252179,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.06349208950996399
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.7678640603827726,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.027963809669017792
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.6172686929098462,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.002320215106010437
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 4,
+            "iou": 0.5945571816597999,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.005089901387691498
+          }
+        ]
+      },
+      {
+        "filename": "인사돌플러스정.png",
+        "reference_boxes": 8,
+        "candidate_boxes": 11,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 3,
+        "matched": 8,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9712904870559644,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.01158052682876587
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.825020363872423,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.014929085969924927
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.8843309813540869,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.06597486138343811
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 5,
+            "iou": 0.9483693350699258,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.16982807219028473
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 6,
+            "iou": 0.7205262039811536,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.06165272742509842
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 9,
+            "iou": 0.5658668169525083,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.05357374995946884
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 3,
+            "iou": 0.8430146002216604,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.040938034653663635
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 4,
+            "iou": 0.7188658207533039,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.05261193588376045
+          }
+        ]
+      },
+      {
+        "filename": "자누비아정 50mg.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 3,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9874118866140039,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.17140641808509827
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9660215168660189,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.010908961296081543
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9451405146993976,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.11850975453853607
+          }
+        ]
+      },
+      {
+        "filename": "자트랄엑스엘정 10mg.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 4,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9511890904144796,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.04285639524459839
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9578636411323495,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.08015662431716919
+          }
+        ]
+      },
+      {
+        "filename": "졸로푸트정 100mg.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 1,
+        "matched": 2,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9639617023604274,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.2995449900627136
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.611065999660449,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.13556164503097534
+          }
+        ]
+      },
+      {
+        "filename": "종근당글리아티린연질캡슐.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9478795754672676,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.07276803255081177
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9788109946671053,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.23997759819030762
+          }
+        ]
+      },
+      {
+        "filename": "지르텍정(세티리진염산염).png",
+        "reference_boxes": 5,
+        "candidate_boxes": 9,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 5,
+        "matched": 4,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9655018164148526,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.12365889549255371
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.7074208190124625,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.09456495195627213
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.589098210704646,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.06866432726383209
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 5,
+            "iou": 0.5911823421262052,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.017258070409297943
+          }
+        ]
+      },
+      {
+        "filename": "지르텍정.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9666326627379508,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.007216393947601318
+          }
+        ]
+      },
+      {
+        "filename": "케이캡정 50mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9041070413657155,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.12786057591438293
+          }
+        ]
+      },
+      {
+        "filename": "쿠에타핀정 25mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9423590642772103,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.03564828634262085
+          }
+        ]
+      },
+      {
+        "filename": "타이레놀500mg.png",
+        "reference_boxes": 8,
+        "candidate_boxes": 9,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 3,
+        "matched": 6,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9607920745996549,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.15266776084899902
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9424569253834819,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.11966633796691895
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9260361758559327,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.06430335342884064
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.9020328345508138,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.023182660341262817
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 4,
+            "iou": 0.8781732123248159,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.015985213220119476
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 7,
+            "iou": 0.904855580597122,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.0204046368598938
+          }
+        ]
+      },
+      {
+        "filename": "타이레놀이알서방정(아세트아미노펜)(수출용).png",
+        "reference_boxes": 8,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 3,
+        "candidate_only_boxes": 3,
+        "matched": 5,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.8898928155510728,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.2161838710308075
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.9143670507247768,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.1719193309545517
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 0,
+            "iou": 0.8698831067128245,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.2761724591255188
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 4,
+            "iou": 0.8764191112834023,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.004805929958820343
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 3,
+            "iou": 0.8478547921123312,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.05130934715270996
+          }
+        ]
+      },
+      {
+        "filename": "트루비타정 60mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 2,
+        "matched": 4,
+        "top1_agreements": 3,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.964315090909541,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.1541106104850769
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 4,
+            "iou": 0.6422742720425725,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.30518270283937454
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.5730587729159675,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.09561175107955933
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 2,
+            "iou": 0.8019782997688166,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.06600137054920197
+          }
+        ]
+      },
+      {
+        "filename": "프로스카정.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9423816199635584,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.13527131080627441
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.966412582982769,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.49286016821861267
+          }
+        ]
+      }
+    ],
+    "metrics": {
+      "reference": {
+        "detection_rate": 0.9361702127659575,
+        "top1_accuracy": 0.2978723404255319,
+        "top3_accuracy": 0.5957446808510638,
+        "image_top1": 0.2727272727272727,
+        "image_top3": 0.5151515151515151,
+        "n_top1": 14,
+        "n_top3": 28,
+        "n_match": 44,
+        "n_false_pos": 99,
+        "total_gt": 47,
+        "n_imgs": 33,
+        "reported_ms_per_image": 132.1
+      },
+      "candidate": {
+        "detection_rate": 0.9574468085106383,
+        "top1_accuracy": 0.5319148936170213,
+        "top3_accuracy": 0.6170212765957447,
+        "image_top1": 0.45454545454545453,
+        "image_top3": 0.5454545454545454,
+        "n_top1": 25,
+        "n_top3": 29,
+        "n_match": 45,
+        "n_false_pos": 105,
+        "total_gt": 47,
+        "n_imgs": 33,
+        "reported_ms_per_image": 1592.282816545459
+      }
+    },
+    "metric_delta_candidate_minus_reference": null,
+    "meaning": "Descriptive stored/new comparison only; not a controlled model-improvement claim",
+    "same_numeric_conditions": true,
+    "historical_postprocess_lineage": "UNRESOLVED; post-hoc stored Top-3 filtering",
+    "forward_postprocess": "float32 pred_instances -> independent threshold -> notebook grouping",
+    "reference_file": "rtmdet_tiny_synth_e11_seed100_results.json"
+  },
+  {
+    "rule": "reference order; highest IoU unused candidate >=0.5; ties by candidate order",
+    "reference_is_not_ground_truth": true,
+    "same_gt": true,
+    "same_postprocess": false,
+    "postprocess": {
+      "reference": {
+        "conf_threshold": 0.05,
+        "nms_iou": 0.5
+      },
+      "candidate": {
+        "conf_threshold": 0.05,
+        "nms_iou": 0.5
+      }
+    },
+    "reference_only_images": [],
+    "candidate_only_images": [],
+    "images": [
+      {
+        "filename": "게보린정 300mg_3.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9800855545744722,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.05035960674285889
+          }
+        ]
+      },
+      {
+        "filename": "글리아타민연질캡슐.png",
+        "reference_boxes": 7,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 1,
+        "matched": 5,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9758442201246228,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.28312990069389343
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.764773965526318,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.04598391056060791
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 2,
+            "iou": 0.6215705768973244,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.012272432446479797
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 5,
+            "iou": 0.679939416540058,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.0010216906666755676
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 3,
+            "iou": 0.7375266642657048,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03804854676127434
+          }
+        ]
+      },
+      {
+        "filename": "낙소졸정 500_20mg.png",
+        "reference_boxes": 6,
+        "candidate_boxes": 7,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 2,
+        "matched": 5,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9829515517005244,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.11690729856491089
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 3,
+            "iou": 0.9516023740312809,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.4167180359363556
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.9490147283610664,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.18916290998458862
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 2,
+            "iou": 0.9279493950493658,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.057619333267211914
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 4,
+            "iou": 0.9103227449438291,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.00554879754781723
+          }
+        ]
+      },
+      {
+        "filename": "넥시움정 40mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9303773110571941,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.13983231782913208
+          }
+        ]
+      },
+      {
+        "filename": "노바스크정 5mg.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9838375749761928,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.05122798681259155
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 1,
+            "iou": 0.5001210662317905,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.0014842301607131958
+          }
+        ]
+      },
+      {
+        "filename": "놀텍정 10mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 2,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9572194404006131,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.04127919673919678
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.938247911161351,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.03784012794494629
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 2,
+            "iou": 0.6937094187149377,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.02485513687133789
+          }
+        ]
+      },
+      {
+        "filename": "디카테오정.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9746851812458438,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.28055912256240845
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9738214561349985,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.06290730834007263
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9773923225156448,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.0954224169254303
+          }
+        ]
+      },
+      {
+        "filename": "라시도필캡슐(비매품).png",
+        "reference_boxes": 4,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 1,
+        "matched": 4,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9362363444930862,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.07176154851913452
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9598881259015016,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.030424833297729492
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9031362788996771,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.04287891089916229
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 4,
+            "iou": 0.916093530488195,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.021510079503059387
+          }
+        ]
+      },
+      {
+        "filename": "마이칼디정.png",
+        "reference_boxes": 8,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 4,
+        "candidate_only_boxes": 1,
+        "matched": 4,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9515712948387829,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.042378902435302734
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.7737972092171818,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.044227004051208496
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.9586972435815331,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.15999940037727356
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 3,
+            "iou": 0.6533801951530294,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.015494123101234436
+          }
+        ]
+      },
+      {
+        "filename": "맥시부펜이알정.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9756843588372899,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.3230741620063782
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9574176203729661,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.24516192078590393
+          }
+        ]
+      },
+      {
+        "filename": "뮤테란캡슐 100mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 4,
+        "matched": 4,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.96652904965687,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.022070229053497314
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.7923050166971682,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.03632655739784241
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.7894109137771216,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.07845093309879303
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 7,
+            "iou": 0.7588035800247493,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.057342529296875
+          }
+        ]
+      },
+      {
+        "filename": "비모보정 500_20mg.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 4,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 1,
+        "matched": 3,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9485605844896442,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.03171664476394653
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9328388229039366,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.09616135060787201
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.6730348625220532,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.03723813593387604
+          }
+        ]
+      },
+      {
+        "filename": "비오플250캡슐.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 6,
+        "matched": 2,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9702918542416068,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.1552879810333252
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 6,
+            "iou": 0.6785087388476424,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.1464126780629158
+          }
+        ]
+      },
+      {
+        "filename": "비타비백정(비타민).png",
+        "reference_boxes": 6,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 3,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9159979566047552,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.34773480892181396
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.5012542454706017,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.002359539270401001
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.6379390687372936,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.011382192373275757
+          }
+        ]
+      },
+      {
+        "filename": "아보다트연질캡슐 0.5mg_1.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9294710954994713,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.1464061737060547
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.7352538585277948,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.2324364259839058
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.8520576394291671,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.1678003966808319
+          }
+        ]
+      },
+      {
+        "filename": "아스피린프로텍트정100mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.990324286495433,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.02904486656188965
+          }
+        ]
+      },
+      {
+        "filename": "아토르바정 10mg.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9062219335751224,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.08883577585220337
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9828558920972005,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.11166411638259888
+          }
+        ]
+      },
+      {
+        "filename": "엔테론정 150mg.png",
+        "reference_boxes": 7,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 5,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9838368160285598,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.09298890829086304
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9852724608289952,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.22745689749717712
+          }
+        ]
+      },
+      {
+        "filename": "울트라셋이알서방정.png",
+        "reference_boxes": 14,
+        "candidate_boxes": 12,
+        "reference_only_boxes": 7,
+        "candidate_only_boxes": 5,
+        "matched": 7,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.969452401669538,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.18014106154441833
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.8951755550097067,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.09126108884811401
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 8,
+            "iou": 0.5343970251867476,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.21040893346071243
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 2,
+            "iou": 0.9109325541701038,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03862066566944122
+          },
+          {
+            "reference_index": 8,
+            "candidate_index": 10,
+            "iou": 0.8870849718380456,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.01881564036011696
+          },
+          {
+            "reference_index": 9,
+            "candidate_index": 3,
+            "iou": 0.928307110508319,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.053348831832408905
+          },
+          {
+            "reference_index": 10,
+            "candidate_index": 6,
+            "iou": 0.8789631478459985,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.020318232476711273
+          }
+        ]
+      },
+      {
+        "filename": "인사돌플러스정 35mg_.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 1,
+        "matched": 4,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.6806826098924783,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.12418435513973236
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 4,
+            "iou": 0.6616178592403437,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.17151455581188202
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.654088508741188,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.0272354856133461
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 0,
+            "iou": 0.876048576737295,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.1716996766626835
+          }
+        ]
+      },
+      {
+        "filename": "인사돌플러스정.png",
+        "reference_boxes": 8,
+        "candidate_boxes": 11,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 5,
+        "matched": 6,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9705469515916179,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.08548182249069214
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.8125462043400515,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.08343172073364258
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.8245861814988898,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.10291914641857147
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 5,
+            "iou": 0.6940375902316666,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.08287332952022552
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 3,
+            "iou": 0.7164778376155979,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.017307177186012268
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 6,
+            "iou": 0.5555170945060965,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.010790050029754639
+          }
+        ]
+      },
+      {
+        "filename": "자누비아정 50mg.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 3,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9716941242534611,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.25323179364204407
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9735194033960289,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.22904956340789795
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 5,
+            "iou": 0.5801037318409598,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.06677953898906708
+          }
+        ]
+      },
+      {
+        "filename": "자트랄엑스엘정 10mg.png",
+        "reference_boxes": 6,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 1,
+        "matched": 5,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9506864671862997,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.08172965049743652
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.8879664791539854,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.1492772102355957
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 4,
+            "iou": 0.5688490232589152,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.17171534150838852
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.8128858707186688,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.07560515403747559
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 2,
+            "iou": 0.5905474117243805,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.07710187137126923
+          }
+        ]
+      },
+      {
+        "filename": "졸로푸트정 100mg.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 1,
+        "matched": 2,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9093766794075004,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.06747657060623169
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.952057723402897,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.521503135561943
+          }
+        ]
+      },
+      {
+        "filename": "종근당글리아티린연질캡슐.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9734126426744922,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.07500463724136353
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9700215116821451,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.04118791222572327
+          }
+        ]
+      },
+      {
+        "filename": "지르텍정(세티리진염산염).png",
+        "reference_boxes": 8,
+        "candidate_boxes": 9,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 2,
+        "matched": 7,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9497426829139426,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.0692790150642395
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 7,
+            "iou": 0.6902479355921269,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.24057993292808533
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 3,
+            "iou": 0.8203469463113,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.08008158951997757
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 8,
+            "iou": 0.5911663488394585,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.05646061152219772
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 2,
+            "iou": 0.846271487075974,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.018468104302883148
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 4,
+            "iou": 0.8142772538687695,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.02749072015285492
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 1,
+            "iou": 0.8545072282092391,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.061975155025720596
+          }
+        ]
+      },
+      {
+        "filename": "지르텍정.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9895127288019363,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.07061880826950073
+          }
+        ]
+      },
+      {
+        "filename": "케이캡정 50mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.8888388882669999,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.07505518198013306
+          }
+        ]
+      },
+      {
+        "filename": "쿠에타핀정 25mg.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.964513584462204,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.16961559653282166
+          }
+        ]
+      },
+      {
+        "filename": "타이레놀500mg.png",
+        "reference_boxes": 8,
+        "candidate_boxes": 9,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 3,
+        "matched": 6,
+        "top1_agreements": 3,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.957992509736334,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.07717370986938477
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.9068393448287406,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.11113619804382324
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.8942488609566027,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.06527110934257507
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.8532488109469614,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.02516615390777588
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 4,
+            "iou": 0.8491188916391441,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.031222380697727203
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 5,
+            "iou": 0.5118283790148407,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.004394926130771637
+          }
+        ]
+      },
+      {
+        "filename": "타이레놀이알서방정(아세트아미노펜)(수출용).png",
+        "reference_boxes": 6,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 4,
+        "matched": 4,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9537965851150848,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.055013447999954224
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.7987865298704792,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.18171755969524384
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.8707026876321096,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.05255052447319031
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 5,
+            "iou": 0.6229447089946193,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.023098155856132507
+          }
+        ]
+      },
+      {
+        "filename": "트루비타정 60mg.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 3,
+        "matched": 3,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9435323652399938,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.10865992307662964
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 4,
+            "iou": 0.6498593575300843,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.40261534601449966
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.8468117110095381,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.04792270064353943
+          }
+        ]
+      },
+      {
+        "filename": "프로스카정.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9371853979690655,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.34358394145965576
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9531091888609764,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.0372852087020874
+          }
+        ]
+      }
+    ],
+    "metrics": {
+      "reference": {
+        "detection_rate": 0.9574468085106383,
+        "top1_accuracy": 0.3617021276595745,
+        "top3_accuracy": 0.574468085106383,
+        "image_top1": 0.2727272727272727,
+        "image_top3": 0.5151515151515151,
+        "n_top1": 17,
+        "n_top3": 27,
+        "n_match": 45,
+        "n_false_pos": 100,
+        "total_gt": 47,
+        "n_imgs": 33,
+        "reported_ms_per_image": 128.6
+      },
+      "candidate": {
+        "detection_rate": 0.9574468085106383,
+        "top1_accuracy": 0.5319148936170213,
+        "top3_accuracy": 0.6170212765957447,
+        "image_top1": 0.45454545454545453,
+        "image_top3": 0.5454545454545454,
+        "n_top1": 25,
+        "n_top3": 29,
+        "n_match": 45,
+        "n_false_pos": 105,
+        "total_gt": 47,
+        "n_imgs": 33,
+        "reported_ms_per_image": 1592.282816545459
+      }
+    },
+    "metric_delta_candidate_minus_reference": null,
+    "meaning": "Descriptive stored/new comparison only; not a controlled model-improvement claim",
+    "same_numeric_conditions": true,
+    "historical_postprocess_lineage": "UNRESOLVED; post-hoc stored Top-3 filtering",
+    "forward_postprocess": "float32 pred_instances -> independent threshold -> notebook grouping",
+    "reference_file": "rtmdet_tiny_synth_e14_seed100_results.json"
+  },
+  {
+    "rule": "reference order; highest IoU unused candidate >=0.5; ties by candidate order",
+    "reference_is_not_ground_truth": true,
+    "same_gt": true,
+    "same_postprocess": false,
+    "postprocess": {
+      "reference": {
+        "conf_threshold": 0.05,
+        "nms_iou": 0.5
+      },
+      "candidate": {
+        "conf_threshold": 0.05,
+        "nms_iou": 0.5
+      }
+    },
+    "reference_only_images": [],
+    "candidate_only_images": [],
+    "images": [
+      {
+        "filename": "게보린정 300mg_3.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 3,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.964653884572324,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.45519381761550903
+          }
+        ]
+      },
+      {
+        "filename": "글리아타민연질캡슐.png",
+        "reference_boxes": 15,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 11,
+        "candidate_only_boxes": 2,
+        "matched": 4,
+        "top1_agreements": 3,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9669862247603283,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.12585791945457458
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.7249583495032101,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.027902938425540924
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 2,
+            "iou": 0.6693836274687623,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.002955295145511627
+          },
+          {
+            "reference_index": 14,
+            "candidate_index": 1,
+            "iou": 0.8729431009240592,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.23406410962343216
+          }
+        ]
+      },
+      {
+        "filename": "낙소졸정 500_20mg.png",
+        "reference_boxes": 18,
+        "candidate_boxes": 7,
+        "reference_only_boxes": 14,
+        "candidate_only_boxes": 3,
+        "matched": 4,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 5,
+            "iou": 0.654640422042425,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.36249882727861404
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.8592694991793381,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.10456874966621399
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 0,
+            "iou": 0.9705240478661531,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.4911695122718811
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.9529618123886574,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.1506020724773407
+          }
+        ]
+      },
+      {
+        "filename": "넥시움정 40mg.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9068223447281399,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.18586242198944092
+          }
+        ]
+      },
+      {
+        "filename": "노바스크정 5mg.png",
+        "reference_boxes": 9,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 8,
+        "candidate_only_boxes": 1,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.965411150036036,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.00435405969619751
+          }
+        ]
+      },
+      {
+        "filename": "놀텍정 10mg.png",
+        "reference_boxes": 13,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 11,
+        "candidate_only_boxes": 3,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9679271594626184,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.0974305272102356
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9538984480268694,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.15166980028152466
+          }
+        ]
+      },
+      {
+        "filename": "디카테오정.png",
+        "reference_boxes": 10,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 7,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9426995323975382,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.20877110958099365
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9224836534645499,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.4608401358127594
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9236602043399433,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.36589279770851135
+          }
+        ]
+      },
+      {
+        "filename": "라시도필캡슐(비매품).png",
+        "reference_boxes": 5,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 3,
+        "candidate_only_boxes": 3,
+        "matched": 2,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9584739398836739,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.22852838039398193
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9698752765820823,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.4679545760154724
+          }
+        ]
+      },
+      {
+        "filename": "마이칼디정.png",
+        "reference_boxes": 12,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 8,
+        "candidate_only_boxes": 1,
+        "matched": 4,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.963478443513044,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.13335394859313965
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.901527502242064,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.16711553931236267
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.8842448490814142,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03627268970012665
+          },
+          {
+            "reference_index": 8,
+            "candidate_index": 4,
+            "iou": 0.6369901125410208,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.011282537132501602
+          }
+        ]
+      },
+      {
+        "filename": "맥시부펜이알정.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9468821310228911,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.060563743114471436
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9592119627203192,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.0030183792114257812
+          }
+        ]
+      },
+      {
+        "filename": "뮤테란캡슐 100mg.png",
+        "reference_boxes": 11,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 7,
+        "candidate_only_boxes": 4,
+        "matched": 4,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9525083343463917,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.2696428894996643
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 3,
+            "iou": 0.6495843106808404,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.27036280930042267
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 1,
+            "iou": 0.5746591476422774,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.2712082862854004
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 7,
+            "iou": 0.8819160899201663,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.021433867514133453
+          }
+        ]
+      },
+      {
+        "filename": "비모보정 500_20mg.png",
+        "reference_boxes": 9,
+        "candidate_boxes": 4,
+        "reference_only_boxes": 6,
+        "candidate_only_boxes": 1,
+        "matched": 3,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9578349631285569,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.3002999722957611
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.9024102689424424,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.038253411650657654
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 3,
+            "iou": 0.9147097740664667,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.027037613093852997
+          }
+        ]
+      },
+      {
+        "filename": "비오플250캡슐.png",
+        "reference_boxes": 10,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 4,
+        "candidate_only_boxes": 2,
+        "matched": 6,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 6,
+            "iou": 0.6914245560834686,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.45595378428697586
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 4,
+            "iou": 0.8374444873165603,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.3262457028031349
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 0,
+            "iou": 0.9805803837158606,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.38453689217567444
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 2,
+            "iou": 0.6826662813396859,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.049276337027549744
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 5,
+            "iou": 0.7288339034624095,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.04365842789411545
+          },
+          {
+            "reference_index": 9,
+            "candidate_index": 7,
+            "iou": 0.6919942970225232,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.009093906730413437
+          }
+        ]
+      },
+      {
+        "filename": "비타비백정(비타민).png",
+        "reference_boxes": 8,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 7,
+        "candidate_only_boxes": 2,
+        "matched": 1,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9126683096880068,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.22839444875717163
+          }
+        ]
+      },
+      {
+        "filename": "아보다트연질캡슐 0.5mg_1.png",
+        "reference_boxes": 7,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 4,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.7865215690440517,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.2107597291469574
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.8972966640442364,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.3845936059951782
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.7315962114622918,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.17014587670564651
+          }
+        ]
+      },
+      {
+        "filename": "아스피린프로텍트정100mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 4,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9370353012139074,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.12022769451141357
+          }
+        ]
+      },
+      {
+        "filename": "아토르바정 10mg.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9668075266642993,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.15393677353858948
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9581440833834256,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.002667039632797241
+          }
+        ]
+      },
+      {
+        "filename": "엔테론정 150mg.png",
+        "reference_boxes": 8,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 6,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9754354113591941,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.06916689872741699
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9720940790365011,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.00897151231765747
+          }
+        ]
+      },
+      {
+        "filename": "울트라셋이알서방정.png",
+        "reference_boxes": 9,
+        "candidate_boxes": 12,
+        "reference_only_boxes": 4,
+        "candidate_only_boxes": 7,
+        "matched": 5,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9175897927215517,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.064145028591156
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9317219555205357,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.13775935769081116
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9579609211074083,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.09398514032363892
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 7,
+            "iou": 0.7520080425789192,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.08152824640274048
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 4,
+            "iou": 0.7630893175705342,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.024737946689128876
+          }
+        ]
+      },
+      {
+        "filename": "인사돌플러스정 35mg_.png",
+        "reference_boxes": 11,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 9,
+        "candidate_only_boxes": 3,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.8786852195019634,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.2625373750925064
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.8208358140773506,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.07085539400577545
+          }
+        ]
+      },
+      {
+        "filename": "인사돌플러스정.png",
+        "reference_boxes": 24,
+        "candidate_boxes": 11,
+        "reference_only_boxes": 18,
+        "candidate_only_boxes": 5,
+        "matched": 6,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.974284653036016,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.009335607290267944
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.6986054752027758,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.027681678533554077
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 1,
+            "iou": 0.8032638390583101,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.15125593543052673
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 5,
+            "iou": 0.652422004975264,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.08068704605102539
+          },
+          {
+            "reference_index": 12,
+            "candidate_index": 4,
+            "iou": 0.7779407635713604,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.01214330643415451
+          },
+          {
+            "reference_index": 13,
+            "candidate_index": 6,
+            "iou": 0.5916521950131134,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.04734351485967636
+          }
+        ]
+      },
+      {
+        "filename": "자누비아정 50mg.png",
+        "reference_boxes": 7,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 4,
+        "candidate_only_boxes": 3,
+        "matched": 3,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.943903690333753,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.01396799087524414
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9691307971808303,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.02179664373397827
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 2,
+            "iou": 0.7714487375938904,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.1585400141775608
+          }
+        ]
+      },
+      {
+        "filename": "자트랄엑스엘정 10mg.png",
+        "reference_boxes": 9,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 6,
+        "candidate_only_boxes": 3,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9496200185628847,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.1416330337524414
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.8588742865758914,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.09044066071510315
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 2,
+            "iou": 0.8589569631131985,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03361831605434418
+          }
+        ]
+      },
+      {
+        "filename": "졸로푸트정 100mg.png",
+        "reference_boxes": 10,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 7,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9724255131656926,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.1371934413909912
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.8965107744956243,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.33083802461624146
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.7786962877125315,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.1719101071357727
+          }
+        ]
+      },
+      {
+        "filename": "종근당글리아티린연질캡슐.png",
+        "reference_boxes": 7,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 5,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9101628397863015,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.125605046749115
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9149100813796225,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.04001122713088989
+          }
+        ]
+      },
+      {
+        "filename": "지르텍정(세티리진염산염).png",
+        "reference_boxes": 8,
+        "candidate_boxes": 9,
+        "reference_only_boxes": 3,
+        "candidate_only_boxes": 4,
+        "matched": 5,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9649366898533255,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.04519098997116089
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.7907855143742665,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.1570357158780098
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 1,
+            "iou": 0.7201437976108516,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.09294755756855011
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 5,
+            "iou": 0.5237107848670172,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.011006653308868408
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 4,
+            "iou": 0.8576450211196215,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03711025416851044
+          }
+        ]
+      },
+      {
+        "filename": "지르텍정.png",
+        "reference_boxes": 8,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 7,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9693876739496303,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.028838515281677246
+          }
+        ]
+      },
+      {
+        "filename": "케이캡정 50mg.png",
+        "reference_boxes": 7,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 6,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.8304839953648743,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.0822000801563263
+          }
+        ]
+      },
+      {
+        "filename": "쿠에타핀정 25mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 4,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9808319180162646,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.274753600358963
+          }
+        ]
+      },
+      {
+        "filename": "타이레놀500mg.png",
+        "reference_boxes": 14,
+        "candidate_boxes": 9,
+        "reference_only_boxes": 10,
+        "candidate_only_boxes": 5,
+        "matched": 4,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9827754775098654,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.10616171360015869
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 4,
+            "iou": 0.5170536579338392,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.351580873131752
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.9422087022257098,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.03858485817909241
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 6,
+            "iou": 0.6437650605091744,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.0025927722454071045
+          }
+        ]
+      },
+      {
+        "filename": "타이레놀이알서방정(아세트아미노펜)(수출용).png",
+        "reference_boxes": 12,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 8,
+        "candidate_only_boxes": 4,
+        "matched": 4,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9074631281552905,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.2584353983402252
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9262767577130457,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.19266563653945923
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 2,
+            "iou": 0.6043228851497515,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.05209740251302719
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 3,
+            "iou": 0.5993590319197062,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.052566975355148315
+          }
+        ]
+      },
+      {
+        "filename": "트루비타정 60mg.png",
+        "reference_boxes": 17,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 14,
+        "candidate_only_boxes": 3,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9510929712491082,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.04990965127944946
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.8281965568987583,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.28201523423194885
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 4,
+            "iou": 0.6126953858755474,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.05720796436071396
+          }
+        ]
+      },
+      {
+        "filename": "프로스카정.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9211258849369051,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.3292241096496582
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9359409559692432,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.2634643018245697
+          }
+        ]
+      }
+    ],
+    "metrics": {
+      "reference": {
+        "detection_rate": 0.9574468085106383,
+        "top1_accuracy": 0.2978723404255319,
+        "top3_accuracy": 0.40425531914893614,
+        "image_top1": 0.2727272727272727,
+        "image_top3": 0.36363636363636365,
+        "n_top1": 14,
+        "n_top3": 19,
+        "n_match": 45,
+        "n_false_pos": 259,
+        "total_gt": 47,
+        "n_imgs": 33,
+        "reported_ms_per_image": 125.5
+      },
+      "candidate": {
+        "detection_rate": 0.9574468085106383,
+        "top1_accuracy": 0.5319148936170213,
+        "top3_accuracy": 0.6170212765957447,
+        "image_top1": 0.45454545454545453,
+        "image_top3": 0.5454545454545454,
+        "n_top1": 25,
+        "n_top3": 29,
+        "n_match": 45,
+        "n_false_pos": 105,
+        "total_gt": 47,
+        "n_imgs": 33,
+        "reported_ms_per_image": 1592.282816545459
+      }
+    },
+    "metric_delta_candidate_minus_reference": null,
+    "meaning": "Descriptive stored/new comparison only; not a controlled model-improvement claim",
+    "same_numeric_conditions": true,
+    "historical_postprocess_lineage": "UNRESOLVED; post-hoc stored Top-3 filtering",
+    "forward_postprocess": "float32 pred_instances -> independent threshold -> notebook grouping",
+    "reference_file": "rtmdet_tiny_synth_e15_seed100_results.json"
+  },
+  {
+    "rule": "reference order; highest IoU unused candidate >=0.5; ties by candidate order",
+    "reference_is_not_ground_truth": true,
+    "same_gt": true,
+    "same_postprocess": false,
+    "postprocess": {
+      "reference": {
+        "conf_threshold": 0.05,
+        "nms_iou": 0.5
+      },
+      "candidate": {
+        "conf_threshold": 0.05,
+        "nms_iou": 0.5
+      }
+    },
+    "reference_only_images": [],
+    "candidate_only_images": [],
+    "images": [
+      {
+        "filename": "게보린정 300mg_3.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9745359596777726,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.02329307794570923
+          }
+        ]
+      },
+      {
+        "filename": "글리아타민연질캡슐.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 2,
+        "matched": 4,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9934554430889105,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.07648923993110657
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9855295490061843,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.026354104280471802
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 3,
+            "iou": 0.9220949865730969,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03020632266998291
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 4,
+            "iou": 0.9322239105387325,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.02672911435365677
+          }
+        ]
+      },
+      {
+        "filename": "낙소졸정 500_20mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 7,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 2,
+        "matched": 5,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9770745164741041,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.23169422149658203
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9814582025652058,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.018096327781677246
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.8910007299592453,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03238469362258911
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 4,
+            "iou": 0.9330357966375334,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.013672135770320892
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 3,
+            "iou": 0.974669224080614,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.044727519154548645
+          }
+        ]
+      },
+      {
+        "filename": "넥시움정 40mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.941163216220187,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.11040675640106201
+          }
+        ]
+      },
+      {
+        "filename": "노바스크정 5mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 1,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9909391498268182,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.16752654314041138
+          }
+        ]
+      },
+      {
+        "filename": "놀텍정 10mg.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 1,
+        "matched": 4,
+        "top1_agreements": 3,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9697668043535219,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.0034061074256896973
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9640146516275079,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.039631187915802
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.911521426283064,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.042907893657684326
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.9456780609616826,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.04429326578974724
+          }
+        ]
+      },
+      {
+        "filename": "디카테오정.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 3,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9727856763325043,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.06584739685058594
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9898209748913303,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.016162127256393433
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9915349092009954,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.03940659761428833
+          }
+        ]
+      },
+      {
+        "filename": "라시도필캡슐(비매품).png",
+        "reference_boxes": 4,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 1,
+        "matched": 4,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9747771545887056,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.028117477893829346
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9781300729553754,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.03331679105758667
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 4,
+            "iou": 0.7443962137986087,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.017104916274547577
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 2,
+            "iou": 0.6922613374403317,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.049762651324272156
+          }
+        ]
+      },
+      {
+        "filename": "마이칼디정.png",
+        "reference_boxes": 7,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 0,
+        "matched": 5,
+        "top1_agreements": 3,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9940375016956031,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.059613823890686035
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9734467680833916,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.14395573735237122
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.8387453845265567,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.0509013831615448
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.9404897254332601,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03056107461452484
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 4,
+            "iou": 0.8938250062437583,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.020502425730228424
+          }
+        ]
+      },
+      {
+        "filename": "맥시부펜이알정.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9730811188732857,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.06483805179595947
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9684504482696913,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.05927807092666626
+          }
+        ]
+      },
+      {
+        "filename": "뮤테란캡슐 100mg.png",
+        "reference_boxes": 6,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 3,
+        "matched": 5,
+        "top1_agreements": 5,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9729898506512459,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.05214029550552368
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9026837830791575,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.04377549886703491
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9196412037121393,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.023156367242336273
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 5,
+            "iou": 0.9416568390429173,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.016783036291599274
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 7,
+            "iou": 0.9150664055363487,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.0016482137143611908
+          }
+        ]
+      },
+      {
+        "filename": "비모보정 500_20mg.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 4,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 4,
+        "top1_agreements": 3,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9024654311406118,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.10974583029747009
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9656676875553382,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.014093220233917236
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 3,
+            "iou": 0.9593967162130659,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.01939970999956131
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 2,
+            "iou": 0.8926136055698877,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.030244186520576477
+          }
+        ]
+      },
+      {
+        "filename": "비오플250캡슐.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 4,
+        "matched": 4,
+        "top1_agreements": 4,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9629317071447233,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.05006152391433716
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9346640839031768,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.08043602108955383
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 6,
+            "iou": 0.9395731595350084,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.02918340265750885
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 5,
+            "iou": 0.8047963009907564,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.011732563376426697
+          }
+        ]
+      },
+      {
+        "filename": "비타비백정(비타민).png",
+        "reference_boxes": 3,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 3,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9565768445535937,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.09231773018836975
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.8730225121477212,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.04377608001232147
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.9281838954761745,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.05009683966636658
+          }
+        ]
+      },
+      {
+        "filename": "아보다트연질캡슐 0.5mg_1.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 1,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9840723234541735,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.03020268678665161
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.8869107963769253,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.0034668147563934326
+          }
+        ]
+      },
+      {
+        "filename": "아스피린프로텍트정100mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.985872836873445,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.12410706281661987
+          }
+        ]
+      },
+      {
+        "filename": "아토르바정 10mg.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9831573466267732,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.02626568078994751
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9820684139245799,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.011287003755569458
+          }
+        ]
+      },
+      {
+        "filename": "엔테론정 150mg.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9920366290117031,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.027483642101287842
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.99491867353513,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.11468109488487244
+          }
+        ]
+      },
+      {
+        "filename": "울트라셋이알서방정.png",
+        "reference_boxes": 12,
+        "candidate_boxes": 12,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 2,
+        "matched": 10,
+        "top1_agreements": 6,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9762112073061532,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.21166333556175232
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.967193643254276,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.008349597454071045
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.8791723619520869,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.07877317070960999
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 4,
+            "iou": 0.9207333443954485,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.0007911920547485352
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 3,
+            "iou": 0.9019601192062001,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.02378486841917038
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 8,
+            "iou": 0.9680245298173455,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.03247620910406113
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 11,
+            "iou": 0.596029940550605,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.004661928862333298
+          },
+          {
+            "reference_index": 8,
+            "candidate_index": 10,
+            "iou": 0.9712136509436449,
+            "top1_agrees": true,
+            "top1_confidence_delta": 3.055483102798462e-05
+          },
+          {
+            "reference_index": 10,
+            "candidate_index": 5,
+            "iou": 0.8213109790882254,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.04153818637132645
+          },
+          {
+            "reference_index": 11,
+            "candidate_index": 6,
+            "iou": 0.9533164742321738,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.03498591110110283
+          }
+        ]
+      },
+      {
+        "filename": "인사돌플러스정 35mg_.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 5,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 2,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9200346220671966,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.061471521854400635
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.8583638731675224,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.15346205979585648
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.8606151998047628,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.028425253927707672
+          }
+        ]
+      },
+      {
+        "filename": "인사돌플러스정.png",
+        "reference_boxes": 9,
+        "candidate_boxes": 11,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 4,
+        "matched": 7,
+        "top1_agreements": 5,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9829678965568974,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.07744485139846802
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.9542237348401563,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.00380900502204895
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.718424773736972,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.08643120527267456
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 4,
+            "iou": 0.9326762148199488,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.003801770508289337
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 5,
+            "iou": 0.9568555720168963,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.005661465227603912
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 3,
+            "iou": 0.7358839654071038,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.033159807324409485
+          },
+          {
+            "reference_index": 6,
+            "candidate_index": 6,
+            "iou": 0.964350688910977,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.01637963205575943
+          }
+        ]
+      },
+      {
+        "filename": "자누비아정 50mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 1,
+        "candidate_only_boxes": 2,
+        "matched": 4,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9662473025685234,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03447636961936951
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.9250358847133526,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.17157086730003357
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.9904441319401732,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.06908923387527466
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.7862486498148166,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.024077750742435455
+          }
+        ]
+      },
+      {
+        "filename": "자트랄엑스엘정 10mg.png",
+        "reference_boxes": 4,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 2,
+        "matched": 4,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.976681713227896,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.039537250995635986
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9063959243932298,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.08549821376800537
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.8539700840419154,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.025924161076545715
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 3,
+            "iou": 0.9081555729232487,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03695928305387497
+          }
+        ]
+      },
+      {
+        "filename": "졸로푸트정 100mg.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 3,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 3,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9836505166650874,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.2755908668041229
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.8087947490000662,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.0014956295490264893
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.85864516920333,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.11181380599737167
+          }
+        ]
+      },
+      {
+        "filename": "종근당글리아티린연질캡슐.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 1,
+            "iou": 0.9735409657965722,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.14417141675949097
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 0,
+            "iou": 0.9859101844762921,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.14263063669204712
+          }
+        ]
+      },
+      {
+        "filename": "지르텍정(세티리진염산염).png",
+        "reference_boxes": 6,
+        "candidate_boxes": 9,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 3,
+        "matched": 6,
+        "top1_agreements": 4,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.973962531693884,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.27018916606903076
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 6,
+            "iou": 0.672118923558724,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.10035344213247299
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.8981286855045426,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.024548068642616272
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 1,
+            "iou": 0.8754306333829435,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.042323045432567596
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 7,
+            "iou": 0.7572519453870279,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.023201540112495422
+          },
+          {
+            "reference_index": 5,
+            "candidate_index": 4,
+            "iou": 0.9282000637434837,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03793862462043762
+          }
+        ]
+      },
+      {
+        "filename": "지르텍정.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9933333713647083,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.04805946350097656
+          }
+        ]
+      },
+      {
+        "filename": "케이캡정 50mg.png",
+        "reference_boxes": 3,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9778016038354825,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.05028471350669861
+          }
+        ]
+      },
+      {
+        "filename": "쿠에타핀정 25mg.png",
+        "reference_boxes": 1,
+        "candidate_boxes": 1,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 1,
+        "top1_agreements": 0,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9710641543366584,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.11721184849739075
+          }
+        ]
+      },
+      {
+        "filename": "타이레놀500mg.png",
+        "reference_boxes": 9,
+        "candidate_boxes": 9,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 2,
+        "matched": 7,
+        "top1_agreements": 4,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9916853924185376,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.08727794885635376
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 2,
+            "iou": 0.9704468526403526,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.07119610905647278
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 1,
+            "iou": 0.9476858734713264,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.07078322768211365
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 5,
+            "iou": 0.7555020226988461,
+            "top1_agrees": true,
+            "top1_confidence_delta": -0.0639088973402977
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 3,
+            "iou": 0.979434551814682,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.03640912473201752
+          },
+          {
+            "reference_index": 7,
+            "candidate_index": 4,
+            "iou": 0.9254192006116021,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.08137667924165726
+          },
+          {
+            "reference_index": 8,
+            "candidate_index": 7,
+            "iou": 0.8924599087906389,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.01996733993291855
+          }
+        ]
+      },
+      {
+        "filename": "타이레놀이알서방정(아세트아미노펜)(수출용).png",
+        "reference_boxes": 5,
+        "candidate_boxes": 8,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 3,
+        "matched": 5,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.9459226980309153,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.09648355841636658
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9134340781459267,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.010506346821784973
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 2,
+            "iou": 0.9652763063417394,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.001974061131477356
+          },
+          {
+            "reference_index": 3,
+            "candidate_index": 4,
+            "iou": 0.9436693702497525,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.0296691432595253
+          },
+          {
+            "reference_index": 4,
+            "candidate_index": 5,
+            "iou": 0.9589486321702478,
+            "top1_agrees": false,
+            "top1_confidence_delta": -0.001299433410167694
+          }
+        ]
+      },
+      {
+        "filename": "트루비타정 60mg.png",
+        "reference_boxes": 5,
+        "candidate_boxes": 6,
+        "reference_only_boxes": 2,
+        "candidate_only_boxes": 3,
+        "matched": 3,
+        "top1_agreements": 1,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.96674035529909,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.06794744729995728
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.6338785854904677,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.018689259886741638
+          },
+          {
+            "reference_index": 2,
+            "candidate_index": 3,
+            "iou": 0.9552116886771239,
+            "top1_agrees": false,
+            "top1_confidence_delta": 0.015585124492645264
+          }
+        ]
+      },
+      {
+        "filename": "프로스카정.png",
+        "reference_boxes": 2,
+        "candidate_boxes": 2,
+        "reference_only_boxes": 0,
+        "candidate_only_boxes": 0,
+        "matched": 2,
+        "top1_agreements": 2,
+        "pairs": [
+          {
+            "reference_index": 0,
+            "candidate_index": 0,
+            "iou": 0.965807858396503,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.017976820468902588
+          },
+          {
+            "reference_index": 1,
+            "candidate_index": 1,
+            "iou": 0.9698178546010954,
+            "top1_agrees": true,
+            "top1_confidence_delta": 0.08077436685562134
+          }
+        ]
+      }
+    ],
+    "metrics": {
+      "reference": {
+        "detection_rate": 0.9574468085106383,
+        "top1_accuracy": 0.5106382978723404,
+        "top3_accuracy": 0.6382978723404256,
+        "image_top1": 0.45454545454545453,
+        "image_top3": 0.5757575757575758,
+        "n_top1": 24,
+        "n_top3": 30,
+        "n_match": 45,
+        "n_false_pos": 84,
+        "total_gt": 47,
+        "n_imgs": 33,
+        "reported_ms_per_image": 132.1
+      },
+      "candidate": {
+        "detection_rate": 0.9574468085106383,
+        "top1_accuracy": 0.5319148936170213,
+        "top3_accuracy": 0.6170212765957447,
+        "image_top1": 0.45454545454545453,
+        "image_top3": 0.5454545454545454,
+        "n_top1": 25,
+        "n_top3": 29,
+        "n_match": 45,
+        "n_false_pos": 105,
+        "total_gt": 47,
+        "n_imgs": 33,
+        "reported_ms_per_image": 1592.282816545459
+      }
+    },
+    "metric_delta_candidate_minus_reference": null,
+    "meaning": "Descriptive stored/new comparison only; not a controlled model-improvement claim",
+    "same_numeric_conditions": true,
+    "historical_postprocess_lineage": "UNRESOLVED; post-hoc stored Top-3 filtering",
+    "forward_postprocess": "float32 pred_instances -> independent threshold -> notebook grouping",
+    "reference_file": "rtmdet_tiny_synth_v4_e13_seed100_results.json"
+  }
+]

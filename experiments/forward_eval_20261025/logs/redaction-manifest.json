@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "rules": {
+    "linux_venv": "<VENV>",
+    "linux_home": "<HOME>",
+    "workspace": "<WORKSPACE_ROOT>",
+    "windows_venv": "<VENV>",
+    "windows_project": "<PROJECT_ROOT>"
+  },
+  "files": [
+    {
+      "source_file": "smoke-01.log",
+      "public_file": "smoke-01.txt",
+      "source_sha256": "f06f87666d88afa346b7aaa7f73af096d1519dcb7a81dc2fc21ce124c604b474",
+      "public_sha256": "c6021f353e69d2c72b9ea29bcd127de641e0a6889cc879dd0a169e9259e163f6",
+      "replacements": {
+        "linux_venv": 1,
+        "workspace": 1
+      },
+      "json_lines_unchanged": true
+    },
+    {
+      "source_file": "full-01.log",
+      "public_file": "full-01.txt",
+      "source_sha256": "3d5a0b4b32516b492478fd3cf2b61819564af7c2cbad8183fd6f3205ffb7e54c",
+      "public_sha256": "7b5b7883a8faf11bf3081ed917d1c500b2b1a4dbc1a0d1b4647ad81907c0ef4a",
+      "replacements": {
+        "linux_venv": 1,
+        "workspace": 1
+      },
+      "json_lines_unchanged": true
+    },
+    {
+      "source_file": "record-01.log",
+      "public_file": "record-01.txt",
+      "source_sha256": "68fcf064da3021b6d4f80c65b5c6ff41727ab01454beff6667d447821b0c2537",
+      "public_sha256": "3f1d7b36a95e730985501bd3bfdfe0d53186e869c607d8179c6d6e2a46763515",
+      "replacements": {
+        "windows_venv": 11,
+        "windows_project": 2
+      },
+      "json_lines_unchanged": true
+    },
+    {
+      "source_file": "record-02-ubuntu.log",
+      "public_file": "record-02-ubuntu.txt",
+      "source_sha256": "a59560a2b4f573511f97b8c4defac82e841f0cdbb382f30d64d13feacc31ee8d",
+      "public_sha256": "a59560a2b4f573511f97b8c4defac82e841f0cdbb382f30d64d13feacc31ee8d",
+      "replacements": {},
+      "json_lines_unchanged": true
+    },
+    {
+      "source_file": "postprocessing-cross-environment.log",
+      "public_file": "postprocessing-cross-environment.txt",
+      "source_sha256": "643731d808b0c9176050ecf4a04e3bd972fcb26579b117ac170bd584aafc230e",
+      "public_sha256": "643731d808b0c9176050ecf4a04e3bd972fcb26579b117ac170bd584aafc230e",
+      "replacements": {},
+      "json_lines_unchanged": true
+    },
+    {
+      "source_file": "environment-check.log",
+      "public_file": "environment-check.txt",
+      "source_sha256": "d9fd0d47364bc44bc2b910efb70f67b21df02d2b5ddb277037105d5747f128fc",
+      "public_sha256": "d9fd0d47364bc44bc2b910efb70f67b21df02d2b5ddb277037105d5747f128fc",
+      "replacements": {},
+      "json_lines_unchanged": true
+    }
+  ]
+}

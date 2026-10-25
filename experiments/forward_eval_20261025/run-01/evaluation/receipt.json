@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "model_executed": true,
+  "gt_version": "v2",
+  "metrics": {
+    "0.05": {
+      "detection_rate": 0.9574468085106383,
+      "top1_accuracy": 0.5319148936170213,
+      "top3_accuracy": 0.6170212765957447,
+      "image_top1": 0.45454545454545453,
+      "image_top3": 0.5454545454545454,
+      "n_top1": 25,
+      "n_top3": 29,
+      "n_match": 45,
+      "n_false_pos": 105,
+      "total_gt": 47,
+      "n_imgs": 33,
+      "reported_ms_per_image": 1592.282816545459
+    },
+    "0.25": {
+      "detection_rate": 0.9574468085106383,
+      "top1_accuracy": 0.5319148936170213,
+      "top3_accuracy": 0.5957446808510638,
+      "image_top1": 0.45454545454545453,
+      "image_top3": 0.5454545454545454,
+      "n_top1": 25,
+      "n_top3": 28,
+      "n_match": 45,
+      "n_false_pos": 10,
+      "total_gt": 47,
+      "n_imgs": 33,
+      "reported_ms_per_image": 1592.282816545459
+    }
+  },
+  "artifacts": {
+    "comparisons-0.05.json": "a38a1a7d297707061ad4c17c70e50ab30007790c04df4c9b1bb323e3e780fd6b",
+    "comparisons-0.25.json": "eb4cfdd0ff01031a66b0e12956aca8cecd8cba71ed8f47c5793b0f203445efdc",
+    "metrics-0.05.json": "5f8570ffa11294f3859a29251bb72acd7a73762673306bc28344bfb5b24842f8",
+    "metrics-0.25.json": "acdf9298bcb2955a8521542cce96503987bece467a72df2a7745e4f969021d66",
+    "predictions-0.05.json": "6e3e28a0c0709c7cc07aedb9ab37da853e4148e3d1d7f7434ecc6fbf35a82cd3",
+    "predictions-0.25.json": "dc60a42d80f3a15c925954d2ad871f1fbc428894df03283b2cefb829574edc7f"
+  },
+  "smoke_run_sha256": "c41fe946abd4b41cd22bb028fe150364c079152ec5b064f13593bb8d484c13fe",
+  "full_run_sha256": "c3afd4610e6b8f047a1944280a5978b3f903523679cde29f11f2c0be5b6c1be4",
+  "manifest_sha256": "6ad3901309268bf0393a0abb0b55e7f49423dcf25e752e750cd3a5ac0533b9c5",
+  "limitations": [
+    "Reused evaluation set",
+    "Historical checkpoint lineage unresolved",
+    "GT correction is not model improvement",
+    "No generalization or medical-use validation"
+  ]
+}

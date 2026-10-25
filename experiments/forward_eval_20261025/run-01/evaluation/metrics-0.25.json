@@ -1,0 +1,14 @@
+{
+  "detection_rate": 0.9574468085106383,
+  "top1_accuracy": 0.5319148936170213,
+  "top3_accuracy": 0.5957446808510638,
+  "image_top1": 0.45454545454545453,
+  "image_top3": 0.5454545454545454,
+  "n_top1": 25,
+  "n_top3": 28,
+  "n_match": 45,
+  "n_false_pos": 10,
+  "total_gt": 47,
+  "n_imgs": 33,
+  "reported_ms_per_image": 1592.282816545459
+}

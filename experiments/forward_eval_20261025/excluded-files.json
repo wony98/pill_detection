@@ -1,0 +1,476 @@
+{
+  "schema": 1,
+  "hashes_observed_at_packaging": true,
+  "files": [
+    {
+      "file": "run-01/inputs/model.pth",
+      "sha256": "dd6dde2600752744321f5a266f3d1366c1d030762300ee61b09682bad18f77f7",
+      "reason": "large checkpoint; original demo/v4/v4.pth hash"
+    },
+    {
+      "file": "run-01/inputs.zip",
+      "sha256": "d18ba8bce198fb9d3d819a428d56d63e543ffe5780f12e3ada86210bb4497f8c",
+      "reason": "duplicate archive"
+    },
+    {
+      "file": "run-01/local_sources.json",
+      "sha256": "ab686756a7df9c6693f920ceebb0457e27f1fe24ca0f5d8ff547149e6625d53f",
+      "reason": "private local paths"
+    },
+    {
+      "file": "run-01/full/partial_predictions.json",
+      "sha256": "56049a7c1a9dcc2d8b6ccf4ac1d5bfc478b6f0f7c0963ef371d372e38f41dcc2",
+      "reason": "intermediate output"
+    },
+    {
+      "file": "run-01/smoke/partial_predictions.json",
+      "sha256": "0c5c8222976abe7c521f3c3cbad75aa8cb3fb132f2a7ff087b24c19f0b16f0dd",
+      "reason": "intermediate output"
+    },
+    {
+      "file": "run-01/inputs/images/게보린정 300mg_3.png",
+      "sha256": "f4608e5e2d5decb681a256c33e744844b9366fd675509f60a5909c6992a08136",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/글리아타민연질캡슐.png",
+      "sha256": "381d1f90e1b5a08c47c5c9e1ff7accc9e55afb8036d2ba14472b46166dd9560c",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/낙소졸정 500_20mg.png",
+      "sha256": "2aed53bfd7e31f61fb0388bb2448c3cf8b36dbabfaf0e72cd0de9650cac0575d",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/넥시움정 40mg.png",
+      "sha256": "203fd009abef1d8cd80ee1263423b9a7c2c4511fe74e68ad002d4491d52dd22b",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/노바스크정 5mg.png",
+      "sha256": "de88a908595cdd25698ed5420098fd5d66d5dba2fa823ff0d61a987238735aab",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/놀텍정 10mg.png",
+      "sha256": "26e3f219140d4b1508e624736cf1cd425627e4ad8e93dbfe5321293169c6981f",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/디카테오정.png",
+      "sha256": "403e4f33f35a309bb1e2f9c17f73147ee0cc12a4cee70df7cf974853fba5eb89",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/라시도필캡슐(비매품).png",
+      "sha256": "960089368d8e31585d2dab747e25a1125a7f5013b1a5d5998364c31cfb075d5e",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/마이칼디정.png",
+      "sha256": "c1388b670472bd1a719d7a84ae8466b0b5afb4860e0f94ac74a19dd9445cd24d",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/맥시부펜이알정.png",
+      "sha256": "f4fdf7d8b76f085e3c485551323f1fe997d4e2c466b32a9f0d445cc810ee42ea",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/뮤테란캡슐 100mg.png",
+      "sha256": "594fd8a04b86b9f01912d9ae0517c8e0f994180100d27eae1fd0699f0094257d",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/비모보정 500_20mg.png",
+      "sha256": "10268385a50fefd62f8f71119a6eb7abfff0aa1ba9568903b62861e7f75817ef",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/비오플250캡슐.png",
+      "sha256": "850f399d83652f4076f9eabf7f617656f43fce613d516d67163c519553767aee",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/비타비백정(비타민).png",
+      "sha256": "5c314a95a4763abbc6a7dfcae4661d8c5ccd091fa25c2739b38eb3fd77e75b58",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/아보다트연질캡슐 0.5mg_1.png",
+      "sha256": "292079df4f0bcfc534489c184595e763e4f80f69655ec8de3d0fae03d2d5ca5d",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/아스피린프로텍트정100mg.png",
+      "sha256": "eaa24d3fa982169f7cfd898fb19f3f1005a254a1cfb28e7d63522996eaea3c33",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/아토르바정 10mg.png",
+      "sha256": "2e7e0ea6a73725bc34a913a3f32c8b277b3c2f72639f0ed3cff62a8375b43efe",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/엔테론정 150mg.png",
+      "sha256": "aece85826102cd4210d3b21024d9471abdfe84e81bc4498cbcb6e7d9a01f6925",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/울트라셋이알서방정.png",
+      "sha256": "5dd1391929e6b60eac03f9bce00fe503dab3eccfffb9ff168dafe4e320e7435e",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/인사돌플러스정 35mg_.png",
+      "sha256": "6af59230345edae924a9b45ca1253549ef5415da07f0d9d9adaa7a57c54e327c",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/인사돌플러스정.png",
+      "sha256": "38450c93c27519b454861648b17e819ccb64786142e97870af96e388808ab84e",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/자누비아정 50mg.png",
+      "sha256": "a582373fa3b50203a4e9dc5e7d59bdfe149daabf7f378220c47e81736783db52",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/자트랄엑스엘정 10mg.png",
+      "sha256": "558081a378f0619381da8f89f1e12cb301edf30103f2674f6263f632825cdd2e",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/졸로푸트정 100mg.png",
+      "sha256": "77ccd0c64bfe42dad8e0dfd084cdf9035b0d4e316b11073d232afa5fecd9f730",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/종근당글리아티린연질캡슐.png",
+      "sha256": "85faaff86bde6ca0f19f86d1b525bdf7d615eb3fe0a01cfd78ed1a011e365f29",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/지르텍정(세티리진염산염).png",
+      "sha256": "a001d6af97d09694e23871d3dd5c197c7fae55a9d4e4d8a23d0841a76fc3214d",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/지르텍정.png",
+      "sha256": "6cf6a85389b3c7761d9213e7ad716ab037796151b4516b0b6cbe4a40c5e77112",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/케이캡정 50mg.png",
+      "sha256": "e8f1575604ae1884115bdaaa8449a8c66f1a9eacf27704db88d067bb5338eb40",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/쿠에타핀정 25mg.png",
+      "sha256": "2d4e99c3149ab2be4aa42c2c4094f0fbd0e4813280d30a8a466df6fcaab9d63e",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/타이레놀500mg.png",
+      "sha256": "94c82ae7586d9b9def135cfca9da4a0f479f3789a7e1aef622a2e508f3c6d0d8",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/타이레놀이알서방정(아세트아미노펜)(수출용).png",
+      "sha256": "ebd838dd1b341d78f0947c4254c3f729ae422d202b9a4da0e91946ee8610b562",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/트루비타정 60mg.png",
+      "sha256": "b8491ffa261f9a7d9d28e2dd54659968be42fad1e89e8ca911ea3a732dfc1be8",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "run-01/inputs/images/프로스카정.png",
+      "sha256": "d00a321840502802a1908e1a61e27d7e4542e8a2bc92b70852395295a904c2ac",
+      "reason": "identical to eval/test_images"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/backfill_runs.py.txt",
+      "sha256": "dc07f56e869a7f7d35b8bdf5cf83dddba92ae2e45c0486296e9a90f5e1c0b51f",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/evaluation__comparisons-0.05.json",
+      "sha256": "a38a1a7d297707061ad4c17c70e50ab30007790c04df4c9b1bb323e3e780fd6b",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/evaluation__comparisons-0.25.json",
+      "sha256": "eb4cfdd0ff01031a66b0e12956aca8cecd8cba71ed8f47c5793b0f203445efdc",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/evaluation__metrics-0.05.json",
+      "sha256": "5f8570ffa11294f3859a29251bb72acd7a73762673306bc28344bfb5b24842f8",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/evaluation__metrics-0.25.json",
+      "sha256": "acdf9298bcb2955a8521542cce96503987bece467a72df2a7745e4f969021d66",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/evaluation__predictions-0.05.json",
+      "sha256": "6e3e28a0c0709c7cc07aedb9ab37da853e4148e3d1d7f7434ecc6fbf35a82cd3",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/evaluation__predictions-0.25.json",
+      "sha256": "dc60a42d80f3a15c925954d2ad871f1fbc428894df03283b2cefb829574edc7f",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/evaluation__receipt.json",
+      "sha256": "7094d7ad846de455ba3c55d1d438bb5a2b36aeca4e9a8a491419b881e0310b70",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/full__effective_config.py",
+      "sha256": "fc1f3b105c5769a072fca9a492024e5689900043f807fef0fa3f015d09f1e1a7",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/full__environment.json",
+      "sha256": "515fb7babba883e828e789b7c05c2b774f5af13a30822a6d8a2acd23a450c15e",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/full__raw_predictions.json",
+      "sha256": "9995925bdc50861a83933334ad920aa4931f62bc15c47e3badae93539b77adb6",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/full__run.json",
+      "sha256": "c3afd4610e6b8f047a1944280a5978b3f903523679cde29f11f2c0be5b6c1be4",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/ground_truth_v2.json",
+      "sha256": "0a1296f420b12b85c1d5d03c1d5f1671534ca8448f6270ee6e8c374492f7174d",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/inputs__config.py",
+      "sha256": "36d7bca052fc96af71d0469926eaf277c15be74796a5d01100163c3627e4b8a7",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/inputs__inference_runner.py",
+      "sha256": "1cdb9394139c3bff43f8f6d875c71426b0bb5efbc30b7111630f9e6c20a37fdc",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/inputs__inputs.json",
+      "sha256": "4a7a6c4cdd5cb42812096e337fc2034aa724ab77f3d053a45b29aa12d7164df8",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/inputs__pill.yaml",
+      "sha256": "36cf3884f9ae5fabd4d177fc29e768a19ab24ea7e3f7eb094c762122e10b74d2",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/inputs__postprocess.py",
+      "sha256": "68ef485a6fcbee6ecec514a0cfa15b8340aa5a4d1e3f46dec9d29db3386d47b8",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/label_v2_manifest.json",
+      "sha256": "84a7c62dc5e2b73599ec158b3d6d070bc18b65e7d17a1ccf23f1e66ef4738226",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/manifest.json",
+      "sha256": "6ad3901309268bf0393a0abb0b55e7f49423dcf25e752e750cd3a5ac0533b9c5",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/origin_forward.py.txt",
+      "sha256": "aa49172cb39b3f33f27adbe6cfe5405bb4ec3039a8643239f349ddef294d031b",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/recording_environment.json",
+      "sha256": "0f83e0a33f76a467a96d5040f409e9b3748b1108c7588ba88d2d78e0c6a03838",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/recording_forward.py.txt",
+      "sha256": "edb879faf0abcba1db14b55955cd9bbfcc3e8bdd236a33d52f39060f6d58542e",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/smoke__effective_config.py",
+      "sha256": "fc1f3b105c5769a072fca9a492024e5689900043f807fef0fa3f015d09f1e1a7",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/smoke__environment.json",
+      "sha256": "515fb7babba883e828e789b7c05c2b774f5af13a30822a6d8a2acd23a450c15e",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/smoke__raw_predictions.json",
+      "sha256": "036dc477bebd6b35efe8b50ef96ff9614dfbeec1634de18625ff106d708e6a8f",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/artifacts/78d809eff3fd4c058d1d6cff958c01f3/artifacts/smoke__run.json",
+      "sha256": "c41fe946abd4b41cd22bb028fe150364c079152ec5b064f13593bb8d484c13fe",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/tracking/tracking.db",
+      "sha256": "5037e5687b6cb139af86f428365be9f4e477a1035f22dd81d4991f8096066bc0",
+      "reason": "local DB and artifact store"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/backfill_runs.py.txt",
+      "sha256": "dc07f56e869a7f7d35b8bdf5cf83dddba92ae2e45c0486296e9a90f5e1c0b51f",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/evaluation__comparisons-0.05.json",
+      "sha256": "a38a1a7d297707061ad4c17c70e50ab30007790c04df4c9b1bb323e3e780fd6b",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/evaluation__comparisons-0.25.json",
+      "sha256": "eb4cfdd0ff01031a66b0e12956aca8cecd8cba71ed8f47c5793b0f203445efdc",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/evaluation__metrics-0.05.json",
+      "sha256": "5f8570ffa11294f3859a29251bb72acd7a73762673306bc28344bfb5b24842f8",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/evaluation__metrics-0.25.json",
+      "sha256": "acdf9298bcb2955a8521542cce96503987bece467a72df2a7745e4f969021d66",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/evaluation__predictions-0.05.json",
+      "sha256": "6e3e28a0c0709c7cc07aedb9ab37da853e4148e3d1d7f7434ecc6fbf35a82cd3",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/evaluation__predictions-0.25.json",
+      "sha256": "dc60a42d80f3a15c925954d2ad871f1fbc428894df03283b2cefb829574edc7f",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/evaluation__receipt.json",
+      "sha256": "7094d7ad846de455ba3c55d1d438bb5a2b36aeca4e9a8a491419b881e0310b70",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/full__effective_config.py",
+      "sha256": "fc1f3b105c5769a072fca9a492024e5689900043f807fef0fa3f015d09f1e1a7",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/full__environment.json",
+      "sha256": "515fb7babba883e828e789b7c05c2b774f5af13a30822a6d8a2acd23a450c15e",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/full__raw_predictions.json",
+      "sha256": "9995925bdc50861a83933334ad920aa4931f62bc15c47e3badae93539b77adb6",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/full__run.json",
+      "sha256": "c3afd4610e6b8f047a1944280a5978b3f903523679cde29f11f2c0be5b6c1be4",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/ground_truth_v2.json",
+      "sha256": "0a1296f420b12b85c1d5d03c1d5f1671534ca8448f6270ee6e8c374492f7174d",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/inputs__config.py",
+      "sha256": "36d7bca052fc96af71d0469926eaf277c15be74796a5d01100163c3627e4b8a7",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/inputs__inference_runner.py",
+      "sha256": "1cdb9394139c3bff43f8f6d875c71426b0bb5efbc30b7111630f9e6c20a37fdc",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/inputs__inputs.json",
+      "sha256": "4a7a6c4cdd5cb42812096e337fc2034aa724ab77f3d053a45b29aa12d7164df8",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/inputs__pill.yaml",
+      "sha256": "36cf3884f9ae5fabd4d177fc29e768a19ab24ea7e3f7eb094c762122e10b74d2",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/inputs__postprocess.py",
+      "sha256": "68ef485a6fcbee6ecec514a0cfa15b8340aa5a4d1e3f46dec9d29db3386d47b8",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/label_v2_manifest.json",
+      "sha256": "84a7c62dc5e2b73599ec158b3d6d070bc18b65e7d17a1ccf23f1e66ef4738226",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/manifest.json",
+      "sha256": "6ad3901309268bf0393a0abb0b55e7f49423dcf25e752e750cd3a5ac0533b9c5",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/origin_forward.py.txt",
+      "sha256": "aa49172cb39b3f33f27adbe6cfe5405bb4ec3039a8643239f349ddef294d031b",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/recording_environment.json",
+      "sha256": "0f83e0a33f76a467a96d5040f409e9b3748b1108c7588ba88d2d78e0c6a03838",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/recording_forward.py.txt",
+      "sha256": "edb879faf0abcba1db14b55955cd9bbfcc3e8bdd236a33d52f39060f6d58542e",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/smoke__effective_config.py",
+      "sha256": "fc1f3b105c5769a072fca9a492024e5689900043f807fef0fa3f015d09f1e1a7",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/smoke__environment.json",
+      "sha256": "515fb7babba883e828e789b7c05c2b774f5af13a30822a6d8a2acd23a450c15e",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/smoke__raw_predictions.json",
+      "sha256": "036dc477bebd6b35efe8b50ef96ff9614dfbeec1634de18625ff106d708e6a8f",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "tracking-02-ubuntu/recorded_files/smoke__run.json",
+      "sha256": "c41fe946abd4b41cd22bb028fe150364c079152ec5b064f13593bb8d484c13fe",
+      "reason": "duplicate artifact copies"
+    },
+    {
+      "file": "run-01/inputs/pill.yaml",
+      "sha256": "36cf3884f9ae5fabd4d177fc29e768a19ab24ea7e3f7eb094c762122e10b74d2",
+      "reason": "duplicate of demo/v4/pill.yaml; historical local path excluded from this new bundle"
+    }
+  ]
+}

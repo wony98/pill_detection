@@ -1,0 +1,614 @@
+{
+  "recipe": "healtheat-label-v2-errata-1",
+  "mapping_evidence": {
+    "file": "eval/reference/class_mapping.json",
+    "sha256": "647caf3d2c6f657dc959820175f57bd290e6b2417ee96dd5c2c2d355d07ab11f",
+    "source_sha256": "eb8c1bfdb68c5b394dbe68b77b4f3f683df4f34271ebada3a4b23da9d7687dff",
+    "original_source_required": false
+  },
+  "packaging_revision": {
+    "reason": "Bundle mapping evidence without changing labels or GT",
+    "previous_manifest_sha256": "940992d02b32a32fd009565cb29eab09990ba9b6ec706bd21fe758820cd15250",
+    "label_data_unchanged": true
+  },
+  "gt_version": "v2",
+  "base_gt_version": "v1",
+  "v1_gt_sha256": "20d8da2c0019248e3e1c8c407135975278db2da46f4e3885aa34e690338c785d",
+  "v2_gt_sha256": "3765b4441cbcfae33ca6380bbd66ebeb8bb9b467de6e2097c332a7a4b6d79720",
+  "images": 33,
+  "gt_boxes": 47,
+  "correction": {
+    "label": "프로스카정.txt",
+    "old_class": 47,
+    "new_class": 16,
+    "old_label_sha256": "a9c51c609dca9b71d4b67be6a7893047be7cd7c412c6f2f1bf579d53dbe9c4d5",
+    "new_label_sha256": "3b159cf70c05a929afd7a919b857b0664732b19604f33901f506046171de74a9",
+    "coordinate_bytes_preserved": true
+  },
+  "name_changes": [
+    {
+      "filename": "프로스카정.png",
+      "box_index": 0,
+      "old_name": "콜리네이트연질캡슐 400mg",
+      "new_name": "프로스카정"
+    },
+    {
+      "filename": "프로스카정.png",
+      "box_index": 1,
+      "old_name": "콜리네이트연질캡슐 400mg",
+      "new_name": "프로스카정"
+    }
+  ],
+  "labels": {
+    "게보린정 300mg_3.txt": "021a5779ca21f7b12278a7fc38a82f0181fd41fc7dbe394fe553dc9136add230",
+    "글리아타민연질캡슐.txt": "832973605ecf61c037577539e4c3572951b7b80ed4d251648b96a95c98c0093c",
+    "낙소졸정 500_20mg.txt": "a7d650a74d013c06d0eff38702af4cbc54c512933c4902c37e65815866731d85",
+    "넥시움정 40mg.txt": "58935fd735a31c2317f65683f5e96b774664cbf29a910b0363144f049a731511",
+    "노바스크정 5mg.txt": "8eddc8ee970d7ea3660a89eaba0b9f350d3692b6126ca80ae20dbca9380eed72",
+    "놀텍정 10mg.txt": "7c27aed253917dfe48f7fc40ce759536c2d5728d21251e8cedada1318a1ad898",
+    "디카테오정.txt": "2d6155eed3fce817c7de4ab696714b89154bb8cecf974fabde342fa8cc7b0c08",
+    "라시도필캡슐(비매품).txt": "08013d7de505e375b0f0aeae5c53e3e1ce51eeb735e1b2b3b8aec826dd7bf7b2",
+    "마이칼디정.txt": "99e50323e3d9816db4bf23a0cf7f53164303b2dc2a03664e067777314dd0f7d4",
+    "맥시부펜이알정.txt": "cce0ae6141fc666abeb4bb2e92d80015998a5813b122e0919c34bffa72cd655c",
+    "뮤테란캡슐 100mg.txt": "49c442b2925752dd946e9916398a89d52a176f6ae616241024fa03a05aa947f8",
+    "비모보정 500_20mg.txt": "689e68b53450036aac081a3122041e41902d9914e2aee9547c41963e55110f4c",
+    "비오플250캡슐.txt": "591b66e2a95c7e1cdb9c42255277f77674c0289c5cf5331a29b405423d9c9220",
+    "비타비백정(비타민).txt": "e3946d6b3cfd08151cc4dbd070ce1882e4db50a69d3022cd7a96d7f964a9aa41",
+    "아보다트연질캡슐 0.5mg_1.txt": "8d0e83cbe4731f88b9ddfc69ea51645171878abbb55f318b042f43888dfed2fd",
+    "아스피린프로텍트정100mg.txt": "36af97377021347d1113f670cd866bde928f5c540da0589b08738e33c5108f3b",
+    "아토르바정 10mg.txt": "093c728c5eae406338013c7f0c30a4dc98fbe5d373093355dc023dfce960059b",
+    "엔테론정 150mg.txt": "56e22a20da7384956c80ba2792f155792fd9c08f3084f1324b69d0ede1db7213",
+    "울트라셋이알서방정.txt": "2bb38767b2b2b645d381b887628967cd38b9bfb0cf4f9d5539276d56c48951b3",
+    "인사돌플러스정 35mg_.txt": "a11764d110878f2f6846840c7b96115ccb3591f86fa719a00cd506014104b3c4",
+    "인사돌플러스정.txt": "bf6fb3c2bc0f92a8c4d46981a15b097469f6815b58acab7ce4ae58e60c298f8a",
+    "자누비아정 50mg.txt": "0e29ef927dff74db52b2eeb410b6d49fc6916eed661540e0a525911247ea4e7a",
+    "자트랄엑스엘정 10mg.txt": "e038280f7cadf4d26fae88bde10faea3a62d874554d02308fea26ac6db37c9b1",
+    "졸로푸트정 100mg.txt": "bcefa246741d2c4d58414252e8d74b67f34927108c914003d50a987b9c243f9d",
+    "종근당글리아티린연질캡슐.txt": "f8bcd77f0cc6128a7eb95124ccb5d262f7f16c67d2ff64e8dddd218f39babcb0",
+    "지르텍정(세티리진염산염).txt": "661bc412ba9a5c9159ebf1098b7eaa1970d4365c509f3c857de4bd13f53a9027",
+    "지르텍정.txt": "17575e52ba0452ee7ccec7b91ddb51b59c35b5d9e959a2fc410ab8635bb2de1a",
+    "케이캡정 50mg.txt": "7691f7bd59df82f395d279ed5765e5450f2d9fe0decc40a24748cbbdde7d6aa6",
+    "쿠에타핀정 25mg.txt": "0d63035d252a78d93867b1bdaf659f9cdb6d781bb5ce6ad6d753b39f01fa9235",
+    "타이레놀500mg.txt": "d985b01c9a4d8f87ff93315c44910a7744cc09a656b0dc1cceabcdb8c2a1a714",
+    "타이레놀이알서방정(아세트아미노펜)(수출용).txt": "da4276560a08a6bb324184eaa44fb9c6aafb176bf05e5e9fd6aeaf32919da894",
+    "트루비타정 60mg.txt": "cdac643f29e3ef1f03d923bba91fe6f7ebbe0930ec901e3ec488049313751574",
+    "프로스카정.txt": "3b159cf70c05a929afd7a919b857b0664732b19604f33901f506046171de74a9"
+  },
+  "source_files": [
+    {
+      "file": "eval/reference/class_mapping.json",
+      "bytes": 15398,
+      "sha256": "647caf3d2c6f657dc959820175f57bd290e6b2417ee96dd5c2c2d355d07ab11f"
+    },
+    {
+      "file": "demo/v4/pill.yaml",
+      "bytes": 3840,
+      "sha256": "36cf3884f9ae5fabd4d177fc29e768a19ab24ea7e3f7eb094c762122e10b74d2"
+    },
+    {
+      "file": "eval/answer_key.json",
+      "bytes": 6257,
+      "sha256": "5d4c3a295a320d882af2d2c64c488c96096d36031a08097b411c3b40e4a4f225"
+    },
+    {
+      "file": "eval/rtmdet_tiny_synth_e11_seed100_results.json",
+      "bytes": 81581,
+      "sha256": "91259ecbc0ad664331a17d836d1acd0e8ef5dd28a07925c12c32530e2c9c86e5"
+    },
+    {
+      "file": "eval/rtmdet_tiny_synth_e14_seed100_results.json",
+      "bytes": 84070,
+      "sha256": "573e0464df43e220aae09443511d2149fea63ba094e23c5f2c15ec5b5ab21512"
+    },
+    {
+      "file": "eval/rtmdet_tiny_synth_e15_seed100_results.json",
+      "bytes": 150438,
+      "sha256": "3d7aa21564462fc804e575c7d653d13296a4ea183dc4afd8c9dd4bf471fe4636"
+    },
+    {
+      "file": "eval/rtmdet_tiny_synth_v4_e13_seed100_results.json",
+      "bytes": 75386,
+      "sha256": "8d552d90e19a64f26ab7189f2f60798cef9d35aeb88357b3e6a75680e2c883d1"
+    },
+    {
+      "file": "eval/test_images/게보린정 300mg_3.png",
+      "bytes": 27183,
+      "sha256": "f4608e5e2d5decb681a256c33e744844b9366fd675509f60a5909c6992a08136"
+    },
+    {
+      "file": "eval/test_images/글리아타민연질캡슐.png",
+      "bytes": 756641,
+      "sha256": "381d1f90e1b5a08c47c5c9e1ff7accc9e55afb8036d2ba14472b46166dd9560c"
+    },
+    {
+      "file": "eval/test_images/낙소졸정 500_20mg.png",
+      "bytes": 1604911,
+      "sha256": "2aed53bfd7e31f61fb0388bb2448c3cf8b36dbabfaf0e72cd0de9650cac0575d"
+    },
+    {
+      "file": "eval/test_images/넥시움정 40mg.png",
+      "bytes": 730781,
+      "sha256": "203fd009abef1d8cd80ee1263423b9a7c2c4511fe74e68ad002d4491d52dd22b"
+    },
+    {
+      "file": "eval/test_images/노바스크정 5mg.png",
+      "bytes": 736418,
+      "sha256": "de88a908595cdd25698ed5420098fd5d66d5dba2fa823ff0d61a987238735aab"
+    },
+    {
+      "file": "eval/test_images/놀텍정 10mg.png",
+      "bytes": 564885,
+      "sha256": "26e3f219140d4b1508e624736cf1cd425627e4ad8e93dbfe5321293169c6981f"
+    },
+    {
+      "file": "eval/test_images/디카테오정.png",
+      "bytes": 301114,
+      "sha256": "403e4f33f35a309bb1e2f9c17f73147ee0cc12a4cee70df7cf974853fba5eb89"
+    },
+    {
+      "file": "eval/test_images/라시도필캡슐(비매품).png",
+      "bytes": 248491,
+      "sha256": "960089368d8e31585d2dab747e25a1125a7f5013b1a5d5998364c31cfb075d5e"
+    },
+    {
+      "file": "eval/test_images/마이칼디정.png",
+      "bytes": 443980,
+      "sha256": "c1388b670472bd1a719d7a84ae8466b0b5afb4860e0f94ac74a19dd9445cd24d"
+    },
+    {
+      "file": "eval/test_images/맥시부펜이알정.png",
+      "bytes": 431274,
+      "sha256": "f4fdf7d8b76f085e3c485551323f1fe997d4e2c466b32a9f0d445cc810ee42ea"
+    },
+    {
+      "file": "eval/test_images/뮤테란캡슐 100mg.png",
+      "bytes": 1069065,
+      "sha256": "594fd8a04b86b9f01912d9ae0517c8e0f994180100d27eae1fd0699f0094257d"
+    },
+    {
+      "file": "eval/test_images/비모보정 500_20mg.png",
+      "bytes": 260599,
+      "sha256": "10268385a50fefd62f8f71119a6eb7abfff0aa1ba9568903b62861e7f75817ef"
+    },
+    {
+      "file": "eval/test_images/비오플250캡슐.png",
+      "bytes": 653558,
+      "sha256": "850f399d83652f4076f9eabf7f617656f43fce613d516d67163c519553767aee"
+    },
+    {
+      "file": "eval/test_images/비타비백정(비타민).png",
+      "bytes": 649218,
+      "sha256": "5c314a95a4763abbc6a7dfcae4661d8c5ccd091fa25c2739b38eb3fd77e75b58"
+    },
+    {
+      "file": "eval/test_images/아보다트연질캡슐 0.5mg_1.png",
+      "bytes": 331186,
+      "sha256": "292079df4f0bcfc534489c184595e763e4f80f69655ec8de3d0fae03d2d5ca5d"
+    },
+    {
+      "file": "eval/test_images/아스피린프로텍트정100mg.png",
+      "bytes": 281552,
+      "sha256": "eaa24d3fa982169f7cfd898fb19f3f1005a254a1cfb28e7d63522996eaea3c33"
+    },
+    {
+      "file": "eval/test_images/아토르바정 10mg.png",
+      "bytes": 342906,
+      "sha256": "2e7e0ea6a73725bc34a913a3f32c8b277b3c2f72639f0ed3cff62a8375b43efe"
+    },
+    {
+      "file": "eval/test_images/엔테론정 150mg.png",
+      "bytes": 242604,
+      "sha256": "aece85826102cd4210d3b21024d9471abdfe84e81bc4498cbcb6e7d9a01f6925"
+    },
+    {
+      "file": "eval/test_images/울트라셋이알서방정.png",
+      "bytes": 1381031,
+      "sha256": "5dd1391929e6b60eac03f9bce00fe503dab3eccfffb9ff168dafe4e320e7435e"
+    },
+    {
+      "file": "eval/test_images/인사돌플러스정 35mg_.png",
+      "bytes": 155306,
+      "sha256": "6af59230345edae924a9b45ca1253549ef5415da07f0d9d9adaa7a57c54e327c"
+    },
+    {
+      "file": "eval/test_images/인사돌플러스정.png",
+      "bytes": 954451,
+      "sha256": "38450c93c27519b454861648b17e819ccb64786142e97870af96e388808ab84e"
+    },
+    {
+      "file": "eval/test_images/자누비아정 50mg.png",
+      "bytes": 1073802,
+      "sha256": "a582373fa3b50203a4e9dc5e7d59bdfe149daabf7f378220c47e81736783db52"
+    },
+    {
+      "file": "eval/test_images/자트랄엑스엘정 10mg.png",
+      "bytes": 716407,
+      "sha256": "558081a378f0619381da8f89f1e12cb301edf30103f2674f6263f632825cdd2e"
+    },
+    {
+      "file": "eval/test_images/졸로푸트정 100mg.png",
+      "bytes": 353153,
+      "sha256": "77ccd0c64bfe42dad8e0dfd084cdf9035b0d4e316b11073d232afa5fecd9f730"
+    },
+    {
+      "file": "eval/test_images/종근당글리아티린연질캡슐.png",
+      "bytes": 366034,
+      "sha256": "85faaff86bde6ca0f19f86d1b525bdf7d615eb3fe0a01cfd78ed1a011e365f29"
+    },
+    {
+      "file": "eval/test_images/지르텍정(세티리진염산염).png",
+      "bytes": 124529,
+      "sha256": "a001d6af97d09694e23871d3dd5c197c7fae55a9d4e4d8a23d0841a76fc3214d"
+    },
+    {
+      "file": "eval/test_images/지르텍정.png",
+      "bytes": 803813,
+      "sha256": "6cf6a85389b3c7761d9213e7ad716ab037796151b4516b0b6cbe4a40c5e77112"
+    },
+    {
+      "file": "eval/test_images/케이캡정 50mg.png",
+      "bytes": 475632,
+      "sha256": "e8f1575604ae1884115bdaaa8449a8c66f1a9eacf27704db88d067bb5338eb40"
+    },
+    {
+      "file": "eval/test_images/쿠에타핀정 25mg.png",
+      "bytes": 188428,
+      "sha256": "2d4e99c3149ab2be4aa42c2c4094f0fbd0e4813280d30a8a466df6fcaab9d63e"
+    },
+    {
+      "file": "eval/test_images/타이레놀500mg.png",
+      "bytes": 433133,
+      "sha256": "94c82ae7586d9b9def135cfca9da4a0f479f3789a7e1aef622a2e508f3c6d0d8"
+    },
+    {
+      "file": "eval/test_images/타이레놀이알서방정(아세트아미노펜)(수출용).png",
+      "bytes": 201741,
+      "sha256": "ebd838dd1b341d78f0947c4254c3f729ae422d202b9a4da0e91946ee8610b562"
+    },
+    {
+      "file": "eval/test_images/트루비타정 60mg.png",
+      "bytes": 949594,
+      "sha256": "b8491ffa261f9a7d9d28e2dd54659968be42fad1e89e8ca911ea3a732dfc1be8"
+    },
+    {
+      "file": "eval/test_images/프로스카정.png",
+      "bytes": 49226,
+      "sha256": "d00a321840502802a1908e1a61e27d7e4542e8a2bc92b70852395295a904c2ac"
+    },
+    {
+      "file": "eval/test_labels/게보린정 300mg_3.txt",
+      "bytes": 39,
+      "sha256": "021a5779ca21f7b12278a7fc38a82f0181fd41fc7dbe394fe553dc9136add230"
+    },
+    {
+      "file": "eval/test_labels/글리아타민연질캡슐.txt",
+      "bytes": 40,
+      "sha256": "832973605ecf61c037577539e4c3572951b7b80ed4d251648b96a95c98c0093c"
+    },
+    {
+      "file": "eval/test_labels/낙소졸정 500_20mg.txt",
+      "bytes": 40,
+      "sha256": "a7d650a74d013c06d0eff38702af4cbc54c512933c4902c37e65815866731d85"
+    },
+    {
+      "file": "eval/test_labels/넥시움정 40mg.txt",
+      "bytes": 40,
+      "sha256": "58935fd735a31c2317f65683f5e96b774664cbf29a910b0363144f049a731511"
+    },
+    {
+      "file": "eval/test_labels/노바스크정 5mg.txt",
+      "bytes": 40,
+      "sha256": "8eddc8ee970d7ea3660a89eaba0b9f350d3692b6126ca80ae20dbca9380eed72"
+    },
+    {
+      "file": "eval/test_labels/놀텍정 10mg.txt",
+      "bytes": 80,
+      "sha256": "7c27aed253917dfe48f7fc40ce759536c2d5728d21251e8cedada1318a1ad898"
+    },
+    {
+      "file": "eval/test_labels/디카테오정.txt",
+      "bytes": 120,
+      "sha256": "2d6155eed3fce817c7de4ab696714b89154bb8cecf974fabde342fa8cc7b0c08"
+    },
+    {
+      "file": "eval/test_labels/라시도필캡슐(비매품).txt",
+      "bytes": 80,
+      "sha256": "08013d7de505e375b0f0aeae5c53e3e1ce51eeb735e1b2b3b8aec826dd7bf7b2"
+    },
+    {
+      "file": "eval/test_labels/마이칼디정.txt",
+      "bytes": 80,
+      "sha256": "99e50323e3d9816db4bf23a0cf7f53164303b2dc2a03664e067777314dd0f7d4"
+    },
+    {
+      "file": "eval/test_labels/맥시부펜이알정.txt",
+      "bytes": 80,
+      "sha256": "cce0ae6141fc666abeb4bb2e92d80015998a5813b122e0919c34bffa72cd655c"
+    },
+    {
+      "file": "eval/test_labels/뮤테란캡슐 100mg.txt",
+      "bytes": 39,
+      "sha256": "49c442b2925752dd946e9916398a89d52a176f6ae616241024fa03a05aa947f8"
+    },
+    {
+      "file": "eval/test_labels/비모보정 500_20mg.txt",
+      "bytes": 40,
+      "sha256": "689e68b53450036aac081a3122041e41902d9914e2aee9547c41963e55110f4c"
+    },
+    {
+      "file": "eval/test_labels/비오플250캡슐.txt",
+      "bytes": 40,
+      "sha256": "591b66e2a95c7e1cdb9c42255277f77674c0289c5cf5331a29b405423d9c9220"
+    },
+    {
+      "file": "eval/test_labels/비타비백정(비타민).txt",
+      "bytes": 40,
+      "sha256": "e3946d6b3cfd08151cc4dbd070ce1882e4db50a69d3022cd7a96d7f964a9aa41"
+    },
+    {
+      "file": "eval/test_labels/아보다트연질캡슐 0.5mg_1.txt",
+      "bytes": 40,
+      "sha256": "8d0e83cbe4731f88b9ddfc69ea51645171878abbb55f318b042f43888dfed2fd"
+    },
+    {
+      "file": "eval/test_labels/아스피린프로텍트정100mg.txt",
+      "bytes": 40,
+      "sha256": "36af97377021347d1113f670cd866bde928f5c540da0589b08738e33c5108f3b"
+    },
+    {
+      "file": "eval/test_labels/아토르바정 10mg.txt",
+      "bytes": 80,
+      "sha256": "093c728c5eae406338013c7f0c30a4dc98fbe5d373093355dc023dfce960059b"
+    },
+    {
+      "file": "eval/test_labels/엔테론정 150mg.txt",
+      "bytes": 80,
+      "sha256": "56e22a20da7384956c80ba2792f155792fd9c08f3084f1324b69d0ede1db7213"
+    },
+    {
+      "file": "eval/test_labels/울트라셋이알서방정.txt",
+      "bytes": 40,
+      "sha256": "2bb38767b2b2b645d381b887628967cd38b9bfb0cf4f9d5539276d56c48951b3"
+    },
+    {
+      "file": "eval/test_labels/인사돌플러스정 35mg_.txt",
+      "bytes": 80,
+      "sha256": "a11764d110878f2f6846840c7b96115ccb3591f86fa719a00cd506014104b3c4"
+    },
+    {
+      "file": "eval/test_labels/인사돌플러스정.txt",
+      "bytes": 40,
+      "sha256": "bf6fb3c2bc0f92a8c4d46981a15b097469f6815b58acab7ce4ae58e60c298f8a"
+    },
+    {
+      "file": "eval/test_labels/자누비아정 50mg.txt",
+      "bytes": 80,
+      "sha256": "0e29ef927dff74db52b2eeb410b6d49fc6916eed661540e0a525911247ea4e7a"
+    },
+    {
+      "file": "eval/test_labels/자트랄엑스엘정 10mg.txt",
+      "bytes": 80,
+      "sha256": "e038280f7cadf4d26fae88bde10faea3a62d874554d02308fea26ac6db37c9b1"
+    },
+    {
+      "file": "eval/test_labels/졸로푸트정 100mg.txt",
+      "bytes": 80,
+      "sha256": "bcefa246741d2c4d58414252e8d74b67f34927108c914003d50a987b9c243f9d"
+    },
+    {
+      "file": "eval/test_labels/종근당글리아티린연질캡슐.txt",
+      "bytes": 80,
+      "sha256": "f8bcd77f0cc6128a7eb95124ccb5d262f7f16c67d2ff64e8dddd218f39babcb0"
+    },
+    {
+      "file": "eval/test_labels/지르텍정(세티리진염산염).txt",
+      "bytes": 40,
+      "sha256": "661bc412ba9a5c9159ebf1098b7eaa1970d4365c509f3c857de4bd13f53a9027"
+    },
+    {
+      "file": "eval/test_labels/지르텍정.txt",
+      "bytes": 40,
+      "sha256": "17575e52ba0452ee7ccec7b91ddb51b59c35b5d9e959a2fc410ab8635bb2de1a"
+    },
+    {
+      "file": "eval/test_labels/케이캡정 50mg.txt",
+      "bytes": 41,
+      "sha256": "7691f7bd59df82f395d279ed5765e5450f2d9fe0decc40a24748cbbdde7d6aa6"
+    },
+    {
+      "file": "eval/test_labels/쿠에타핀정 25mg.txt",
+      "bytes": 40,
+      "sha256": "0d63035d252a78d93867b1bdaf659f9cdb6d781bb5ce6ad6d753b39f01fa9235"
+    },
+    {
+      "file": "eval/test_labels/타이레놀500mg.txt",
+      "bytes": 40,
+      "sha256": "d985b01c9a4d8f87ff93315c44910a7744cc09a656b0dc1cceabcdb8c2a1a714"
+    },
+    {
+      "file": "eval/test_labels/타이레놀이알서방정(아세트아미노펜)(수출용).txt",
+      "bytes": 40,
+      "sha256": "da4276560a08a6bb324184eaa44fb9c6aafb176bf05e5e9fd6aeaf32919da894"
+    },
+    {
+      "file": "eval/test_labels/트루비타정 60mg.txt",
+      "bytes": 40,
+      "sha256": "cdac643f29e3ef1f03d923bba91fe6f7ebbe0930ec901e3ec488049313751574"
+    },
+    {
+      "file": "eval/test_labels/프로스카정.txt",
+      "bytes": 80,
+      "sha256": "a9c51c609dca9b71d4b67be6a7893047be7cd7c412c6f2f1bf579d53dbe9c4d5"
+    }
+  ],
+  "approval": {
+    "date_kst": "2026-10-24",
+    "scope": "Separate label v2 and errata only; originals and public metrics unchanged",
+    "evidence": "Owner visual confirmation relayed in thread #504; direct approval in Codex chat after #505"
+  },
+  "auxiliary_index_warnings_preserved": [
+    {
+      "filename": "글리아타민연질캡슐.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 2
+    },
+    {
+      "filename": "낙소졸정 500_20mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 5
+    },
+    {
+      "filename": "넥시움정 40mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 6
+    },
+    {
+      "filename": "노바스크정 5mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 7
+    },
+    {
+      "filename": "놀텍정 10mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 8
+    },
+    {
+      "filename": "디카테오정.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 16
+    },
+    {
+      "filename": "라시도필캡슐(비매품).png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 18
+    },
+    {
+      "filename": "마이칼디정.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 33
+    },
+    {
+      "filename": "맥시부펜이알정.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 34
+    },
+    {
+      "filename": "뮤테란캡슐 100mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 38
+    },
+    {
+      "filename": "비모보정 500_20mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 44
+    },
+    {
+      "filename": "비오플250캡슐.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 45
+    },
+    {
+      "filename": "비타비백정(비타민).png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 47
+    },
+    {
+      "filename": "아보다트연질캡슐 0.5mg_1.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 57
+    },
+    {
+      "filename": "아스피린프로텍트정100mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 59
+    },
+    {
+      "filename": "아토르바정 10mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 61
+    },
+    {
+      "filename": "엔테론정 150mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 72
+    },
+    {
+      "filename": "울트라셋이알서방정.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 78
+    },
+    {
+      "filename": "인사돌플러스정 35mg_.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 82
+    },
+    {
+      "filename": "인사돌플러스정.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 82
+    },
+    {
+      "filename": "자누비아정 50mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 86
+    },
+    {
+      "filename": "자트랄엑스엘정 10mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 88
+    },
+    {
+      "filename": "졸로푸트정 100mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 92
+    },
+    {
+      "filename": "종근당글리아티린연질캡슐.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 93
+    },
+    {
+      "filename": "지르텍정(세티리진염산염).png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 94
+    },
+    {
+      "filename": "지르텍정.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 94
+    },
+    {
+      "filename": "케이캡정 50mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 98
+    },
+    {
+      "filename": "쿠에타핀정 25mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 100
+    },
+    {
+      "filename": "타이레놀500mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 105
+    },
+    {
+      "filename": "타이레놀이알서방정(아세트아미노펜)(수출용).png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 104
+    },
+    {
+      "filename": "트루비타정 60mg.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 110
+    },
+    {
+      "filename": "프로스카정.png",
+      "code": "AUXILIARY_INDEX_NAMESPACE_DIFFERS",
+      "answer_class_idx": 114
+    }
+  ],
+  "model_executed": false,
+  "creator_code_sha256": "6f8d36b43a934d053ff51d3e9d0e501a501b3dcff75f0390bbd6e7af2b5908f6",
+  "ground_truth_file_sha256": "0a1296f420b12b85c1d5d03c1d5f1671534ca8448f6270ee6e8c374492f7174d"
+}

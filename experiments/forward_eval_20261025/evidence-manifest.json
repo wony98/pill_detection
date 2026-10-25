@@ -237,8 +237,9 @@
     {
       "file": "docs/errata_label_v2_20261024/errata.json",
       "source": "original-errata/errata.json",
-      "source_sha256": "bb7311b38ca5ed16d43cdd87553c5b8d0173d5c4afa8d1f79b06c68c37575b56",
-      "sha256": "bb7311b38ca5ed16d43cdd87553c5b8d0173d5c4afa8d1f79b06c68c37575b56",
+      "source_revision": "post-mapping-portability-20261024",
+      "source_sha256": "b60f4efce11ddc375b2ef914d330e31292706dd1bce0fa3d25e4f8118e7e5826",
+      "sha256": "b60f4efce11ddc375b2ef914d330e31292706dd1bce0fa3d25e4f8118e7e5826",
       "transform": "byte-identical"
     },
     {
@@ -304,7 +305,7 @@
     },
     {
       "file": "docs/errata_label_v2_20261024/README.md",
-      "sha256": "58b91c483ddbda88b3cce76f5f32a84bd272e232fbe0af37fff4d90e793f53a8",
+      "sha256": "4e2111820ea02a63306d88b26076a3cd6821a4241b91d9f7ca91d2806ce52782",
       "transform": "generated-packaging-document"
     },
     {

@@ -6,7 +6,7 @@
   "source_json_gt_version": "v1",
   "v1_gt_sha256": "20d8da2c0019248e3e1c8c407135975278db2da46f4e3885aa34e690338c785d",
   "v2_gt_sha256": "3765b4441cbcfae33ca6380bbd66ebeb8bb9b467de6e2097c332a7a4b6d79720",
-  "label_manifest_sha256": "940992d02b32a32fd009565cb29eab09990ba9b6ec706bd21fe758820cd15250",
+  "label_manifest_sha256": "84a7c62dc5e2b73599ec158b3d6d070bc18b65e7d17a1ccf23f1e66ef4738226",
   "semantics": "label correction only; predictions not rerun; 0.25 is historical stored-score filtering",
   "rows": [
     {
@@ -349,7 +349,7 @@
     "rtmdet_tiny_synth_v4_e13_seed100_results__gt-v2__posthoc-0p25.json": "0fc065f161911db4b1175c540fe0390730ded6d760a174d25e09fba0fb043b10"
   },
   "code_sha256": {
-    "label_errata.py": "6f8d36b43a934d053ff51d3e9d0e501a501b3dcff75f0390bbd6e7af2b5908f6",
+    "label_errata.py": "16da2b75273bab4ce728fe742d6b2e6eeb3263dd3aa30d4ebb067623be7640f7",
     "evaluation.py": "8f02d2374c4994576fa7bf710cc76302df1a3cca96b8b6b3a6452e0f535f8919",
     "backfill_runs.py": "dc07f56e869a7f7d35b8bdf5cf83dddba92ae2e45c0486296e9a90f5e1c0b51f"
   }

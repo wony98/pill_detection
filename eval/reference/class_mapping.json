@@ -1,0 +1,606 @@
+{
+  "schema_version": 1,
+  "columns": [
+    "dl_idx",
+    "final_class_idx_merged",
+    "dl_name"
+  ],
+  "row_count": 118,
+  "source_file": "data/final_mapping_after_category_merge.csv",
+  "source_sha256": "eb8c1bfdb68c5b394dbe68b77b4f3f683df4f34271ebada3a4b23da9d7687dff",
+  "source_required_at_runtime": false,
+  "empty_source_dl_idx_preserved": 2,
+  "rows_sha256": "91a8384eacc15056d85ff4700f2e1d30fb48ff0a464a52dae58a5b1e7ab9c76a",
+  "rows": [
+    {
+      "dl_idx": "249",
+      "final_class_idx_merged": 0,
+      "dl_name": "마그밀정(수산화마그네슘)"
+    },
+    {
+      "dl_idx": "572",
+      "final_class_idx_merged": 1,
+      "dl_name": "게보린정 300mg/PTP"
+    },
+    {
+      "dl_idx": "1865",
+      "final_class_idx_merged": 2,
+      "dl_name": "알마겔정(알마게이트)(수출명:유한가스트라겔정)"
+    },
+    {
+      "dl_idx": "1899",
+      "final_class_idx_merged": 3,
+      "dl_name": "보령부스파정 5mg"
+    },
+    {
+      "dl_idx": "2482",
+      "final_class_idx_merged": 4,
+      "dl_name": "뮤테란캡슐 100mg"
+    },
+    {
+      "dl_idx": "",
+      "final_class_idx_merged": 5,
+      "dl_name": "일양하이트린정 2mg"
+    },
+    {
+      "dl_idx": "",
+      "final_class_idx_merged": 6,
+      "dl_name": "기넥신에프정(은행엽엑스)(수출용)"
+    },
+    {
+      "dl_idx": "3543",
+      "final_class_idx_merged": 7,
+      "dl_name": "무코스타정(레바미피드)(비매품)"
+    },
+    {
+      "dl_idx": "3613",
+      "final_class_idx_merged": 8,
+      "dl_name": "동아오팔몬정(리마프로스트알파-시클로덱스트린포접화합물)"
+    },
+    {
+      "dl_idx": "3742",
+      "final_class_idx_merged": 9,
+      "dl_name": "알드린정"
+    },
+    {
+      "dl_idx": "3831",
+      "final_class_idx_merged": 10,
+      "dl_name": "뉴로메드정(옥시라세탐)"
+    },
+    {
+      "dl_idx": "4377",
+      "final_class_idx_merged": 11,
+      "dl_name": "타이레놀정500mg"
+    },
+    {
+      "dl_idx": "4542",
+      "final_class_idx_merged": 12,
+      "dl_name": "에어탈정(아세클로페낙)"
+    },
+    {
+      "dl_idx": "4999",
+      "final_class_idx_merged": 13,
+      "dl_name": "비유피-4정 20mg"
+    },
+    {
+      "dl_idx": "5001",
+      "final_class_idx_merged": 14,
+      "dl_name": "엘도스캡슐(에르도스테인)(수출용)"
+    },
+    {
+      "dl_idx": "5093",
+      "final_class_idx_merged": 15,
+      "dl_name": "삼남건조수산화알루미늄겔정"
+    },
+    {
+      "dl_idx": "5390",
+      "final_class_idx_merged": 16,
+      "dl_name": "프로스카정"
+    },
+    {
+      "dl_idx": "5885",
+      "final_class_idx_merged": 17,
+      "dl_name": "타이레놀이알서방정(아세트아미노펜)(수출용)"
+    },
+    {
+      "dl_idx": "6191",
+      "final_class_idx_merged": 18,
+      "dl_name": "삐콤씨에프정 618.6mg/병"
+    },
+    {
+      "dl_idx": "6562",
+      "final_class_idx_merged": 19,
+      "dl_name": "조인스정 200mg"
+    },
+    {
+      "dl_idx": "6696",
+      "final_class_idx_merged": 20,
+      "dl_name": "씨즈날정(세티리진염산염)"
+    },
+    {
+      "dl_idx": "6834",
+      "final_class_idx_merged": 21,
+      "dl_name": "이튼큐정 35mg/PTP"
+    },
+    {
+      "dl_idx": "10220",
+      "final_class_idx_merged": 22,
+      "dl_name": "쎄로켈정 100mg"
+    },
+    {
+      "dl_idx": "10223",
+      "final_class_idx_merged": 23,
+      "dl_name": "넥시움정 40mg"
+    },
+    {
+      "dl_idx": "10486",
+      "final_class_idx_merged": 24,
+      "dl_name": "동화덴스톨캡슐 150mg/PTP"
+    },
+    {
+      "dl_idx": "11219",
+      "final_class_idx_merged": 25,
+      "dl_name": "아스피린프로텍트정 100mg"
+    },
+    {
+      "dl_idx": "12080",
+      "final_class_idx_merged": 26,
+      "dl_name": "리렉스펜정 300mg/PTP"
+    },
+    {
+      "dl_idx": "12246",
+      "final_class_idx_merged": 27,
+      "dl_name": "아빌리파이정 10mg"
+    },
+    {
+      "dl_idx": "12419",
+      "final_class_idx_merged": 28,
+      "dl_name": "자이프렉사정 2.5mg"
+    },
+    {
+      "dl_idx": "12637",
+      "final_class_idx_merged": 29,
+      "dl_name": "투스딘골드캡슐 150mg/PTP"
+    },
+    {
+      "dl_idx": "12777",
+      "final_class_idx_merged": 30,
+      "dl_name": "다보타민큐정 10mg/병"
+    },
+    {
+      "dl_idx": "13003",
+      "final_class_idx_merged": 31,
+      "dl_name": "이가탄에프캡슐 150mg/PTP"
+    },
+    {
+      "dl_idx": "13160",
+      "final_class_idx_merged": 32,
+      "dl_name": "엘스테인캡슐(에르도스테인)"
+    },
+    {
+      "dl_idx": "13394",
+      "final_class_idx_merged": 33,
+      "dl_name": "써스펜8시간이알서방정 650mg"
+    },
+    {
+      "dl_idx": "13899",
+      "final_class_idx_merged": 34,
+      "dl_name": "에빅사정(메만틴염산염)(비매품)"
+    },
+    {
+      "dl_idx": "15279",
+      "final_class_idx_merged": 35,
+      "dl_name": "한미탐스캡슐 0.2mg"
+    },
+    {
+      "dl_idx": "15709",
+      "final_class_idx_merged": 36,
+      "dl_name": "엔테론정 150mg"
+    },
+    {
+      "dl_idx": "16205",
+      "final_class_idx_merged": 37,
+      "dl_name": "아보다트연질캡슐 0.5mg"
+    },
+    {
+      "dl_idx": "16231",
+      "final_class_idx_merged": 38,
+      "dl_name": "리피토정 20mg"
+    },
+    {
+      "dl_idx": "16234",
+      "final_class_idx_merged": 39,
+      "dl_name": "카듀엣정 5mg/20mg"
+    },
+    {
+      "dl_idx": "16261",
+      "final_class_idx_merged": 40,
+      "dl_name": "크레스토정 20mg"
+    },
+    {
+      "dl_idx": "16547",
+      "final_class_idx_merged": 41,
+      "dl_name": "가바토파정 100mg"
+    },
+    {
+      "dl_idx": "16550",
+      "final_class_idx_merged": 42,
+      "dl_name": "동아가바펜틴정 800mg"
+    },
+    {
+      "dl_idx": "16687",
+      "final_class_idx_merged": 43,
+      "dl_name": "오마코연질캡슐(오메가-3-산에틸에스테르90)"
+    },
+    {
+      "dl_idx": "18109",
+      "final_class_idx_merged": 44,
+      "dl_name": "란스톤엘에프디티정 30mg"
+    },
+    {
+      "dl_idx": "18146",
+      "final_class_idx_merged": 45,
+      "dl_name": "리리카캡슐 150mg"
+    },
+    {
+      "dl_idx": "18356",
+      "final_class_idx_merged": 46,
+      "dl_name": "종근당글리아티린연질캡슐(콜린알포세레이트) "
+    },
+    {
+      "dl_idx": "19231",
+      "final_class_idx_merged": 47,
+      "dl_name": "콜리네이트연질캡슐 400mg"
+    },
+    {
+      "dl_idx": "19551",
+      "final_class_idx_merged": 48,
+      "dl_name": "트루비타정 60mg/병"
+    },
+    {
+      "dl_idx": "19606",
+      "final_class_idx_merged": 49,
+      "dl_name": "스토가정 10mg"
+    },
+    {
+      "dl_idx": "19860",
+      "final_class_idx_merged": 50,
+      "dl_name": "노바스크정 5mg"
+    },
+    {
+      "dl_idx": "19880",
+      "final_class_idx_merged": 51,
+      "dl_name": "지르텍정(세티리진염산염)"
+    },
+    {
+      "dl_idx": "20003",
+      "final_class_idx_merged": 52,
+      "dl_name": "라시도필캡슐(비매품)"
+    },
+    {
+      "dl_idx": "20013",
+      "final_class_idx_merged": 53,
+      "dl_name": "마도파정"
+    },
+    {
+      "dl_idx": "20237",
+      "final_class_idx_merged": 54,
+      "dl_name": "플라빅스정 75mg"
+    },
+    {
+      "dl_idx": "20258",
+      "final_class_idx_merged": 55,
+      "dl_name": "자트랄엑스엘정 10mg"
+    },
+    {
+      "dl_idx": "20752",
+      "final_class_idx_merged": 56,
+      "dl_name": "인사돌플러스정 35mg/PTP"
+    },
+    {
+      "dl_idx": "20851",
+      "final_class_idx_merged": 57,
+      "dl_name": "베시케어정 10mg"
+    },
+    {
+      "dl_idx": "20876",
+      "final_class_idx_merged": 58,
+      "dl_name": "엑스포지정 5/160mg"
+    },
+    {
+      "dl_idx": "21025",
+      "final_class_idx_merged": 59,
+      "dl_name": "펠루비정(펠루비프로펜)"
+    },
+    {
+      "dl_idx": "21324",
+      "final_class_idx_merged": 60,
+      "dl_name": "아토르바정 10mg"
+    },
+    {
+      "dl_idx": "21770",
+      "final_class_idx_merged": 61,
+      "dl_name": "라비에트정 20mg"
+    },
+    {
+      "dl_idx": "22073",
+      "final_class_idx_merged": 62,
+      "dl_name": "리피로우정 20mg"
+    },
+    {
+      "dl_idx": "22346",
+      "final_class_idx_merged": 63,
+      "dl_name": "자누비아정 50mg"
+    },
+    {
+      "dl_idx": "22361",
+      "final_class_idx_merged": 64,
+      "dl_name": "맥시부펜이알정 300mg"
+    },
+    {
+      "dl_idx": "22626",
+      "final_class_idx_merged": 65,
+      "dl_name": "메가파워정 90mg/병"
+    },
+    {
+      "dl_idx": "23202",
+      "final_class_idx_merged": 66,
+      "dl_name": "쿠에타핀정 25mg"
+    },
+    {
+      "dl_idx": "23222",
+      "final_class_idx_merged": 67,
+      "dl_name": "비타비백정 100mg/병"
+    },
+    {
+      "dl_idx": "23318",
+      "final_class_idx_merged": 68,
+      "dl_name": "디카맥스디플러스정"
+    },
+    {
+      "dl_idx": "24751",
+      "final_class_idx_merged": 69,
+      "dl_name": "토비애즈서방정 4mg"
+    },
+    {
+      "dl_idx": "24849",
+      "final_class_idx_merged": 70,
+      "dl_name": "놀텍정 10mg"
+    },
+    {
+      "dl_idx": "24940",
+      "final_class_idx_merged": 71,
+      "dl_name": "액티프롤정 60mg/PTP"
+    },
+    {
+      "dl_idx": "25199",
+      "final_class_idx_merged": 72,
+      "dl_name": "마이칼디정"
+    },
+    {
+      "dl_idx": "25366",
+      "final_class_idx_merged": 73,
+      "dl_name": "자누메트정 50/850mg"
+    },
+    {
+      "dl_idx": "25437",
+      "final_class_idx_merged": 74,
+      "dl_name": "큐시드정 31.5mg/PTP"
+    },
+    {
+      "dl_idx": "25468",
+      "final_class_idx_merged": 75,
+      "dl_name": "아모잘탄정 5/100mg"
+    },
+    {
+      "dl_idx": "26454",
+      "final_class_idx_merged": 76,
+      "dl_name": "클라리틴정(로라타딘)"
+    },
+    {
+      "dl_idx": "26992",
+      "final_class_idx_merged": 77,
+      "dl_name": "원더칼-디츄어블정"
+    },
+    {
+      "dl_idx": "27652",
+      "final_class_idx_merged": 78,
+      "dl_name": "세비카정 10/40mg"
+    },
+    {
+      "dl_idx": "27732",
+      "final_class_idx_merged": 79,
+      "dl_name": "트윈스타정 40/5mg"
+    },
+    {
+      "dl_idx": "27776",
+      "final_class_idx_merged": 80,
+      "dl_name": "카나브정 60mg"
+    },
+    {
+      "dl_idx": "27925",
+      "final_class_idx_merged": 81,
+      "dl_name": "울트라셋이알서방정"
+    },
+    {
+      "dl_idx": "27992",
+      "final_class_idx_merged": 82,
+      "dl_name": "졸로푸트정 100mg"
+    },
+    {
+      "dl_idx": "28423",
+      "final_class_idx_merged": 83,
+      "dl_name": "플리바스정 50mg"
+    },
+    {
+      "dl_idx": "28762",
+      "final_class_idx_merged": 84,
+      "dl_name": "트라젠타정(리나글립틴)"
+    },
+    {
+      "dl_idx": "29344",
+      "final_class_idx_merged": 85,
+      "dl_name": "비모보정 500/20mg"
+    },
+    {
+      "dl_idx": "29450",
+      "final_class_idx_merged": 86,
+      "dl_name": "레일라정"
+    },
+    {
+      "dl_idx": "29666",
+      "final_class_idx_merged": 87,
+      "dl_name": "리바로정 4mg"
+    },
+    {
+      "dl_idx": "29710",
+      "final_class_idx_merged": 88,
+      "dl_name": "디카테오정"
+    },
+    {
+      "dl_idx": "29870",
+      "final_class_idx_merged": 89,
+      "dl_name": "렉사프로정 15mg"
+    },
+    {
+      "dl_idx": "30307",
+      "final_class_idx_merged": 90,
+      "dl_name": "트라젠타듀오정 2.5/850mg"
+    },
+    {
+      "dl_idx": "30849",
+      "final_class_idx_merged": 91,
+      "dl_name": "비오플250캡슐 282.5mg"
+    },
+    {
+      "dl_idx": "31704",
+      "final_class_idx_merged": 92,
+      "dl_name": "낙소졸정 500/20mg"
+    },
+    {
+      "dl_idx": "31862",
+      "final_class_idx_merged": 93,
+      "dl_name": "아질렉트정(라사길린메실산염)"
+    },
+    {
+      "dl_idx": "31884",
+      "final_class_idx_merged": 94,
+      "dl_name": "자누메트엑스알서방정 100/1000mg"
+    },
+    {
+      "dl_idx": "32309",
+      "final_class_idx_merged": 95,
+      "dl_name": "글리아타민연질캡슐"
+    },
+    {
+      "dl_idx": "33008",
+      "final_class_idx_merged": 96,
+      "dl_name": "신바로정"
+    },
+    {
+      "dl_idx": "33025",
+      "final_class_idx_merged": 97,
+      "dl_name": "트루패스정 4mg"
+    },
+    {
+      "dl_idx": "33207",
+      "final_class_idx_merged": 98,
+      "dl_name": "에스원엠프정 20mg"
+    },
+    {
+      "dl_idx": "33877",
+      "final_class_idx_merged": 99,
+      "dl_name": "브린텔릭스정 20mg"
+    },
+    {
+      "dl_idx": "33879",
+      "final_class_idx_merged": 100,
+      "dl_name": "글리틴정(콜린알포세레이트)"
+    },
+    {
+      "dl_idx": "34596",
+      "final_class_idx_merged": 101,
+      "dl_name": "제미메트서방정 50/1000mg"
+    },
+    {
+      "dl_idx": "35205",
+      "final_class_idx_merged": 102,
+      "dl_name": "아토젯정 10/40mg"
+    },
+    {
+      "dl_idx": "35658",
+      "final_class_idx_merged": 103,
+      "dl_name": "제라타딘정(로라타딘)"
+    },
+    {
+      "dl_idx": "36636",
+      "final_class_idx_merged": 104,
+      "dl_name": "로수젯정10/5밀리그램"
+    },
+    {
+      "dl_idx": "37776",
+      "final_class_idx_merged": 105,
+      "dl_name": "알바스테인캡슐(에르도스테인)"
+    },
+    {
+      "dl_idx": "38161",
+      "final_class_idx_merged": 106,
+      "dl_name": "로수바미브정 10/20mg"
+    },
+    {
+      "dl_idx": "38722",
+      "final_class_idx_merged": 107,
+      "dl_name": "엔트레스토필름코팅정 200mg"
+    },
+    {
+      "dl_idx": "38926",
+      "final_class_idx_merged": 108,
+      "dl_name": "락토엔큐캡슐(바실루스리케니포르미스균) "
+    },
+    {
+      "dl_idx": "38953",
+      "final_class_idx_merged": 109,
+      "dl_name": "뮤코원캡슐(에르도스테인)"
+    },
+    {
+      "dl_idx": "38971",
+      "final_class_idx_merged": 110,
+      "dl_name": "알러비정(세티리진염산염)"
+    },
+    {
+      "dl_idx": "41148",
+      "final_class_idx_merged": 111,
+      "dl_name": "람노스캡슐500mg/병"
+    },
+    {
+      "dl_idx": "41767",
+      "final_class_idx_merged": 112,
+      "dl_name": "카발린캡슐 25mg"
+    },
+    {
+      "dl_idx": "43232",
+      "final_class_idx_merged": 113,
+      "dl_name": "바이오탑디캡슐 50mg/병"
+    },
+    {
+      "dl_idx": "44198",
+      "final_class_idx_merged": 114,
+      "dl_name": "케이캡정 50mg"
+    },
+    {
+      "dl_idx": "44265",
+      "final_class_idx_merged": 115,
+      "dl_name": "바이오탑하이캡슐 150mg/병"
+    },
+    {
+      "dl_idx": "44833",
+      "final_class_idx_merged": 116,
+      "dl_name": "엘스테인정(에르도스테인)"
+    },
+    {
+      "dl_idx": "130376",
+      "final_class_idx_merged": 117,
+      "dl_name": "디카테오엘씨정 10mg/병"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "FAILED_BEFORE_RUN_CREATED",
+  "stage": "MlflowClient construction / SQLAlchemy import",
+  "error_type": "ImportError",
+  "message": "Windows application-control policy blocked SQLAlchemy _collections_cy DLL in sandboxed execution",
+  "run_id": null,
+  "model_inference_and_scoring": "completed separately; not changed",
+  "preserved_log": "../record-01.log",
+  "receipt_origin": "failure documented after command returned; no rerun or overwrite in this folder"
+}

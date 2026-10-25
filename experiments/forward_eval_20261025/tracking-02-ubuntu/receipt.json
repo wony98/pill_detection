@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "run_id": "78d809eff3fd4c058d1d6cff958c01f3",
+  "record": {
+    "params": {
+      "checkpoint_sha256": "dd6dde2600752744321f5a266f3d1366c1d030762300ee61b09682bad18f77f7",
+      "config_sha256": "36d7bca052fc96af71d0469926eaf277c15be74796a5d01100163c3627e4b8a7",
+      "gt_sha256": "3765b4441cbcfae33ca6380bbd66ebeb8bb9b467de6e2097c332a7a4b6d79720",
+      "input_manifest_sha256": "4a7a6c4cdd5cb42812096e337fc2034aa724ab77f3d053a45b29aa12d7164df8"
+    },
+    "points": [
+      [
+        "conf005_detection_rate",
+        0.9574468085106383,
+        0
+      ],
+      [
+        "conf005_top1_accuracy",
+        0.5319148936170213,
+        0
+      ],
+      [
+        "conf005_top3_accuracy",
+        0.6170212765957447,
+        0
+      ],
+      [
+        "conf005_image_top1",
+        0.45454545454545453,
+        0
+      ],
+      [
+        "conf005_image_top3",
+        0.5454545454545454,
+        0
+      ],
+      [
+        "conf005_n_top1",
+        25.0,
+        0
+      ],
+      [
+        "conf005_n_top3",
+        29.0,
+        0
+      ],
+      [
+        "conf005_n_match",
+        45.0,
+        0
+      ],
+      [
+        "conf005_n_false_pos",
+        105.0,
+        0
+      ],
+      [
+        "conf005_total_gt",
+        47.0,
+        0
+      ],
+      [
+        "conf005_n_imgs",
+        33.0,
+        0
+      ],
+      [
+        "conf005_reported_ms_per_image",
+        1592.282816545459,
+        0
+      ],
+      [
+        "conf025_detection_rate",
+        0.9574468085106383,
+        0
+      ],
+      [
+        "conf025_top1_accuracy",
+        0.5319148936170213,
+        0
+      ],
+      [
+        "conf025_top3_accuracy",
+        0.5957446808510638,
+        0
+      ],
+      [
+        "conf025_image_top1",
+        0.45454545454545453,
+        0
+      ],
+      [
+        "conf025_image_top3",
+        0.5454545454545454,
+        0
+      ],
+      [
+        "conf025_n_top1",
+        25.0,
+        0
+      ],
+      [
+        "conf025_n_top3",
+        28.0,
+        0
+      ],
+      [
+        "conf025_n_match",
+        45.0,
+        0
+      ],
+      [
+        "conf025_n_false_pos",
+        10.0,
+        0
+      ],
+      [
+        "conf025_total_gt",
+        47.0,
+        0
+      ],
+      [
+        "conf025_n_imgs",
+        33.0,
+        0
+      ],
+      [
+        "conf025_reported_ms_per_image",
+        1592.282816545459,
+        0
+      ]
+    ]
+  },
+  "tags": {
+    "mlflow.runName": "HealthEat v4 forward evaluation / GT v2",
+    "record_kind": "new_inference",
+    "model_executed": "true",
+    "training": "false",
+    "gt_version": "v2",
+    "historical_checkpoint_lineage": "UNRESOLVED",
+    "recording_recipe": "explicit-root-frozen-origin-v1"
+  },
+  "artifacts": {
+    "manifest.json": "6ad3901309268bf0393a0abb0b55e7f49423dcf25e752e750cd3a5ac0533b9c5",
+    "ground_truth_v2.json": "0a1296f420b12b85c1d5d03c1d5f1671534ca8448f6270ee6e8c374492f7174d",
+    "label_v2_manifest.json": "84a7c62dc5e2b73599ec158b3d6d070bc18b65e7d17a1ccf23f1e66ef4738226",
+    "inputs__inputs.json": "4a7a6c4cdd5cb42812096e337fc2034aa724ab77f3d053a45b29aa12d7164df8",
+    "inputs__inference_runner.py": "1cdb9394139c3bff43f8f6d875c71426b0bb5efbc30b7111630f9e6c20a37fdc",
+    "inputs__postprocess.py": "68ef485a6fcbee6ecec514a0cfa15b8340aa5a4d1e3f46dec9d29db3386d47b8",
+    "inputs__config.py": "36d7bca052fc96af71d0469926eaf277c15be74796a5d01100163c3627e4b8a7",
+    "inputs__pill.yaml": "36cf3884f9ae5fabd4d177fc29e768a19ab24ea7e3f7eb094c762122e10b74d2",
+    "full__run.json": "c3afd4610e6b8f047a1944280a5978b3f903523679cde29f11f2c0be5b6c1be4",
+    "full__raw_predictions.json": "9995925bdc50861a83933334ad920aa4931f62bc15c47e3badae93539b77adb6",
+    "full__environment.json": "515fb7babba883e828e789b7c05c2b774f5af13a30822a6d8a2acd23a450c15e",
+    "full__effective_config.py": "fc1f3b105c5769a072fca9a492024e5689900043f807fef0fa3f015d09f1e1a7",
+    "smoke__run.json": "c41fe946abd4b41cd22bb028fe150364c079152ec5b064f13593bb8d484c13fe",
+    "smoke__raw_predictions.json": "036dc477bebd6b35efe8b50ef96ff9614dfbeec1634de18625ff106d708e6a8f",
+    "smoke__environment.json": "515fb7babba883e828e789b7c05c2b774f5af13a30822a6d8a2acd23a450c15e",
+    "smoke__effective_config.py": "fc1f3b105c5769a072fca9a492024e5689900043f807fef0fa3f015d09f1e1a7",
+    "evaluation__comparisons-0.05.json": "a38a1a7d297707061ad4c17c70e50ab30007790c04df4c9b1bb323e3e780fd6b",
+    "evaluation__comparisons-0.25.json": "eb4cfdd0ff01031a66b0e12956aca8cecd8cba71ed8f47c5793b0f203445efdc",
+    "evaluation__metrics-0.05.json": "5f8570ffa11294f3859a29251bb72acd7a73762673306bc28344bfb5b24842f8",
+    "evaluation__metrics-0.25.json": "acdf9298bcb2955a8521542cce96503987bece467a72df2a7745e4f969021d66",
+    "evaluation__predictions-0.05.json": "6e3e28a0c0709c7cc07aedb9ab37da853e4148e3d1d7f7434ecc6fbf35a82cd3",
+    "evaluation__predictions-0.25.json": "dc60a42d80f3a15c925954d2ad871f1fbc428894df03283b2cefb829574edc7f",
+    "evaluation__receipt.json": "7094d7ad846de455ba3c55d1d438bb5a2b36aeca4e9a8a491419b881e0310b70",
+    "recording_forward.py.txt": "edb879faf0abcba1db14b55955cd9bbfcc3e8bdd236a33d52f39060f6d58542e",
+    "origin_forward.py.txt": "aa49172cb39b3f33f27adbe6cfe5405bb4ec3039a8643239f349ddef294d031b",
+    "backfill_runs.py.txt": "dc07f56e869a7f7d35b8bdf5cf83dddba92ae2e45c0486296e9a90f5e1c0b51f",
+    "recording_environment.json": "0f83e0a33f76a467a96d5040f409e9b3748b1108c7588ba88d2d78e0c6a03838"
+  }
+}

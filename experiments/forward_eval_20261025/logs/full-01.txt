@@ -1,0 +1,37 @@
+<VENV>/lib/python3.11/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Loads checkpoint by local backend from path: <WORKSPACE_ROOT>/run-01/inputs/model.pth
+{"image": 1, "of": 33, "boxes": 300, "elapsed_ms": 1844.4}
+{"image": 2, "of": 33, "boxes": 300, "elapsed_ms": 1668.7}
+{"image": 3, "of": 33, "boxes": 300, "elapsed_ms": 1613.1}
+{"image": 4, "of": 33, "boxes": 300, "elapsed_ms": 1544.1}
+{"image": 5, "of": 33, "boxes": 300, "elapsed_ms": 1572.2}
+{"image": 6, "of": 33, "boxes": 300, "elapsed_ms": 1480.3}
+{"image": 7, "of": 33, "boxes": 300, "elapsed_ms": 1572.8}
+{"image": 8, "of": 33, "boxes": 300, "elapsed_ms": 1568.1}
+{"image": 9, "of": 33, "boxes": 300, "elapsed_ms": 1553.8}
+{"image": 10, "of": 33, "boxes": 300, "elapsed_ms": 1519.5}
+{"image": 11, "of": 33, "boxes": 300, "elapsed_ms": 1619.1}
+{"image": 12, "of": 33, "boxes": 300, "elapsed_ms": 1608.7}
+{"image": 13, "of": 33, "boxes": 300, "elapsed_ms": 1581.0}
+{"image": 14, "of": 33, "boxes": 300, "elapsed_ms": 1563.7}
+{"image": 15, "of": 33, "boxes": 300, "elapsed_ms": 1676.2}
+{"image": 16, "of": 33, "boxes": 300, "elapsed_ms": 1573.9}
+{"image": 17, "of": 33, "boxes": 300, "elapsed_ms": 1565.0}
+{"image": 18, "of": 33, "boxes": 300, "elapsed_ms": 1540.0}
+{"image": 19, "of": 33, "boxes": 300, "elapsed_ms": 1581.5}
+{"image": 20, "of": 33, "boxes": 300, "elapsed_ms": 1660.1}
+{"image": 21, "of": 33, "boxes": 300, "elapsed_ms": 1612.9}
+{"image": 22, "of": 33, "boxes": 300, "elapsed_ms": 1538.5}
+{"image": 23, "of": 33, "boxes": 300, "elapsed_ms": 1585.2}
+{"image": 24, "of": 33, "boxes": 300, "elapsed_ms": 1525.9}
+{"image": 25, "of": 33, "boxes": 300, "elapsed_ms": 1537.0}
+{"image": 26, "of": 33, "boxes": 300, "elapsed_ms": 1678.7}
+{"image": 27, "of": 33, "boxes": 300, "elapsed_ms": 1597.2}
+{"image": 28, "of": 33, "boxes": 300, "elapsed_ms": 1704.8}
+{"image": 29, "of": 33, "boxes": 300, "elapsed_ms": 1582.4}
+{"image": 30, "of": 33, "boxes": 300, "elapsed_ms": 1534.7}
+{"image": 31, "of": 33, "boxes": 300, "elapsed_ms": 1650.1}
+{"image": 32, "of": 33, "boxes": 300, "elapsed_ms": 1514.8}
+{"image": 33, "of": 33, "boxes": 300, "elapsed_ms": 1576.9}
+{"status": "PASS", "model_executed": true, "training": false, "scope": "full", "image_count": 33, "input_manifest_sha256": "4a7a6c4cdd5cb42812096e337fc2034aa724ab77f3d053a45b29aa12d7164df8", "started_unix": 1792918105.4747915, "finished_unix": 1792918172.3179307, "peak_rss_kib_linux": 830908, "peak_cuda_bytes": null, "artifacts": {"raw_predictions.json": "9995925bdc50861a83933334ad920aa4931f62bc15c47e3badae93539b77adb6", "environment.json": "515fb7babba883e828e789b7c05c2b774f5af13a30822a6d8a2acd23a450c15e", "effective_config.py": "fc1f3b105c5769a072fca9a492024e5689900043f807fef0fa3f015d09f1e1a7"}, "overrides": ["backbone.init_cfg=None", "load_from=None", "ann_file empty", "LoadAnnotations removed", "explicit palette=coco; no dataset construction"]}

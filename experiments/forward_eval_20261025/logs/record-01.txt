@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "<PROJECT_ROOT>\experiments\checkpoint_eval\forward.py", line 270, in <module>
+    else:r=record(args.workspace,args.tracking)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_ROOT>\experiments\checkpoint_eval\forward.py", line 224, in record
+    uri='sqlite:///'+(store/'tracking.db').as_posix();client=MlflowClient(tracking_uri=uri,registry_uri=uri)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>\Lib\site-packages\mlflow\tracking\client.py", line 257, in __init__
+    self._tracking_client = TrackingServiceClient(final_tracking_uri)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 98, in __init__
+    self.store
+  File "<VENV>\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 102, in store
+    return utils._get_store(self.tracking_uri)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>\Lib\site-packages\mlflow\tracking\_tracking_service\utils.py", line 267, in _get_store
+    return _tracking_store_registry.get_store(store_uri, artifact_uri)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>\Lib\site-packages\mlflow\tracking\_tracking_service\registry.py", line 45, in get_store
+    return self._get_store_with_resolved_uri(resolved_store_uri, artifact_uri)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>\Lib\site-packages\mlflow\tracking\_tracking_service\registry.py", line 56, in _get_store_with_resolved_uri
+    return builder(store_uri=resolved_store_uri, artifact_uri=artifact_uri)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>\Lib\site-packages\mlflow\tracking\_tracking_service\utils.py", line 185, in _get_sqlalchemy_store
+    from mlflow.store.tracking.sqlalchemy_store import SqlAlchemyStore
+  File "<VENV>\Lib\site-packages\mlflow\store\tracking\sqlalchemy_store.py", line 19, in <module>
+    import sqlalchemy
+  File "<VENV>\Lib\site-packages\sqlalchemy\__init__.py", line 12, in <module>
+    from . import util as _util
+  File "<VENV>\Lib\site-packages\sqlalchemy\util\__init__.py", line 14, in <module>
+    from ._collections import coerce_generator_arg as coerce_generator_arg
+  File "<VENV>\Lib\site-packages\sqlalchemy\util\_collections.py", line 41, in <module>
+    from ._collections_cy import IdentitySet as IdentitySet
+ImportError: DLL load failed while importing _collections_cy: 애플리케이션 제어 정책에서 이 파일을 차단했습니다.

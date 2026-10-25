@@ -1,0 +1,1 @@
+{"status": "PASS", "numpy": "1.26.4", "checks": [{"threshold": 0.05, "images": 33, "groups_identical": true}, {"threshold": 0.25, "images": 33, "groups_identical": true}], "model_loaded": false}

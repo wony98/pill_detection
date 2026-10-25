@@ -1,0 +1,6 @@
+# Preserve exact bytes of versioned labels and hashed evaluation evidence.
+/experiments/checkpoint_eval/** -text
+/eval/label_versions/v2/** -text
+/eval/reference/class_mapping.json -text
+/docs/errata_label_v2_20261024/** -text
+/experiments/forward_eval_20261025/** -text
